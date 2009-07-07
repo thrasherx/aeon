@@ -978,47 +978,47 @@
 			<control type="label" id="161">
 				<include>List_Objects</include>
 				<label>$INFO[Container(50).NumItems] $LOCALIZE[31938]</label>
-				<visible>Container.Content(episodes)</visible>
+				<visible>Container.Content(episodes) + Control.IsVisible(50)</visible>
 			</control>				
 			<control type="label" id="161">
 				<include>List_Objects</include>
 				<label>$INFO[Container(50).NumItems] $LOCALIZE[31934]</label>
-				<visible>Container.Content(movies)</visible>
+				<visible>Container.Content(movies) + Control.IsVisible(50)</visible>
 			</control>
 			<control type="label" id="161">
 				<include>List_Objects</include>
 				<label>$INFO[Container(50).NumItems] $LOCALIZE[31928]</label>
-				<visible>Container.Content(albums)</visible>
+				<visible>Container.Content(albums) + Control.IsVisible(50)</visible>
 			</control>
 			<control type="label" id="161">
 				<include>List_Objects</include>
 				<label>$INFO[Container(50).NumItems] $LOCALIZE[31927]</label>
-				<visible>Container.Content(artists)</visible>
+				<visible>Container.Content(artists) + Control.IsVisible(50)</visible>
 			</control>
 			<control type="label" id="161">
 				<include>List_Objects</include>
 				<label>$INFO[Container(50).NumItems] $LOCALIZE[31937]</label>
-				<visible>Container.Content(seasons)</visible>
+				<visible>Container.Content(seasons) + Control.IsVisible(50)</visible>
 			</control>				
 			<control type="label" id="161">
 				<include>List_Objects</include>
 				<label>$INFO[Container(50).NumItems] $LOCALIZE[31933]</label>
-				<visible>Container.Content(tvshows)</visible>
+				<visible>Container.Content(tvshows) + Control.IsVisible(50)</visible>
 			</control>				
 			<control type="label">
 				<include>List_Objects</include>
 				<label>$INFO[Container(50).NumItems] $LOCALIZE[31935]</label>
-				<visible>!Control.IsVisible(161)</visible>				
+				<visible>!Control.IsVisible(161) + Control.IsVisible(50)</visible>				
 			</control>
 			<control type="label" id="161">
 				<include>List_Objects</include>
 				<label>$INFO[Container(50).NumItems] $LOCALIZE[31936]</label>
-				<visible>Container.Content(songs)</visible>				
+				<visible>Container.Content(songs) + Control.IsVisible(50)</visible>				
 			</control>
 			<control type="label" id="161">
 				<include>List_Objects</include>
 				<label>$INFO[Container(50).NumItems] $LOCALIZE[31923]</label>
-				<visible>Container.Content(years)</visible>				
+				<visible>Container.Content(years) + Control.IsVisible(50)</visible>				
 			</control>				
 		
 		</control>

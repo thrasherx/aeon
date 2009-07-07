@@ -2449,7 +2449,7 @@
 				<include condition="Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) | Window.IsActive(2) | Window.IsActive(20)">MusicShowcaseGroupVars</include>
                 <onleft>57</onleft>
                 <onright>57</onright>
-                <onup>900</onup>
+                <onup>2</onup>
                 <ondown>60</ondown>
                 <viewtype label="Showcase">list</viewtype>
                 <pagecontrol>60</pagecontrol>

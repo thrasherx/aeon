@@ -290,7 +290,7 @@
 			<usealttexture>Skin.HasSetting(listpanelthin)</usealttexture>
 			<onclick>Skin.SetBool(listpanelthin)</onclick>
 			<altclick>Skin.Reset(listpanelthin)</altclick>
-			<visible>Control.IsVisible(50)</visible>
+			<visible>Control.IsVisible(50) | Control.IsVisible(550)</visible>
 		</control>
 		<control type="togglebutton" id="944">
 			<include>Objects_MediaMenuButton</include>				
@@ -704,7 +704,7 @@
 			<height>57</height>
 			<texture>showcase/showcase_menupanel.png</texture>
 			<include>Animation_MediaMenuSlide</include>
-			<visible>Control.IsVisible(50) | Control.IsVisible(52) | Control.IsVisible(51) | Control.IsVisible(57) | Control.IsVisible(53)</visible>
+			<visible>Control.IsVisible(50) | Control.IsVisible(550) | Control.IsVisible(52) | Control.IsVisible(51) | Control.IsVisible(57) | Control.IsVisible(53)</visible>
 		</control>
 	</include>
 	

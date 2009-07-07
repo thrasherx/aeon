@@ -1,6 +1,7 @@
 <window id="500">
 	<defaultcontrol always="true">900</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+	<views>50,57,53</views>
 	<controls>
 
 	<control type="multiimage">
@@ -32,11 +33,11 @@
 				<include>Animation_MediaMenuSlide</include>
 				<include>Objects_MediaMenuGroup</include>
 
-				<control type="button" id="900">
+				<control type="button" id="2">
 					<label>View: $INFO[Container.ViewMode]</label>
 					<include>Objects_MediaMenuButton</include>
 					<onfocus>Skin.Reset(bmtransitnowplaying)</onfocus>
-					<onclick>SetFocus(69)</onclick>
+					<onclick>SetFocus(2)</onclick>
 				</control>
 
 				<include>Objects_FlattenFlowButton</include>
@@ -85,13 +86,13 @@
 				<include>Objects_MediaDebugButtons</include>
 			</control>
 		</control>
+		
 		<include>Viewtype_List</include>
 		<include>Viewtype_Showcase</include>
 
 	</control>
 
-	<include>Furniture_DarkGradient</include>	
-	<include>ViewChange</include>
+	<include>Furniture_DarkGradient</include>
 	<!--<include>Background_ContextBlack</include>-->
 	<include>Furniture_Debug</include>
 	

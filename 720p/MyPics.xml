@@ -1,6 +1,7 @@
 <window id="2">
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+	<views>50,550,51,57,53</views>
 	<controls>
 
     <control type="image" id="101">
@@ -76,7 +77,8 @@
 		<include>Viewtype_Wall</include>		
 		<include>Viewtype_StripShow</include>
 		<include>Viewtype_Showcase</include>
-		<include>Viewtype_List</include>		
+		<include>Viewtype_List</include>
+		<include>Viewtype_List_Slim</include>		
 
 		<include>Objects_ShowcaseMenuPanel</include>
 		<include>Furniture_WallTime</include>
@@ -98,10 +100,10 @@
 				<include>Animation_MediaMenuSlide</include>
 				<include>Objects_MediaMenuGroup</include>
 
-				<control type="button" id="900">
+				<control type="button" id="2">
 					<label>$LOCALIZE[31050] $INFO[Container.ViewMode]</label>
 					<include>Objects_MediaMenuButton</include>
-					<onclick>SetFocus(69)</onclick>
+					<onclick>SetFocus(2)</onclick>
 				</control>
 
 				<include>Objects_FlattenFlowButton</include>	
@@ -182,7 +184,6 @@
 	</control>
 
 	<include>Furniture_DarkGradient</include>	
-	<include>ViewChange</include>	
 	<!--<include>Background_ContextBlack</include>-->
 	<include condition="Skin.HasSetting(debug)">Furniture_Debug</include>
 	
