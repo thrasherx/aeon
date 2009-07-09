@@ -67,15 +67,6 @@
 					<include>Objects_MediaMenuButton</include>
 				</control>
 
-				<control type="togglebutton" id="940">
-					<include>Objects_MediaMenuButton</include>				
-					<include>Objects_ListLayoutStrings</include>
-					<usealttexture>Skin.HasSetting(musiclistfull)</usealttexture>
-					<onclick>Skin.SetBool(musiclistfull)</onclick>
-					<altclick>Skin.Reset(musiclistfull)</altclick>
-					<visible>Control.IsVisible(50)</visible>
-				</control>
-
 				<include>Objects_PanelDensityButton</include>
 				
 				<control type="togglebutton" id="901">
