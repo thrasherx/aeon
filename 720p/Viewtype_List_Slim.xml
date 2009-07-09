@@ -39,7 +39,7 @@
 		<font>Font_ListDetailTV</font>
 		<align>center</align>
 		<aligny>center</aligny>
-		<animation effect="slide" start="-25,0" end="-25,0" time="0" condition="Window.IsActive(2) | Container.Content(tvshows) | Container.Content(seasons)">Conditional</animation>
+		<animation effect="slide" start="-25,0" end="-25,0" time="0" condition="Window.IsActive(2) | Container.Content(tvshows) | Container.Content(seasons) | [Window.IsActive(502) + !Container.Content(songs) + !Container.Content(albums)]">Conditional</animation>
 	</include>
 
 	<include name="ListLabel_TrackSmall_Slim">
@@ -128,7 +128,7 @@
 				<width>44</width>
 				<height>579</height>
 				<texture>list/listpanel_detailwide.png</texture>
-				<visible>[Window.IsActive(25) + Skin.HasSetting(videomovies)] | [Window.IsActive(25) + Container.Content(episodes)] | [Window.IsActive(500) | Window.IsActive(501) | [Window.IsActive(502) + !Container.Content(artists) + !Container.Content(years)]]</visible>
+				<visible>[Window.IsActive(25) + Skin.HasSetting(videomovies)] | [Window.IsActive(25) + Container.Content(episodes)] | [Window.IsActive(502) + Container.Content(songs)]</visible>
 				<visible>Control.IsVisible(550)</visible>
 			</control>
 			
@@ -138,7 +138,7 @@
 				<width>97</width>
 				<height>567</height>
 				<texture>list/listpanel_detailwide.png</texture>
-				<visible>Window.IsActive(2)</visible>			
+				<visible>Window.IsActive(2) | [Window.IsActive(502) + !Container.Content(songs)]</visible>			
 				<visible>Control.IsVisible(550)</visible>
 			</control>
 			
@@ -189,7 +189,13 @@
 						<include>ListLabel_MainSmall_Slim</include>
 						<include>listcolornofocus</include>
 						<info>ListItem.Label</info>
-						<visible>[[![Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] | [[Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + IsEmpty(ListItem.Artist)] | Container.Content(artists)] + !Container.Content(episodes)</visible>
+						<visible>[[![Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] | [[Window.IsActive(500) | Window.IsActive(501)] + IsEmpty(ListItem.Artist)] | Container.Content(artists)] + !Container.Content(episodes)</visible>
+					</control>					
+					<control type="label">
+						<include>ListLabel_MainSmall_Slim</include>
+						<include>listcolornofocus</include>
+						<info>ListItem.Label</info>
+						<visible>Window.IsActive(502) + !Container.Content(songs) + !Container.Content(albums) + !Container.Content(artists)</visible>
 					</control>
 					<control type="label">
 						<include>ListLabel_TrackSmall_Slim</include>
@@ -264,7 +270,14 @@
 						<include>listcolornofocus</include>
 						<include>Animation_ButtonFocusFade_fix</include>
 						<info>ListItem.Label</info>
-						<visible>[[![Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] | [[Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + IsEmpty(ListItem.Artist)] | Container.Content(artists)] + !Container.Content(episodes)</visible>
+						<visible>[[![Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] | [[Window.IsActive(500) | Window.IsActive(501)] + IsEmpty(ListItem.Artist)] | Container.Content(artists)] + !Container.Content(episodes)</visible>
+					</control>					
+					<control type="label">
+						<include>ListLabel_MainSmall_Slim</include>
+						<include>listcolornofocus</include>
+						<include>Animation_ButtonFocusFade_fix</include>
+						<info>ListItem.Label</info>
+						<visible>Window.IsActive(502) + !Container.Content(songs) + !Container.Content(albums) + !Container.Content(artists)</visible>
 					</control>
 					<control type="label">
 						<include>ListLabel_TrackSmall_Slim</include>
@@ -328,7 +341,14 @@
 						<include>listcolorfocus</include>
 						<include>Animation_ButtonFocusFade</include>
 						<info>ListItem.Label</info>
-						<visible>[[![Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] | [[Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + IsEmpty(ListItem.Artist)] | Container.Content(artists)] + !Container.Content(episodes)</visible>
+						<visible>[[![Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] | [[Window.IsActive(500) | Window.IsActive(501)] + IsEmpty(ListItem.Artist)] | Container.Content(artists)] + !Container.Content(episodes)</visible>
+					</control>					
+					<control type="label">
+						<include>ListLabel_MainSmall_Slim</include>
+						<include>listcolorfocus</include>
+						<include>Animation_ButtonFocusFade</include>
+						<info>ListItem.Label</info>
+						<visible>Window.IsActive(502) + !Container.Content(songs) + !Container.Content(albums) + !Container.Content(artists)</visible>
 					</control>
 					<control type="label">
 						<include>ListLabel_TrackSmall_Slim</include>
