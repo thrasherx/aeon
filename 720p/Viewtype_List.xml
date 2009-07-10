@@ -240,7 +240,7 @@
 					</control>
 					<control type="label">
 						<include>ListLabel_Track</include>
-						<include>Colour_ListItemTrackUnfocused</include>
+						<include>listcolornofocus</include>
 						<label>$INFO[ListItem.TrackNumber]</label>
 						<visible>[Window.IsActive(500) | Window.IsActive(501) | [Window.IsActive(502) + Container.Content(songs)]]</visible>
 					</control>						
@@ -338,7 +338,7 @@
 					</control>			
 					<control type="label">
 						<include>ListLabel_Track</include>
-						<include>Colour_ListItemTrackUnfocused</include>
+						<include>listcolornofocus</include>
 						<label>$INFO[ListItem.TrackNumber]</label>
 						<visible>[Window.IsActive(500) | Window.IsActive(501) | [Window.IsActive(502) + Container.Content(songs)]]</visible>
 						<include>Animation_ButtonFocusFade_fix</include>						
