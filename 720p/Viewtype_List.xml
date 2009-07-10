@@ -610,8 +610,8 @@
 						<width>65</width>
 						<height>13</height>
 						<info>ListItem.StarRating</info>
-						<colordiffuse>FF585858</colordiffuse>
-						<visible>![Container.Content(artists) | Container.Content(years) | Container.Content(genres)]</visible>
+						<colordiffuse>dcbdbdbd</colordiffuse>
+						<visible>![Container.Content(artists) | Container.Content(years) | Container.Content(genres) | Container.Content(seasons)]</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout condition="[Window.IsActive(25) + Skin.HasSetting(videotv)]" height="85">
@@ -710,8 +710,8 @@
 						<height>13</height>
 						<info>ListItem.StarRating</info>
 						<include>Animation_ButtonFocusFade_fix</include>						
-						<colordiffuse>FF585858</colordiffuse>
-						<visible>![Container.Content(artists) | Container.Content(years) | Container.Content(genres)]</visible>						
+						<colordiffuse>dcbdbdbd</colordiffuse>
+						<visible>![Container.Content(artists) | Container.Content(years) | Container.Content(genres) | Container.Content(seasons)]</visible>						
 					</control>
 					
 					<control type="label">
@@ -794,7 +794,7 @@
 						<info>ListItem.StarRating</info>
 						<include>Animation_ButtonFocusFade</include>						
 						<colordiffuse>FF585858</colordiffuse>
-						<visible>![Container.Content(artists) | Container.Content(years) | Container.Content(genres)]</visible>						
+						<visible>![Container.Content(artists) | Container.Content(years) | Container.Content(genres) | Container.Content(seasons)]</visible>						
 					</control>				
 				</focusedlayout>					
 			</control>
