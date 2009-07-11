@@ -24,6 +24,7 @@
 <include file="Viewtype_List.xml" />
 <include file="Viewtype_Wall.xml" />
 <include file="Viewtype_List_Slim.xml" />
+<include file="Includes_Filemanager.xml" />
 
 <!-- Text colours ================================== -->
 

@@ -85,6 +85,13 @@
 				<onclick>Skin.SetBool(bmtransit)</onclick>				
 				<onclick>XBMC.ActivateWindow(605)</onclick>
 			</control>
+			<!--File manager -->
+			<control type="button" id="811">
+				<description>Settings</description>
+				<label>10003</label>
+				<include>Objects_ContextMenuButton</include>
+				<onclick>XBMC.ActivateWindow(3)</onclick>
+			</control>
 			<control type="togglebutton" id="804">
 				<description>Home Visualiser</description>
 				<label>31203</label>
