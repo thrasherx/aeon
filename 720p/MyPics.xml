@@ -103,8 +103,6 @@
 				<control type="button" id="2">
 					<label>$LOCALIZE[31050] $INFO[Container.ViewMode]</label>
 					<include>Objects_MediaMenuButton</include>
-					<onclick>ReloadSkin()</onclick>
-					<onclick>SetFocus(2)</onclick>
 				</control>
 
 				<include>Objects_FlattenFlowButton</include>	

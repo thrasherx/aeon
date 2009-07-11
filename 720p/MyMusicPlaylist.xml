@@ -37,8 +37,6 @@
 					<label>View: $INFO[Container.ViewMode]</label>
 					<include>Objects_MediaMenuButton</include>
 					<onfocus>Skin.Reset(bmtransitnowplaying)</onfocus>
-					<onclick>ReloadSkin()</onclick>
-					<onclick>SetFocus(2)</onclick>
 				</control>
 
 				<include>Objects_FlattenFlowButton</include>
