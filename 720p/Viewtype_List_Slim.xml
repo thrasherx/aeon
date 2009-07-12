@@ -128,7 +128,7 @@
 				<width>44</width>
 				<height>579</height>
 				<texture>list/listpanel_detailwide.png</texture>
-				<visible>[Window.IsActive(25) + Skin.HasSetting(videomovies)] | [Window.IsActive(25) + Container.Content(episodes)] | [Window.IsActive(502) + Container.Content(songs)]</visible>
+				<visible>[Window.IsActive(25) + Skin.HasSetting(videomovies)] | [Window.IsActive(25) + Container.Content(episodes)] | [Window.IsActive(502) + Container.Content(songs)] | [Window.IsActive(502) + Container.Content(albums)]</visible>
 				<visible>Control.IsVisible(550)</visible>
 			</control>
 			
@@ -138,7 +138,7 @@
 				<width>97</width>
 				<height>567</height>
 				<texture>list/listpanel_detailwide.png</texture>
-				<visible>Window.IsActive(2) | [Window.IsActive(502) + !Container.Content(songs)]</visible>			
+				<visible>Window.IsActive(2) | [Window.IsActive(502) + ![Container.Content(songs) | Container.Content(albums)]]</visible>			
 				<visible>Control.IsVisible(550)</visible>
 			</control>
 			
@@ -219,7 +219,7 @@
 						<include>ListLabel_DetailSmall_Slim</include>
 						<include>detailcolornofocus</include>
 						<label>[UPPERCASE]$INFO[ListItem.Year][/UPPERCASE]</label>
-						<visible>Container.Content(movies)</visible>
+						<visible>Container.Content(movies) | Container.Content(albums)</visible>
 					</control>
 					<control type="label">
 						<include>ListLabel_DetailSmall_Slim</include>
@@ -305,7 +305,7 @@
 						<include>detailcolornofocus</include>
 						<include>Animation_ButtonFocusFade_fix</include>						
 						<label fallback="-">[UPPERCASE]$INFO[ListItem.Year][/UPPERCASE]</label>				
-						<visible>!Control.IsVisible(76) + Container.Content(movies)</visible>
+						<visible>!Control.IsVisible(76) + Container.Content(movies) | Container.Content(albums)</visible>
 					</control>
 					<control type="label">
 						<include>ListLabel_DetailSmall_Slim</include>
@@ -376,7 +376,7 @@
 						<include>detailcolorfocus</include>
 						<include>Animation_ButtonFocusFade</include>						
 						<label fallback="-">[UPPERCASE]$INFO[ListItem.Year][/UPPERCASE]</label>				
-						<visible>!Control.IsVisible(76) + Container.Content(movies)</visible>
+						<visible>!Control.IsVisible(76) + Container.Content(movies) | Container.Content(albums)</visible>
 					</control>
 					<control type="label">
 						<include>ListLabel_DetailSmall_Slim</include>
