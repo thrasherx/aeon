@@ -719,7 +719,9 @@
 		<textcolor>FF383838</textcolor>
 		<focusedcolor>FFdfdfdf</focusedcolor>
 		<texturenofocus>dialogs/context_nofocus.png</texturenofocus>
-		<texturefocus>dialogs/context_highlight.png</texturefocus>
+		<texturefocus>dialogs/context_highlight.png</texturefocus> 
+        <alttexturefocus>dialogs/context_highlight.png</alttexturefocus> 
+        <alttexturenofocus>dialogs/context_nofocus.png</alttexturenofocus>
 		<align>center</align>
 		<aligny>top</aligny>
 		<font>Font_ContextMenuButton</font>
@@ -1082,8 +1084,8 @@
 			<height>351</height>	
 	</include>
 	
-	<include name="Objects_ButtonMenu8Group">
-			<height>312</height>	
+	<include name="Objects_ButtonMenu11Group">
+			<height>429</height>	
 	</include>
 
 <!-- Login Screen -->
