@@ -1081,12 +1081,12 @@
 			<height>390</height>	
 	</include>
 	
-	<include name="Objects_ButtonMenu9Group">
-			<height>351</height>	
-	</include>
-	
 	<include name="Objects_ButtonMenu11Group">
 			<height>429</height>	
+	</include>
+	
+	<include name="Objects_ButtonMenu12Group">
+			<height>460</height>	
 	</include>
 
 <!-- Login Screen -->

@@ -36,15 +36,15 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>308</width>
-			<include condition="![system.hasloginscreen | System.HasMediaDVD]">Objects_ButtonMenu9Group</include> 
-			<include condition="[system.hasloginscreen + !System.HasMediaDVD] | [!system.hasloginscreen + System.HasMediaDVD]">Objects_ButtonMenu10Group</include>			
-			<include condition="system.hasloginscreen + System.HasMediaDVD">Objects_ButtonMenu11Group</include>		
+			<include condition="![system.hasloginscreen | System.HasMediaDVD]">Objects_ButtonMenu10Group</include> 
+			<include condition="[system.hasloginscreen + !System.HasMediaDVD] | [!system.hasloginscreen + System.HasMediaDVD]">Objects_ButtonMenu11Group</include>			
+			<include condition="system.hasloginscreen + System.HasMediaDVD">Objects_ButtonMenu12Group</include>		
 			<texture>dialogs/context_middle.png</texture>
 		</control>
 		<control type="image">
 			<description>background bottom image</description>
 			<posx>0</posx>
-			<posy>390</posy>
+			<posy>429</posy>
 			<width>308</width>
 			<height>27</height>
 			<animation effect="slide" start="0,-39" end="0,-39" time="0" condition="![system.hasloginscreen | System.HasMediaDVD]">Conditional</animation>
@@ -56,9 +56,9 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>308</width>
-			<include condition="![system.hasloginscreen | System.HasMediaDVD]">Objects_ButtonMenu9Group</include> 
-			<include condition="[system.hasloginscreen + !System.HasMediaDVD] | [!system.hasloginscreen + System.HasMediaDVD]">Objects_ButtonMenu10Group</include>			
-			<include condition="system.hasloginscreen + System.HasMediaDVD">Objects_ButtonMenu11Group</include>			
+			<include condition="![system.hasloginscreen | System.HasMediaDVD]">Objects_ButtonMenu10Group</include> 
+			<include condition="[system.hasloginscreen + !System.HasMediaDVD] | [!system.hasloginscreen + System.HasMediaDVD]">Objects_ButtonMenu11Group</include>			
+			<include condition="system.hasloginscreen + System.HasMediaDVD">Objects_ButtonMenu12Group</include>			
 			<itemgap>0</itemgap>
 			<orientation>vertical</orientation>
 			<onup>4112</onup>
@@ -78,6 +78,12 @@
 				<onclick>Skin.SetBool(bmtransit)</onclick>				
 				<onclick>XBMC.ActivateWindow(604)</onclick>
 			</control>
+			<control type="button" id="812">
+				<description>Favourites</description>
+				<label>$LOCALIZE[1036]</label>
+				<include>Objects_ContextMenuButton</include>
+				<onclick>ActivateWindow(Favourites)</onclick>
+			</control>
 			<control type="button" id="803">
 				<description>Assistant</description>
 				<label>31202</label>
@@ -85,9 +91,8 @@
 				<onclick>Skin.SetBool(bmtransit)</onclick>				
 				<onclick>XBMC.ActivateWindow(605)</onclick>
 			</control>
-			<!--File manager -->
 			<control type="button" id="811">
-				<description>Settings</description>
+				<description>File Manager</description>
 				<label>10003</label>
 				<include>Objects_ContextMenuButton</include>
 				<onclick>XBMC.ActivateWindow(3)</onclick>
