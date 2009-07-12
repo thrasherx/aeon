@@ -191,6 +191,41 @@
 			<visible>substring(listitem.mpaa,Rated G)</visible>
 		</control>
 		
+		<control type="image">
+			<include>Objects_FSInfoCertificate</include>
+			<texture>flags/bbfc_u.png</texture>
+			<visible>substring(listitem.mpaa,UK:u)</visible>
+		</control>
+		
+		<control type="image">
+			<include>Objects_FSInfoCertificate</include>
+			<texture>flags/bbfc_pg.png</texture>
+			<visible>substring(listitem.mpaa,UK:pg)</visible>
+		</control>
+		
+		<control type="image">
+			<include>Objects_FSInfoCertificate</include>
+			<texture>flags/bbfc_12.png</texture>
+			<visible>substring(listitem.mpaa,UK:12)</visible>
+		</control>
+		
+		<control type="image">
+			<include>Objects_FSInfoCertificate</include>
+			<texture>flags/bbfc_15.png</texture>
+			<visible>substring(listitem.mpaa,UK:15)</visible>
+		</control>
+		
+		<control type="image">
+			<include>Objects_FSInfoCertificate</include>
+			<texture>flags/bbfc_18.png</texture>
+			<visible>substring(listitem.mpaa,UK:18)</visible>
+		</control>
+		
+		<control type="image">
+			<include>Objects_FSInfoCertificate</include>
+			<texture>flags/bbfc_18.png</texture>
+			<visible>substring(listitem.mpaa,UK:X)</visible>
+		</control>
 		<control type="label">
 			<description>Movie title</description>
 			<posx>0</posx>
