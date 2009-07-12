@@ -47,6 +47,7 @@
 			<focusedcolor>FFdfdfdf</focusedcolor>
 			<texturenofocus>dialogs/context_nofocus.png</texturenofocus>
 			<texturefocus>dialogs/context_highlight.png</texturefocus>
+			<pulseonselect>true</pulseonselect>
 			<align>center</align>
 			<aligny>top</aligny>
 			<font>Font_ContextMenuButton</font>
