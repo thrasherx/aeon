@@ -157,6 +157,7 @@
 	</control>
 
 	<include condition="Skin.HasSetting(videomovies)">Furniture_ShowcaseMediaFlags</include>	
+	<include condition="Skin.HasSetting(videotv)">Furniture_EpisodeMediaFlags</include>
 	
 	<include>Furniture_DarkGradient</include>
 	<!--<include>Background_ContextBlack</include>-->
