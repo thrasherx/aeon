@@ -1,7 +1,7 @@
 <window id="25">
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	<views>50,550,52,53,57</views>
+	<views>50,550,551,52,53,57</views>
 	<controls>
 
     <control type="image" id="109">
@@ -19,7 +19,7 @@
 
 	<control type="largeimage" id="102">
 		<include>FullscreenDimensions</include>
-        <visible>[Control.IsVisible(50) | Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(550)] + [[Container.Content(movies) + !Skin.HasSetting(nomoviefanart)] | [Container.Content(tvshows) + !Skin.HasSetting(notvfanart)]] + !IsEmpty(listitem.property(fanart_image))</visible>
+        <visible>[Control.IsVisible(50) | Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(550) | Control.IsVisible(551)] + [[Container.Content(movies) + !Skin.HasSetting(nomoviefanart)] | [Container.Content(tvshows) + !Skin.HasSetting(notvfanart)]] + !IsEmpty(listitem.property(fanart_image))</visible>
 		<fadetime>400</fadetime>
 		<texture>$INFO[listitem.property(fanart_image)]</texture>
 		<include>Animation_FanartFade</include>
@@ -39,6 +39,7 @@
 		<include>Objects_ShowcaseMenuPanel</include>
 		<include>ListFade</include>
 		<include>ListFade2</include>
+		<include>ListFade_Low</include>
 		<include>Viewtype_Wall</include>
 		<include>Furniture_WallTime</include>
 		<include>Furniture_WallRSS</include>		
@@ -84,13 +85,22 @@
 				
 				<include>Objects_PanelDensityButton</include>				
 				
+				<control type="togglebutton" id="940">
+					<include>Objects_MediaMenuButton</include>				
+					<include>Objects_ListLayoutStrings</include>
+					<usealttexture>Skin.HasSetting(movieslistfull)</usealttexture>
+					<onclick>Skin.SetBool(movieslistfull)</onclick>
+					<altclick>Skin.Reset(movieslistfull)</altclick>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(50) | Control.IsVisible(551)</visible>
+				</control>
+
 				<control type="togglebutton" id="901">
 					<include>Objects_MediaMenuButton</include>				
 					<include>Objects_FanartToggleStrings</include>
 					<usealttexture>Skin.HasSetting(nomoviefanart)</usealttexture>
 					<onclick>Skin.SetBool(nomoviefanart)</onclick>
 					<altclick>Skin.Reset(nomoviefanart)</altclick>
-					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + [Control.IsVisible(50) | Control.IsVisible(550) | Control.IsVisible(57) | Control.IsVisible(52)]</visible>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + [Control.IsVisible(50) | Control.IsVisible(550) | Control.IsVisible(551) | Control.IsVisible(57) | Control.IsVisible(52)]</visible>
 				</control>
 				
 				<control type="togglebutton" id="902">
@@ -99,7 +109,7 @@
 					<usealttexture>Skin.HasSetting(notvfanart)</usealttexture>
 					<onclick>Skin.SetBool(notvfanart)</onclick>
 					<altclick>Skin.Reset(notvfanart)</altclick>
-					<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + [Control.IsVisible(50) | Control.IsVisible(550) | Control.IsVisible(57) | Control.IsVisible(52)]</visible>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + [Control.IsVisible(50) | Control.IsVisible(550) | Control.IsVisible(551) | Control.IsVisible(57) | Control.IsVisible(52)]</visible>
 				</control>
 				
 				<include condition="!Skin.HasSetting(nomediaflagsbutton)">Objects_FlagsButton</include>
@@ -150,6 +160,7 @@
 		
 		<include>Viewtype_List</include>
 		<include>Viewtype_List_Slim</include>
+		<include>Viewtype_List_Low</include>
 		<include>Viewtype_Showcase</include>
 		<include condition="!Skin.HasSetting(oldmultiplex)">Viewtype_Multiplex</include>
 		<include condition="Skin.HasSetting(oldmultiplex)">Viewtype_MultiplexOld</include>

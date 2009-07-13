@@ -2,7 +2,7 @@
 	<id>6</id>
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	<views>50,550,52,53,57</views>
+	<views>50,550,551,52,53,57</views>
 	<controls>
 
 	<control type="multiimage">
@@ -67,7 +67,7 @@
 					<usealttexture>Skin.HasSetting(listvideosquare)</usealttexture>
 					<onclick>Skin.SetBool(listvideosquare)</onclick>
 					<altclick>Skin.Reset(listvideosquare)</altclick>
-					<visible>Control.IsVisible(50) | Control.IsVisible(550)</visible>
+					<visible>Control.IsVisible(50) | Control.IsVisible(550) | Control.IsVisible(551)</visible>
 				</control>
 				
 				<include>Objects_PanelDensityButton</include>					
@@ -90,6 +90,7 @@
 
 		<include>Viewtype_List</include>
 		<include>Viewtype_List_Slim</include>
+		<include>Viewtype_List_Low</include>
 		<include>Viewtype_Showcase</include>
 	</control>
 
