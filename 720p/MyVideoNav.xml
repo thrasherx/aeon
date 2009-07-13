@@ -91,7 +91,7 @@
 					<usealttexture>Skin.HasSetting(movieslistfull)</usealttexture>
 					<onclick>Skin.SetBool(movieslistfull)</onclick>
 					<altclick>Skin.Reset(movieslistfull)</altclick>
-					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(50) | Control.IsVisible(551)</visible>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(50)</visible>
 				</control>
 
 				<control type="togglebutton" id="901">
