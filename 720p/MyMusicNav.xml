@@ -11,7 +11,7 @@
 
 	<control type="largeimage" id="102">
 		<include>FullscreenDimensions</include>
-        <visible>!Control.IsVisible(103) + Control.IsVisible(57) + !IsEmpty(listitem.property(fanart_image)) + !Skin.HasSetting(nomusicfanart)</visible>
+		<visible>!Control.IsVisible(103) + [Control.IsVisible(57) | Control.IsVisible(50) | Control.IsVisible(550)] + !IsEmpty(listitem.property(fanart_image)) + !Skin.HasSetting(nomusicfanart)</visible>
 		<fadetime>400</fadetime>
 		<texture>$INFO[listitem.property(fanart_image)]</texture>
 		<include>Animation_FanartFade</include>
@@ -19,7 +19,7 @@
 
 	<control type="largeimage" id="103">
 		<include>FullscreenDimensions</include>
-        <visible>Control.IsVisible(57) + !IsEmpty(container.property(fanart_image)) + !Skin.HasSetting(nomusicfanart)</visible>
+		<visible>[Control.IsVisible(57) | Control.IsVisible(50) | Control.IsVisible(550)] + !IsEmpty(container.property(fanart_image)) + !Skin.HasSetting(nomusicfanart)</visible>
 		<fadetime>400</fadetime>
 		<texture>$INFO[container.property(fanart_image)]</texture>
 		<include>Animation_FanartFade</include>
@@ -74,7 +74,7 @@
 					<usealttexture>Skin.HasSetting(nomusicfanart)</usealttexture>
 					<onclick>Skin.SetBool(nomusicfanart)</onclick>
 					<altclick>Skin.Reset(nomusicfanart)</altclick>
-					<visible>Control.IsVisible(57)</visible>
+					<visible>Control.IsVisible(57) | Control.IsVisible(50) | Control.IsVisible(550)</visible>
 				</control>
 
 				<include>Objects_WallGridButton</include>
