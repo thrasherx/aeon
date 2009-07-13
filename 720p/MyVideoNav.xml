@@ -99,7 +99,7 @@
 					<usealttexture>Skin.HasSetting(notvfanart)</usealttexture>
 					<onclick>Skin.SetBool(notvfanart)</onclick>
 					<altclick>Skin.Reset(notvfanart)</altclick>
-					<visible>Window.IsActive(25) + Skin.HasSetting(videotv)</visible>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + [Control.IsVisible(50) | Control.IsVisible(550) | Control.IsVisible(57) | Control.IsVisible(52)]</visible>
 				</control>
 				
 				<include condition="!Skin.HasSetting(nomediaflagsbutton)">Objects_FlagsButton</include>
