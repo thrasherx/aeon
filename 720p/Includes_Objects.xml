@@ -828,15 +828,20 @@
 	</include>
 
 <!-- OSD -->
-
+	
+	<include name="Objects_OSDButtonGroup11">
+		<width>878</width>
+		<posx>206</posx>
+	</include>
+	
 	<include name="Objects_OSDButtonGroup10">
 		<width>790</width>
-		<posx>249</posx>
+		<posx>241</posx>
 	</include>
 	
 	<include name="Objects_OSDButtonGroup9">
 		<width>712</width>
-		<posx>284</posx>
+		<posx>276</posx>
 	</include>
 
 	<include name="Objects_OSDButton">
