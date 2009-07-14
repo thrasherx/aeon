@@ -278,7 +278,7 @@
 			<usealttexture>Skin.HasSetting(nomediaflags)</usealttexture>
 			<include>Objects_MediaMenuButton</include>
 			<onclick>Skin.ToggleSetting(nomediaflags)</onclick>
-			<visible>Control.IsVisible(57) | Control.IsVisible(52) + Container.Content(movies)</visible>
+			<visible>[Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(50) | Control.IsVisible(550)] + [Container.Content(movies) | Container.Content(episodes)]</visible>
 		</control>
 	</include>
 

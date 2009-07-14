@@ -36,7 +36,8 @@
 		<include>Animation_HideShowcase</include>
 		<include>Animation_HideMultiplex</include>
 		<visible>Control.IsVisible(50) | Control.IsVisible(550) | Control.IsVisible(551)</visible>
-		<colordiffuse>74000000</colordiffuse>
+		<include condition="!Skin.HasSetting(darkshowcase)">ShowcaseMediaFlagLightShade</include>
+		<include condition="Skin.HasSetting(darkshowcase)">ShowcaseMediaFlagNightShade</include>
 	</include>
 	<include name="Furniture_PanelMediaFlagsVars">
 		<posy>454</posy>
@@ -199,7 +200,7 @@
 		</control>
 	</include>
 	<include name="Furniture_ListMediaFlags">
-		<visible>[Control.IsVisible(50) | Control.IsVisible(550) | Control.IsVisible(551)] + [Container.Content(movies) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons)]</visible>
+		<visible>[Control.IsVisible(50) | Control.IsVisible(550) | Control.IsVisible(551)] + [Container.Content(movies) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons)] + !Skin.HasSetting(nomediaflags)</visible>
 		<include>Animation_CommonFade</include>
 		<control type="group">
 			<posx>1105</posx>
