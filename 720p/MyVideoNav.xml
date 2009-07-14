@@ -85,15 +85,6 @@
 				
 				<include>Objects_PanelDensityButton</include>				
 				
-				<control type="togglebutton" id="940">
-					<include>Objects_MediaMenuButton</include>				
-					<include>Objects_ListLayoutStrings</include>
-					<usealttexture>Skin.HasSetting(movieslistfull)</usealttexture>
-					<onclick>Skin.SetBool(movieslistfull)</onclick>
-					<altclick>Skin.Reset(movieslistfull)</altclick>
-					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(50)</visible>
-				</control>
-
 				<control type="togglebutton" id="901">
 					<include>Objects_MediaMenuButton</include>				
 					<include>Objects_FanartToggleStrings</include>
