@@ -1,7 +1,7 @@
 <window id="25">
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	<views>50,550,551,52,53,57</views>
+	<views>50,550,551,52,552,53,57</views>
 	<controls>
 
     <control type="image" id="109">
@@ -10,7 +10,7 @@
 		<width>0</width>
 		<height>0</height>
 		<texture>-</texture>
-		<visible>[Skin.HasSetting(videomovies) + !Skin.HasSetting(nomultiplexpopup) + ![Skin.HasSetting(multiplexinfooff) | Skin.HasSetting(multiplexinfotrigger)] + [Control.HasFocus(52) | Control.HasFocus(61) | Control.HasFocus(94) | ControlGroup(7000).HasFocus()] + [!Container(52).OnNext + !Container(52).OnPrevious]] | [Skin.HasSetting(videotv) + !Skin.HasSetting(nomultiplextvpopup) + ![Skin.HasSetting(multiplextvinfooff) | Skin.HasSetting(multiplextvinfotrigger)] + [Control.HasFocus(52) | Control.HasFocus(61) | Control.HasFocus(94) | ControlGroup(7000).HasFocus()] + [!Container(52).OnNext + !Container(52).OnPrevious]]</visible>
+		<visible>[Skin.HasSetting(videomovies) + !Skin.HasSetting(nomultiplexpopup) + ![Skin.HasSetting(multiplexinfooff) | Skin.HasSetting(multiplexinfotrigger)] + [[Control.HasFocus(52) | Control.IsVisible(552)] | Control.HasFocus(61) | Control.HasFocus(94) | ControlGroup(7000).HasFocus()] + [[!Container(52).OnNext + !Container(52).OnPrevious] | [!Container(552).OnNext + !Container(552).OnPrevious]] | [Skin.HasSetting(videotv) + !Skin.HasSetting(nomultiplextvpopup) + ![Skin.HasSetting(multiplextvinfooff) | Skin.HasSetting(multiplextvinfotrigger)] + [[Control.HasFocus(52) | Control.HasFocus(552)] | Control.HasFocus(61) | Control.HasFocus(94) | ControlGroup(7000).HasFocus()] + [[!Container(52).OnNext + !Container(52).OnPrevious] | [!Container(52).OnNext + !Container(52).OnPrevious]]]</visible>
 		<animation effect="fade" start="0" end="100" time="150" delay="3000">Visible</animation>
 	</control>
 	
@@ -19,7 +19,7 @@
 
 	<control type="largeimage" id="102">
 		<include>FullscreenDimensions</include>
-        <visible>[Control.IsVisible(50) | Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(550) | Control.IsVisible(551)] + [[Container.Content(movies) + !Skin.HasSetting(nomoviefanart)] | [Container.Content(tvshows) + !Skin.HasSetting(notvfanart)]] + !IsEmpty(listitem.property(fanart_image))</visible>
+        <visible>[Control.IsVisible(50) | Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(552) | Control.IsVisible(550) | Control.IsVisible(551)] + [[Container.Content(movies) + !Skin.HasSetting(nomoviefanart)] | [Container.Content(tvshows) + !Skin.HasSetting(notvfanart)]] + !IsEmpty(listitem.property(fanart_image))</visible>
 		<fadetime>400</fadetime>
 		<texture>$INFO[listitem.property(fanart_image)]</texture>
 		<include>Animation_FanartFade</include>
@@ -91,7 +91,7 @@
 					<usealttexture>Skin.HasSetting(nomoviefanart)</usealttexture>
 					<onclick>Skin.SetBool(nomoviefanart)</onclick>
 					<altclick>Skin.Reset(nomoviefanart)</altclick>
-					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + [Control.IsVisible(50) | Control.IsVisible(550) | Control.IsVisible(551) | Control.IsVisible(57) | Control.IsVisible(52)]</visible>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + [Control.IsVisible(50) | Control.IsVisible(550) | Control.IsVisible(551) | Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(552)]</visible>
 				</control>
 				
 				<control type="togglebutton" id="902">
@@ -100,7 +100,7 @@
 					<usealttexture>Skin.HasSetting(notvfanart)</usealttexture>
 					<onclick>Skin.SetBool(notvfanart)</onclick>
 					<altclick>Skin.Reset(notvfanart)</altclick>
-					<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + [Control.IsVisible(50) | Control.IsVisible(550) | Control.IsVisible(551) | Control.IsVisible(57) | Control.IsVisible(52)]</visible>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + [Control.IsVisible(50) | Control.IsVisible(550) | Control.IsVisible(551) | Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(552)]</visible>
 				</control>
 				
 				<include condition="!Skin.HasSetting(nomediaflagsbutton)">Objects_FlagsButton</include>
@@ -113,8 +113,17 @@
 					<include>Objects_MediaMenuButton</include>				
 					<label>$LOCALIZE[31066]: $LOCALIZE[31077]</label>
 					<altlabel>$LOCALIZE[31066]: $LOCALIZE[31078]</altlabel>
-					<usealttexture>Skin.HasSetting(nooverlays)</usealttexture>
-					<onclick>Skin.ToggleSetting(nooverlays)</onclick>
+					<usealttexture>Skin.HasSetting(nomovieoverlays)</usealttexture>
+					<onclick>Skin.ToggleSetting(nomovieoverlays)</onclick>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies)</visible>
+				</control>
+
+				<control type="togglebutton" id="992">
+					<include>Objects_MediaMenuButton</include>				
+					<label>$LOCALIZE[31066]: $LOCALIZE[31077]</label>
+					<altlabel>$LOCALIZE[31066]: $LOCALIZE[31078]</altlabel>
+					<usealttexture>Skin.HasSetting(notvoverlays)</usealttexture>
+					<onclick>Skin.ToggleSetting(notvoverlays)</onclick>
 					<visible>Window.IsActive(25) + Skin.HasSetting(videotv)</visible>
 				</control>				
 

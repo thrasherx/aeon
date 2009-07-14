@@ -7,7 +7,7 @@
 		<include>Animation_CommonFade</include>
 		<include>Animation_HideShowcase</include>
 		<include>Animation_HideMultiplex</include>
-		<visible>Control.IsVisible(57) | Control.IsVisible(52)</visible>
+		<visible>Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(552)</visible>
 		<include condition="!Skin.HasSetting(darkshowcase)">ShowcaseMediaFlagLightShade</include>
 		<include condition="Skin.HasSetting(darkshowcase)">ShowcaseMediaFlagNightShade</include>
 	</include>
@@ -24,7 +24,7 @@
 		<include>Animation_CommonFade</include>
 		<include>Animation_HideShowcase</include>
 		<include>Animation_HideMultiplex</include>
-		<visible>Control.IsVisible(57) | Control.IsVisible(52)</visible>
+		<visible>Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(552)</visible>
 		<include condition="!Skin.HasSetting(darkshowcase)">ShowcaseMediaFlagLightShade</include>
 		<include condition="Skin.HasSetting(darkshowcase)">ShowcaseMediaFlagNightShade</include>
 	</include>
@@ -44,7 +44,7 @@
 		<width>90</width>
 		<height>59</height>
 		<include>Animation_CommonFade</include>
-		<visible>Control.IsVisible(52)</visible>
+		<visible>Control.IsVisible(52) | Control.IsVisible(552)</visible>
 	</include>
 	<include name="Furniture_ShowcaseMediaFlagsBlack">
 		<posy>647</posy>
@@ -256,7 +256,7 @@
 	</include>
 	<include name="Furniture_ShowcaseMediaFlags">
 		<control type="group">
-			<visible>Window.IsActive(25) + [Control.IsVisible(57) | [Control.IsVisible(52) + !Skin.HasSetting(oldmultiplex)]] + !Skin.HasSetting(nomediaflags) + Container.Content(movies) + ![Control.HasFocus(60) | Control.HasFocus(94)]</visible>
+			<visible>Window.IsActive(25) + [Control.IsVisible(57) | [[Control.IsVisible(52) | Control.IsVisible(552)] + !Skin.HasSetting(oldmultiplex)]] + !Skin.HasSetting(nomediaflags) + Container.Content(movies) + ![Control.HasFocus(60) | Control.HasFocus(94)]</visible>
 			<include>Animation_CommonFade</include>
 			<control type="image">
 				<posx>0</posx>
@@ -278,7 +278,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Window.IsActive(25) + [Control.IsVisible(57) | [Control.IsVisible(52) + !Skin.HasSetting(oldmultiplex)]] + !Skin.HasSetting(nomediaflags) + Container.Content(movies) + ![Control.HasFocus(60) | Control.HasFocus(94)]</visible>
+			<visible>Window.IsActive(25) + [Control.IsVisible(57) | [[Control.IsVisible(52) | Control.IsVisible(552)] + !Skin.HasSetting(oldmultiplex)]] + !Skin.HasSetting(nomediaflags) + Container.Content(movies) + ![Control.HasFocus(60) | Control.HasFocus(94)]</visible>
 			<include>Animation_CommonFade</include>
 			<control type="group">
 				<posx>80</posx>
@@ -352,7 +352,7 @@
 	</include>
 	<include name="Furniture_MultiplexMediaFlags">
 		<control type="group">
-			<visible>Window.IsActive(25) + Control.IsVisible(52) + !Skin.HasSetting(nomediaflags) + [Container.Content(movies) | Container.Content(episodes)]</visible>
+			<visible>Window.IsActive(25) + [Control.IsVisible(52) | Control.IsVisible(552)] + !Skin.HasSetting(nomediaflags) + [Container.Content(movies) | Container.Content(episodes)]</visible>
 			<include>Animation_CommonFade</include>
 			<include>Animation_HideMultiplex</include>
 			<control type="group">
@@ -406,7 +406,7 @@
 	</include>
 	<include name="Furniture_EpisodeMediaFlags">
 		<control type="group">
-			<visible>Window.IsActive(25) + [Control.IsVisible(57) | [Control.IsVisible(52) + !Skin.HasSetting(oldmultiplex)]] + !Skin.HasSetting(nomediaflags) + Container.Content(movies) + ![Control.HasFocus(60) | Control.HasFocus(94)]</visible>
+			<visible>Window.IsActive(25) + [Control.IsVisible(57) | [[Control.IsVisible(52) | Control.IsVisible(552)] + !Skin.HasSetting(oldmultiplex)]] + !Skin.HasSetting(nomediaflags) + Container.Content(movies) + ![Control.HasFocus(60) | Control.HasFocus(94)]</visible>
 			<include>Animation_CommonFade</include>
 			<control type="image">
 				<posx>0</posx>
@@ -428,7 +428,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Window.IsActive(25) + [Control.IsVisible(57) | [Control.IsVisible(52) + !Skin.HasSetting(oldmultiplex)]] + !Skin.HasSetting(nomediaflags) + Container.Content(episodes) + ![Control.HasFocus(60) | Control.HasFocus(94)]</visible>
+			<visible>Window.IsActive(25) + [Control.IsVisible(57) | [[Control.IsVisible(52) | Control.IsVisible(552)] + !Skin.HasSetting(oldmultiplex)]] + !Skin.HasSetting(nomediaflags) + Container.Content(episodes) + ![Control.HasFocus(60) | Control.HasFocus(94)]</visible>
 			<include>Animation_CommonFade</include>
 			<control type="group">
 				<posx>80</posx>

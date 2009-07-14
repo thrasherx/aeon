@@ -1,6 +1,6 @@
 <includes>
 
-<!-- Home page -->
+	<!-- Home page -->
 
 	<include name="Objects_WeatherBack">
 		<posy>0</posy>
@@ -8,7 +8,7 @@
 		<height>287</height>
 		<texture>home/home_weather_small.png</texture>	
 	</include>
-	
+
 	<include name="Objects_WeatherDay">
 		<posx>0</posx>
 		<posy>0</posy>
@@ -204,7 +204,7 @@
 		</control>
 	</include>
 
-<!-- Media windows -->
+	<!-- Media windows -->
 
 	<include name="Objects_MediaLogo">
 		<posx>49</posx> 
@@ -227,7 +227,7 @@
 		<include>common-fade-quick</include>
 		<include>Animation_MediaMenuSlide</include>
 	</include>
-	
+
 	<include name="Objects_MediaMenuGroup">	
 		<posx>230</posx>
 		<posy>9</posy>
@@ -270,7 +270,7 @@
 			<visible>Control.IsVisible(53)</visible>
 		</control>
 	</include>
-	
+
 	<include name="Objects_FlagsButton">
 		<control type="togglebutton" id="916">
 			<label>$LOCALIZE[31069]: $LOCALIZE[31077]</label>
@@ -278,7 +278,7 @@
 			<usealttexture>Skin.HasSetting(nomediaflags)</usealttexture>
 			<include>Objects_MediaMenuButton</include>
 			<onclick>Skin.ToggleSetting(nomediaflags)</onclick>
-			<visible>[Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(50) | Control.IsVisible(550)] + [Container.Content(movies) | Container.Content(episodes)]</visible>
+			<visible>[Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(552) | Control.IsVisible(50) | Control.IsVisible(550)] + [Container.Content(movies) | Container.Content(episodes)]</visible>
 		</control>
 	</include>
 
@@ -298,10 +298,10 @@
 			<altlabel>$LOCALIZE[31065]: $LOCALIZE[31053]</altlabel>
 			<usealttexture>Skin.HasSetting(multiplexthin)</usealttexture>
 			<onclick>Skin.ToggleSetting(multiplexthin)</onclick>
-			<visible>Control.IsVisible(52) + !Skin.HasSetting(oldmultiplex)</visible>
+			<visible>[Control.IsVisible(52) | Control.IsVisible(552)] + !Skin.HasSetting(oldmultiplex)</visible>
 		</control>			
 	</include>
-	
+
 	<include name="Objects_ListLayoutStrings">
 		<label>$LOCALIZE[31075]: $LOCALIZE[31071]</label>
 		<altlabel>$LOCALIZE[31075]: $LOCALIZE[31072]</altlabel>	
@@ -311,7 +311,7 @@
 		<label>$LOCALIZE[31064]: $LOCALIZE[31077]</label>
 		<altlabel>$LOCALIZE[31064]: $LOCALIZE[31078]</altlabel>
 	</include>
-	
+
 	<include name="Objects_VideoSetupButton">
 		<control type="button" id="915">
 			<label>31016</label>
@@ -347,7 +347,7 @@
 			<visible>!Skin.HasSetting(nomenusettings)</visible>
 		</control>
 	</include>		
-	
+
 	<include name="Objects_FlattenFlowButton">
 		<control type="togglebutton" id="908">
 			<label>31061</label>
@@ -357,7 +357,7 @@
 			<onclick>Skin.ToggleSetting(flattenshowcase)</onclick>
 			<visible>Control.IsVisible(57) + !Container.Content(episodes)</visible>
 		</control>		
-		
+
 		<control type="togglebutton" id="909">
 			<label>31061</label>
 			<altlabel>31060</altlabel>
@@ -367,7 +367,7 @@
 			<visible>Control.IsVisible(55) + !Container.Content(episodes)</visible>
 		</control>
 	</include>
-	
+
 	<include name="Objects_MediaDebugButtons">
 		<control type="button" id="910">
 			<label>31607</label>
@@ -375,7 +375,7 @@
 			<onclick>XBMC.ReloadSkin</onclick>
 			<visible>Skin.HasSetting(debug)</visible>
 		</control>
-		
+
 		<control type="button" id="911">
 			<label>31608</label>
 			<onclick>Skin.ToggleSetting(debuginfo)</onclick>
@@ -395,7 +395,7 @@
 			<visible>!Control.IsVisible(53)</visible>
 		</control>
 	</include>
-	
+
 	<include name="Objects_CurtainsButton">
 		<control type="togglebutton" id="997">
 			<include>Objects_MediaMenuButton</include>				
@@ -403,10 +403,10 @@
 			<altlabel>$LOCALIZE[31067]S: $LOCALIZE[31077]</altlabel>
 			<usealttexture>Skin.HasSetting(nocurtains)</usealttexture>
 			<onclick>Skin.ToggleSetting(nocurtains)</onclick>
-			<visible>Control.IsVisible(52)</visible>
+			<visible>Control.IsVisible(52) | Control.IsVisible(552)</visible>
 		</control>
 	</include>	
-	
+
 	<include name="Objects_MultiplexInfoButtons">
 		<control type="button" id="980">
 			<include>Objects_MediaMenuButton</include>				
@@ -414,16 +414,16 @@
 			<onclick>Skin.SetBool(multiplexinfoauto)</onclick>
 			<onclick>Skin.Reset(multiplexinfooff)</onclick>
 			<onclick>XBMC.ReloadSkin</onclick>
-			<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + Skin.HasSetting(multiplexinfooff)</visible>
+			<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + [Control.IsVisible(52) | Control.IsVisible(552)]z + Skin.HasSetting(multiplexinfooff)</visible>
 		</control>
-		
+
 		<control type="button" id="981">
 			<include>Objects_MediaMenuButton</include>				
 			<label>$LOCALIZE[31070]: $LOCALIZE[31049]</label>
 			<onclick>Skin.SetBool(multiplexinfotrigger)</onclick>
 			<onclick>Skin.Reset(multiplexinfoauto)</onclick>
 			<onclick>XBMC.ReloadSkin</onclick>
-			<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + ![Skin.HasSetting(multiplexinfotrigger) | Skin.HasSetting(multiplexinfooff) | Skin.HasSetting(multiplexinfoon)]</visible>
+			<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + [Control.IsVisible(52) | Control.IsVisible(552)] + ![Skin.HasSetting(multiplexinfotrigger) | Skin.HasSetting(multiplexinfooff) | Skin.HasSetting(multiplexinfoon)]</visible>
 		</control>
 
 		<control type="button" id="982">
@@ -432,7 +432,7 @@
 			<onclick>Skin.SetBool(multiplexinfoon)</onclick>
 			<onclick>Skin.Reset(multiplexinfotrigger)</onclick>
 			<onclick>XBMC.ReloadSkin</onclick>
-			<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + Skin.HasSetting(multiplexinfotrigger)</visible>
+			<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + [Control.IsVisible(52) | Control.IsVisible(552)] + Skin.HasSetting(multiplexinfotrigger)</visible>
 		</control>	
 
 		<control type="button" id="983">
@@ -441,7 +441,7 @@
 			<onclick>Skin.SetBool(multiplexinfooff)</onclick>
 			<onclick>Skin.Reset(multiplexinfoon)</onclick>
 			<onclick>XBMC.ReloadSkin</onclick>
-			<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + Skin.HasSetting(multiplexinfoon)</visible>
+			<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + [Control.IsVisible(52) | Control.IsVisible(552)] + Skin.HasSetting(multiplexinfoon)</visible>
 		</control>
 
 		<control type="button" id="984">
@@ -450,16 +450,16 @@
 			<onclick>Skin.SetBool(multiplextvinfoauto)</onclick>
 			<onclick>Skin.Reset(multiplextvinfooff)</onclick>
 			<onclick>XBMC.ReloadSkin</onclick>
-			<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + Control.IsVisible(52) + Skin.HasSetting(multiplextvinfooff)</visible>
+			<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + [Control.IsVisible(52) | Control.IsVisible(552)] + Skin.HasSetting(multiplextvinfooff)</visible>
 		</control>
-		
+
 		<control type="button" id="985">
 			<include>Objects_MediaMenuButton</include>				
 			<label>$LOCALIZE[31070]: $LOCALIZE[31049]</label>
 			<onclick>Skin.SetBool(multiplextvinfotrigger)</onclick>
 			<onclick>Skin.Reset(multiplextvinfoauto)</onclick>
 			<onclick>XBMC.ReloadSkin</onclick>
-			<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + Control.IsVisible(52) + ![Skin.HasSetting(multiplextvinfotrigger) | Skin.HasSetting(multiplextvinfooff) | Skin.HasSetting(multiplextvinfoon)]</visible>
+			<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + [Control.IsVisible(52) | Control.IsVisible(552)] + ![Skin.HasSetting(multiplextvinfotrigger) | Skin.HasSetting(multiplextvinfooff) | Skin.HasSetting(multiplextvinfoon)]</visible>
 		</control>
 
 		<control type="button" id="986">
@@ -468,7 +468,7 @@
 			<onclick>Skin.SetBool(multiplextvinfoon)</onclick>
 			<onclick>Skin.Reset(multiplextvinfotrigger)</onclick>
 			<onclick>XBMC.ReloadSkin</onclick>
-			<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + Control.IsVisible(52) + Skin.HasSetting(multiplextvinfotrigger)</visible>
+			<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + [Control.IsVisible(52) | Control.IsVisible(552)] + Skin.HasSetting(multiplextvinfotrigger)</visible>
 		</control>	
 
 		<control type="button" id="987">
@@ -477,20 +477,21 @@
 			<onclick>Skin.SetBool(multiplextvinfooff)</onclick>
 			<onclick>Skin.Reset(multiplextvinfoon)</onclick>
 			<onclick>XBMC.ReloadSkin</onclick>
-			<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + Control.IsVisible(52) + Skin.HasSetting(multiplextvinfoon)</visible>
+			<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + [Control.IsVisible(52) | Control.IsVisible(552)] + Skin.HasSetting(multiplextvinfoon)</visible>
 		</control>		
 	</include>
-	
+
 	<include name="Objects_MultiplexStyleButtons">
-		<control type="button" id="988">
+
+		<control type="button" id="3002">
 			<include>Objects_MediaMenuButton</include>				
-			<label>$LOCALIZE[31047]: $LOCALIZE[31046]</label>
+			<label>$LOCALIZE[31047]: POSTER</label>
 			<onclick>Skin.SetBool(multiplexbigthumb)</onclick>
-			<onclick>Skin.Reset(multiplexplot)</onclick>
+			<onclick>Skin.Reset(multiplexposter)</onclick>
 			<onclick>XBMC.ReloadSkin</onclick>
-			<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + ![Skin.HasSetting(multiplexbigthumb) | Skin.HasSetting(multiplexfanart)]</visible>
+			<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + ![Skin.HasSetting(multiplexbigthumb) | Skin.HasSetting(multiplexfanart) | Skin.HasSetting(multiplexplot)]</visible>
 		</control>
-		
+
 		<control type="button" id="989">
 			<include>Objects_MediaMenuButton</include>				
 			<label>$LOCALIZE[31047]: $LOCALIZE[31045]</label>
@@ -508,7 +509,16 @@
 			<onclick>XBMC.ReloadSkin</onclick>
 			<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + Skin.HasSetting(multiplexfanart)</visible>
 		</control>
-		
+
+		<control type="button" id="3003">
+			<include>Objects_MediaMenuButton</include>				
+			<label>$LOCALIZE[31047]: $LOCALIZE[31046]</label>
+			<onclick>Skin.SetBool(multiplexposter)</onclick>
+			<onclick>Skin.Reset(multiplexplot)</onclick>
+			<onclick>XBMC.ReloadSkin</onclick>
+			<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + Skin.HasSetting(multiplexplot)</visible>
+		</control>
+
 		<control type="togglebutton" id="995">
 			<include>Objects_MediaMenuButton</include>				
 			<label>$LOCALIZE[31045]: $LOCALIZE[31063]</label>
@@ -522,7 +532,7 @@
 	<include name="Objects_ViewtypeClick">
 		<onclick>SetFocus(69)</onclick>	
 	</include>
-	
+
 	<include name="Objects_WallGridButton">
 		<control type="togglebutton" id="922">
 			<include>Objects_MediaMenuButton</include>				
@@ -546,7 +556,7 @@
 		</control>		
 	</include>
 
-<!-- Fullscreen Info -->
+	<!-- Fullscreen Info -->
 
 	<include name="Objects_FSInfoMenu">
 		<posx>3</posx>
@@ -566,7 +576,7 @@
 		<font>Font_FSInfoData</font>
 		<animation effect="slide" start="0,-110" end="0,-110" time="0" condition="Container.Content(artists)">Conditional</animation>
 	</include>
-	
+
 	<include name="Objects_FSInfoMenuMusic">
 		<posx>3</posx>
 		<posy>222</posy>
@@ -588,11 +598,11 @@
 	<include name="FSInfoButtonWidth">
 		<width>90</width>	
 	</include>
-	
+
 	<include name="FSInfoButtonWidth_French">
 		<width>90</width>	
 	</include>	
-	
+
 	<include name="Objects_FSInfoButton">
 		<include>Colour_Grey</include>
 		<texturenofocus>-</texturenofocus>
@@ -605,7 +615,7 @@
 		<height>29</height>
 		<font>Font_FSInfoData</font>
 	</include>
-	
+
 	<include name="Objects_FSInfoButtonWide">
 		<include>Colour_Grey</include>
 		<texturenofocus>-</texturenofocus>
@@ -624,7 +634,7 @@
 		<width>166</width>
 		<height>38</height>	
 	</include>
-	
+
 	<include name="Objects_FSInfoYear">
 		<width>109</width>
 		<height>53</height>
@@ -633,7 +643,7 @@
 		<label fallback="-">$INFO[ListItem.Year]</label>
 		<include>Colour_Grey</include>	
 	</include>
-	
+
 	<include name="Objects_FSInfoGenre">
 		<align>left</align>
 		<aligny>center</aligny>
@@ -642,7 +652,7 @@
 		<include>Colour_Grey</include>
 		<height>56</height>		
 	</include>
-	
+
 	<include name="Objects_FSInfoLabel">
 		<posx>3</posx>
 		<width>110</width>
@@ -662,7 +672,7 @@
 		<font>Font_FSInfoData</font>
 		<include>Colour_OffWhite</include>	
 	</include>
-	
+
 	<include name="Objects_BookmarkMenu">
 		<posx>3</posx>
 		<posy>159</posy>
@@ -693,9 +703,9 @@
 		<height>29</height>
 		<font>Font_FSInfoData</font>
 	</include>	
-	
-<!-- Showcase viewtype -->
-	
+
+	<!-- Showcase viewtype -->
+
 	<include name="Objects_ShowcaseMenuPanel">
 		<control type="image" id="74">
 			<posx>0</posx>
@@ -704,12 +714,12 @@
 			<height>57</height>
 			<texture>showcase/showcase_menupanel.png</texture>
 			<include>Animation_MediaMenuSlide</include>
-			<visible>Control.IsVisible(50) | Control.IsVisible(550) | Control.IsVisible(551) | Control.IsVisible(52) | Control.IsVisible(51) | Control.IsVisible(57) | Control.IsVisible(53)</visible>
+			<visible>Control.IsVisible(50) | Control.IsVisible(550) | Control.IsVisible(551) | Control.IsVisible(52) | Control.IsVisible(552) | Control.IsVisible(51) | Control.IsVisible(57) | Control.IsVisible(53)</visible>
 		</control>
 	</include>
-	
-<!-- Context menus -->
-	
+
+	<!-- Context menus -->
+
 	<include name="Objects_ContextMenuButton">
 		<description>button template</description>
 		<posx>0</posx>
@@ -720,15 +730,15 @@
 		<focusedcolor>FFdfdfdf</focusedcolor>
 		<texturenofocus>dialogs/context_nofocus.png</texturenofocus>
 		<texturefocus>dialogs/context_highlight.png</texturefocus> 
-        <alttexturefocus>dialogs/context_highlight.png</alttexturefocus> 
-        <alttexturenofocus>dialogs/context_nofocus.png</alttexturenofocus>
-        <pulseonselect>true</pulseonselect>
+		<alttexturefocus>dialogs/context_highlight.png</alttexturefocus> 
+		<alttexturenofocus>dialogs/context_nofocus.png</alttexturenofocus>
+		<pulseonselect>true</pulseonselect>
 		<align>center</align>
 		<aligny>top</aligny>
 		<font>Font_ContextMenuButton</font>
 		<textoffsety>8</textoffsety>
 	</include>
-	
+
 	<include name="Objects_ContextMenuRadioButton">
 		<textcolor>FF8f8f8f</textcolor>
 		<focusedcolor>FFFFFFFF</focusedcolor>
@@ -746,8 +756,8 @@
 		<font>Font_ContextMenuButton</font>
 		<textoffsetx>10</textoffsetx>
 	</include>
-	
-<!-- Settings screens -->
+
+	<!-- Settings screens -->
 
 	<include name="Objects_SettingsSectionTitle">
 		<posx>72</posx>
@@ -786,7 +796,7 @@
 		<texturenofocus>settings/settings_leftmenufocus.png</texturenofocus>
 		<texturefocus>-</texturefocus>
 	</include>
-	
+
 	<include name="Objects_SettingsSectionMenuButtonSubtitle">
 		<posx>30</posx>
 		<width>216</width>
@@ -795,7 +805,7 @@
 		<aligny>top</aligny>
 		<include>Animation_CommonFadeOpenClose</include>		
 	</include>
-	
+
 	<include name="Objects_SettingsDefaultRadioButton">
 		<description>Default RadioButton</description>
 		<posx>0</posx>
@@ -816,7 +826,7 @@
 		<textureradiofocus>settings/settings_radiobuttononfocus.png</textureradiofocus>
 		<textureradionofocus>settings/settings_radiobuttonon.png</textureradionofocus>
 	</include>
-	
+
 	<include name="Objects_SettingsControlAreaVars">
 		<posx>258</posx>
 		<posy>120</posy>
@@ -827,18 +837,18 @@
 		<animation effect="fade" start="100" end="0" time="125">WindowClose</animation>		
 	</include>
 
-<!-- OSD -->
-	
+	<!-- OSD -->
+
 	<include name="Objects_OSDButtonGroup11">
 		<width>878</width>
 		<posx>206</posx>
 	</include>
-	
+
 	<include name="Objects_OSDButtonGroup10">
 		<width>790</width>
 		<posx>241</posx>
 	</include>
-	
+
 	<include name="Objects_OSDButtonGroup9">
 		<width>712</width>
 		<posx>276</posx>
@@ -850,7 +860,7 @@
 		<texturefocus>osd/osd_button_focus.png</texturefocus>
 		<texturenofocus>osd/osd_button_nofocus.png</texturenofocus>
 	</include>
-	
+
 	<include name="Objects_OSDButtonTop">
 		<width>88</width>
 		<height>88</height>
@@ -867,7 +877,7 @@
 		<textcolor>FF363636</textcolor>
 		<include>Animation_CommonFade</include>		
 	</include>
-	
+
 	<include name="Objects_OSDSeekReverse">
 		<posx>29</posx>
 		<posy>0</posy>
@@ -893,7 +903,7 @@
 		<font>Font_OSDOptions</font>
 		<info>ListItem.Label</info>		
 	</include>
-	
+
 	<include name="Objects_OSDSettingsButton">
 		<posx>0</posx>
 		<height>40</height>
@@ -906,8 +916,8 @@
 		<texturefocus>osd/osd_settings_buttonf.png</texturefocus>
 		<texturenofocus>osd/osd_settings_buttonnf.png</texturenofocus>		
 	</include>
-	
-<!-- Keyboard -->
+
+	<!-- Keyboard -->
 
 	<include name="Objects_KeyOffVars">
 		<textcolor>77FFFFFF</textcolor>
@@ -918,7 +928,7 @@
 		<textoffsety>21</textoffsety>
 		<font>Font_KeyboardKeys</font>		
 	</include>
-	
+
 	<include name="Objects_KeyOnVars">
 		<textcolor>FFFFFFFF</textcolor>
 		<focusedcolor>FFFFFFFF</focusedcolor>
@@ -939,7 +949,7 @@
 		<textoffsety>21</textoffsety>
 		<font>Font_KeyboardShapes</font>		
 	</include>
-	
+
 	<include name="Objects_KeyOnSymbolVars">
 		<textcolor>FFFFFFFF</textcolor>
 		<focusedcolor>FFFFFFFF</focusedcolor>
@@ -950,7 +960,7 @@
 		<include>Animation_KeyboardFade</include>
 		<font>Font_KeyboardShapes</font>
 	</include>
-	
+
 	<include name="Objects_DoubleKeyOff">
 		<posy>0</posy>		
 		<width>110</width>
@@ -959,7 +969,7 @@
 		<texturenofocus>keyboard/keyboard_doublenf.png</texturenofocus>
 		<include>Objects_KeyOffVars</include>
 	</include>
-	
+
 	<include name="Objects_DoubleKeyOffSymbol">
 		<posy>0</posy>		
 		<width>110</width>
@@ -968,7 +978,7 @@
 		<texturenofocus>keyboard/keyboard_doublenf.png</texturenofocus>
 		<include>Objects_KeyOffSymbolVars</include>
 	</include>	
-	
+
 	<include name="Objects_SingleKeyOff">
 		<posy>0</posy>			
 		<width>68</width>
@@ -986,7 +996,7 @@
 		<texturenofocus>keyboard/keyboard_triplenf.png</texturenofocus>
 		<include>Objects_KeyOffVars</include>
 	</include>
-	
+
 	<include name="Objects_SpaceBarOff">
 		<posy>0</posy>			
 		<width>278</width>
@@ -1004,7 +1014,7 @@
 		<texturenofocus>keyboard/keyboard_doublef.png</texturenofocus>
 		<include>Objects_KeyOnVars</include>
 	</include>
-	
+
 	<include name="Objects_DoubleKeyOnSymbol">
 		<posy>0</posy>			
 		<width>110</width>
@@ -1013,7 +1023,7 @@
 		<texturenofocus>keyboard/keyboard_doublef.png</texturenofocus>
 		<include>Objects_KeyOnSymbolVars</include>
 	</include>	
-	
+
 	<include name="Objects_SingleKeyOn">
 		<posy>0</posy>			
 		<width>68</width>
@@ -1031,7 +1041,7 @@
 		<texturenofocus>keyboard/keyboard_triplef.png</texturenofocus>
 		<include>Objects_KeyOnVars</include>
 	</include>
-	
+
 	<include name="Objects_SpaceBarOn">
 		<posy>0</posy>			
 		<width>278</width>
@@ -1041,7 +1051,7 @@
 		<include>Objects_KeyOnVars</include>		
 	</include>	
 
-<!-- Button menu -->
+	<!-- Button menu -->
 
 	<include name="Objects_ButtonMenuLabel">
 		<width>320</width>
@@ -1061,7 +1071,7 @@
 		<height>273</height>
 		<colordiffuse>abFFFFFF</colordiffuse>
 	</include>
-	
+
 	<include name="Objects_ButtonMenuLabelFocused">
 		<width>320</width>
 		<height>120</height>
@@ -1083,66 +1093,66 @@
 	</include>	
 
 	<include name="Objects_ButtonMenu10Group">
-			<height>390</height>	
-	</include>
-	
-	<include name="Objects_ButtonMenu11Group">
-			<height>429</height>	
-	</include>
-	
-	<include name="Objects_ButtonMenu12Group">
-			<height>460</height>	
+		<height>390</height>	
 	</include>
 
-<!-- Login Screen -->
-	
-	<include name="LoginThumbDimensions">
-	    <posx>18</posx>
-	    <posy>18</posy>
-	    <width>234</width>
-	    <height>234</height>
+	<include name="Objects_ButtonMenu11Group">
+		<height>429</height>	
 	</include>
-	
+
+	<include name="Objects_ButtonMenu12Group">
+		<height>460</height>	
+	</include>
+
+	<!-- Login Screen -->
+
+	<include name="LoginThumbDimensions">
+		<posx>18</posx>
+		<posy>18</posy>
+		<width>234</width>
+		<height>234</height>
+	</include>
+
 	<include name="LoginThumbReflectionDimensions">
-	    <posx>18</posx>
-	    <posy>254</posy>
-	    <width>234</width>
-	    <height>234</height>
+		<posx>18</posx>
+		<posy>254</posy>
+		<width>234</width>
+		<height>234</height>
 	</include>	
-	
+
 	<include name="LoginThumb">
-	    <include>LoginThumbDimensions</include>
+		<include>LoginThumbDimensions</include>
 		<texture diffuse="thumbs/cdcover_mask.png">defaultAudio.png</texture>
-	    <aspectratio scalediffuse="false">scale</aspectratio>
+		<aspectratio scalediffuse="false">scale</aspectratio>
 	</include>
 
 	<include name="LoginGlassOverlayDimensions">
-	    <posx>-14</posx>
-	    <posy>-14</posy>
-	    <width>298</width>
-	    <height>298</height>
-	</include>
-	
-	<include name="LoginGlassOverlay">
-	    <include>LoginThumbDimensions</include>
-	    <bordertexture border="-18">thumbs/cd_shadow.png</bordertexture>
-	    <texture>thumbs/cd_glass_noedge.png</texture>
-	    <texture>cdcover_frame.png</texture>
+		<posx>-14</posx>
+		<posy>-14</posy>
+		<width>298</width>
+		<height>298</height>
 	</include>
 
-    <include name="LoginThumbReflection">
-        <include>LoginThumbReflectionDimensions</include>
-        <colordiffuse>d0FFFFFF</colordiffuse>
-        <texture flipy="true" diffuse="thumbs/cdcover_mask_reflect.png">defaultmusic.png</texture>
-        <aspectratio scalediffuse="false">scale</aspectratio>
-    </include>
+	<include name="LoginGlassOverlay">
+		<include>LoginThumbDimensions</include>
+		<bordertexture border="-18">thumbs/cd_shadow.png</bordertexture>
+		<texture>thumbs/cd_glass_noedge.png</texture>
+		<texture>cdcover_frame.png</texture>
+	</include>
+
+	<include name="LoginThumbReflection">
+		<include>LoginThumbReflectionDimensions</include>
+		<colordiffuse>d0FFFFFF</colordiffuse>
+		<texture flipy="true" diffuse="thumbs/cdcover_mask_reflect.png">defaultmusic.png</texture>
+		<aspectratio scalediffuse="false">scale</aspectratio>
+	</include>
 
 	<include name="EmptyLibraryLabelMovies">
 		<label>$LOCALIZE[31609][CR]$LOCALIZE[31610]</label>	
 	</include>
-	
+
 	<include name="EmptyLibraryLabelMusic">
 		<label>$LOCALIZE[31609][CR]$LOCALIZE[31611]</label>	
 	</include>	
-	
+
 </includes>

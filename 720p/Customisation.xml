@@ -88,8 +88,13 @@
 			<selected>Skin.HasSetting(oldmultiplex)</selected>
 		</control>		
 		
+		<control type="radiobutton" id="408">
+			<include>Objects_SettingsDefaultRadioButton</include>
+			<label>USE TV POSTERS FOR MULTIPLEX</label>
+			<onclick>Skin.ToggleSetting(tvposter)</onclick>
+			<selected>Skin.HasSetting(tvposter)</selected>
+		</control>
 	</control>
-
 	<control type="grouplist" id="11">
 		<include>Objects_SettingsControlAreaVars</include>
 		<onup>11</onup>
