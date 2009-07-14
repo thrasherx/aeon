@@ -915,7 +915,7 @@
 					<control type="image">
 						<include>LowList_Detail_Separator</include>
 						<posy>155</posy>
-						<visible>![Control.IsVisible(7898) | [!Skin.HasSetting(highlist) + [Control.IsVisible(7814) | Control.IsVisible(7820) | Control.IsVisible(7850)]]]</visible>
+						<visible>[![Control.IsVisible(7898) | [!Skin.HasSetting(highlist) + [Control.IsVisible(7814) | Control.IsVisible(7820) | Control.IsVisible(7850)]]]] + Control.IsVisible(551)</visible>
 					</control>
 				</control>
 			
