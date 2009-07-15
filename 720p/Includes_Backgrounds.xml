@@ -212,7 +212,7 @@
 		
 		<control type="videowindow">
 			<include>FullscreenDimensions</include>
-			<visible>Skin.HasSetting(videohome) + Player.HasVideo</visible>
+			<visible>Skin.HasSetting(videohome) + Player.HasMedia</visible>
 		</control> 
 
 		<control type="multiimage">
