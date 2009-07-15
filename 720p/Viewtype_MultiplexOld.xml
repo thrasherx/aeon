@@ -243,7 +243,7 @@
 			<control type="group">
 				<posx>921</posx>
 				<posy>18</posy>
-				<visible>![Skin.HasSetting(multiplexfanart) | Skin.HasSetting(multiplexbigthumb)]</visible>				
+				<visible>![Skin.HasSetting(multiplexfanart) | Skin.HasSetting(multiplexbigthumb) | Skin.HasSetting(multiplexposter)]</visible>				
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -279,6 +279,30 @@
 					<fadetime>400</fadetime>
 					<texture>$INFO[Container(52).ListItem.Path,,extrathumbs/thumb2.jpg]</texture>
 				</control>				
+			</control>
+			
+			<control type="group">
+				<posx>921</posx>
+				<posy>18</posy>
+				<visible>Skin.HasSetting(multiplexposter)</visible>				
+				<control type="image">
+					<posx>50</posx>
+					<posy>0</posy>
+					<width>236</width>
+					<height>352</height>
+					<texture>common/black.png</texture>
+					<colordiffuse>94FFFFFF</colordiffuse>
+					<animation effect="fade" start="50" end="50" time="0" condition="!Skin.HasSetting(darkmultiplex)">Conditional</animation>					
+				</control>				
+				<control type="largeimage">
+					<description>Cover image</description>
+					<posx>52</posx>
+					<posy>2</posy>
+					<width>232</width>
+					<height>348</height>
+					<texture>$INFO[listitem.thumb]</texture>
+					<aspectratio>stretch</aspectratio>
+				</control>
 			</control>
 			
 			<control type="group">
