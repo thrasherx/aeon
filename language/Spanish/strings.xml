@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes" ?>
 <!-- $Revision: 204$ -->
 <!--  strings 31000 thru 31999 reserved for skins  -->
  
@@ -45,39 +45,52 @@
   <string id="31041">POR:</string>
  
 <!-- Media Window options -->
-  
-  <string id="31050">VISTA:</string> 
-  <string id="31051">ALEATORIO: OFF</string>
-  <string id="31052">ALEATORIO: ON</string> 
-  <string id="31053">BIBLIOTECA: OFF</string> 
-  <string id="31054">CONFIGURACIÓN</string> 
-  <string id="31055">AGRUPAR: ON</string> 
-  <string id="31056">AGRUPAR: OFF</string>
-  <string id="31057">ARCHIVOS</string>
-  <string id="31058">OCULTAR VISTOS: ON</string>
-  <string id="31059">OCULTAR VISTOS: OFF</string>
-  <string id="31060">DISPOSICIÓN: PLANA</string>
-  <string id="31061">DISPOSICIÓN: FLUIDA</string>
-  <string id="31062">TEMPORADA</string>
-  <string id="31063">EPISODIO</string>
-  <string id="31064">FANART: OFF</string>
-  <string id="31065">FANART: ON</string>
-  <string id="31066">BACKDROP: ON</string>
-  <string id="31067">BACKDROP: OFF</string>
-  <string id="31068">BIBLIOTECA: ON</string>
-  <string id="31069">FLAGS: ON</string>
-  <string id="31070">FLAGS: OFF</string>
-  <string id="31071">THUMBS: ÚNICO</string>
-  <string id="31072">THUMBS: MULTI</string>
-  <string id="31073">REJILLA: POR DEFECTO</string>
-  <string id="31074">REJILLA: MÁX</string>
+
+   <string id="31042">TEMA: CLARO</string>
+   <string id="31043">TEMA: OSCURO</string>
+   <string id="31044">ARTE</string>
+   <string id="31045">THUMB</string>
+   <string id="31046">TRAMA</string>
+   <string id="31047">DISEÑO</string>
+   <string id="31048">TRIGGER</string>
+   <string id="31049">AUTO</string>
+   <string id="31050">VISTA:</string>
+   <string id="31051">ALEATORIA</string>
+   <string id="31052">GRUESO</string>
+   <string id="31053">FINO</string>
+   <string id="31054">CONF.</string>
+   <string id="31055">PILA</string>
+   <string id="31056">THUMB: CUADRADO</string>
+   <string id="31057">ARCHIVOS</string>
+   <string id="31058">OCULTAS VISTOS</string>
+   <string id="31059">THUMB: POSTER</string>
+   <string id="31060">NAVEGACIÓN: PLANO</string>
+   <string id="31061">NAVEGACIÓN: FLUJO</string>
+   <string id="31062">TEMPORADA</string>
+   <string id="31063">EPISODIO</string>
+   <string id="31064">FANART</string>
+   <string id="31065">PANEL</string>
+   <string id="31066">OVERLAY</string>
+   <string id="31067">BACKDROP</string>
+   <string id="31068">LIBRERIA</string>
+   <string id="31069">FLAGS</string>
+   <string id="31070">INFO</string>
+   <string id="31071">DELGADO</string>
+   <string id="31072">COMPLETO</string>
+   <string id="31073">POR DEFECTO</string>
+   <string id="31074">MÁX</string>
+   <string id="31075">DISEÑO</string>
+   <string id="31076">GRILLA</string>
+   <string id="31077">ON</string>
+   <string id="31078">OFF</string>
+   <string id="31079">AUTO OCULTAR</string>
   
 <!-- Aeon Customisation Virtual Home page labels -->
   
   <string id="31080">BACKDROPS</string>
   <string id="31081">CAMBIAR BACKDROPS</string>
   <string id="31082">MOVER A IZQ/DER PARA NAVEGAR, SELECCIONAR PARA CAMBIAR</string>
-  <string id="31083">BACKDROPS (FONDOS DE PANTALLA) PERSONALIZADOS</string>
+  <string id="31083">BACKDROPS PERSONALIZADOS</string>
   <string id="31084">ESCOGER TIPO DE BACKDROP</string>
   <string id="31085">MOVER HACIA ARRIBA PARA UN ÚNICO BACKDROP, HACIA ABAJO PARA CARPETA DE DIAPOSITIVAS</string>
   <string id="31086">ATAJOS</string>
@@ -102,7 +115,7 @@
   <string id="31105">ATAJO</string>
   <string id="31106">DISPONER OBJETOS DEL OSD</string>
   <string id="31107">MOVER A IZQ/DER PARA NAVEGAR, SELECCIONAR PARA CAMBIAR</string>
-  <string id="31108">CAMBIAR ESTILO DE DETALLE, ARRIBA (AHORA: MINIMALISTA)</string>
+  <string id="31108">CAMBIAR ESTILO DE DETALLE, ARRIBA (AHORA: MÍN)</string>
   <string id="31109">CAMBIAR BARRA DE PROGRESO (AHORA: ON)</string>
   <string id="31110">CAMBIAR TEXTO DE TIEMPO/DURACIÓN (AHORA: OFF)</string>
   <string id="31111">CAMBIAR ESTILO DE DETALLE, ARRIBA (AHORA: MÁX)</string>
@@ -157,8 +170,8 @@
   <string id="31200">OPCIONES</string> 
   <string id="31201">PERSONALIZAR</string>
   <string id="31202">ASISTENTE</string> 
-  <string id="31203">VISUALIZADOR EN PÁG. DE INICIO: OFF</string>
-  <string id="31204">VISUALIZADOR EN PÁG. DE INICIO: ON</string> 
+  <string id="31203">VISUALIZADOR EN PÁG. INICIO: OFF</string>
+  <string id="31204">VISUALIZADOR EN PÁG. INICIO: ON</string> 
   <string id="31205">REPRODUCIENDO</string>
   <string id="31206">TEMPORIZADOR PARA APAGADO</string> 
   <string id="31207">REINICIAR</string> 
@@ -172,8 +185,8 @@
   <string id="31221">INTRODUCIR RUTA O NAVEGAR PARA LOCALIZAR MEDIOS</string>
   <string id="31222">ELEGIR UN NOMBRE PARA ESTE ORIGEN:</string>
   <string id="31223">LISTA</string>
-  <string id="31224">MINIATURAS</string>
- 
+  <string id="31224">TÍTULO</string>
+
 <!-- Aeon Advanced Menu labels -->
   
   <string id="31230">AEON</string> 
@@ -194,7 +207,12 @@
   <string id="31245">DISPOSICIÓN DE NAVEGACIÓN</string>
   
 <!-- Aeon Advanced options -->
- 
+
+  <string id="31249">MEDIA FLAGS TOGGLE</string>
+  <string id="31250">NAVEGACIÓN MULTIPLEX (FANART, TRAMA, THUMBSHOW)</string>
+  <string id="31251">MULTIPLEX INFO TOGGLE (ON, OFF, AUTO, TRIGGER)</string>
+  <string id="31252">EFECTO DEGRADADO EN MENÚ PRINCIPAL</string>
+  <string id="31253">VINCULAR ACCESO DIRECTO A CON 'LAUNCHER' PLUGIN</string>
   <string id="31258">MOSTRAR RATINGS (IMDB, ETC.) EN LA PÁGINA DE INFO. DE PELÍCULA</string>
   <string id="31259">ICONOS POR DEFECTO PARA FLAGS DE MEDIOS (OFF PARA ESPACIOS EN BLANCO)</string>  
   <string id="31260">MOSTRAR PANEL HORARIO</string>
@@ -225,7 +243,7 @@
   <string id="31296">CAMBIAR THUMBNAILS ÚNICO/MULTI</string>
   <string id="31297">USAR UN ÚNICO THUMBNAIL PARA LA LISTA DE MÚSICA</string>
   <string id="31298">USAR UN ÚNICO THUMBNAIL PARA LA LISTA DE PELÍCULAS</string>
-  <string id="31299">MOSTRAR RSS / REPRODUCIENDO EN LA VISTA VITRINA ("SHOWCASE")</string>
+  <string id="31299">MOSTRAR RSS / REPRODUCIENDO EN LA VISTA SHOWCASE</string>
   
 <!-- XBMC Settings Menu headings -->
   
@@ -310,6 +328,16 @@
   <string id="31431">PULSAR ARRIBA O ABAJO PARA CAMBIAR RATING</string>
   <string id="31432">TEMPORADA</string>
   <string id="31433">EPISODIO</string>
+  <string id="31434">DURACIÓN</string>
+  <string id="31435">DETALLES DE REPARTO NO DISPONIBLES</string>
+  <string id="31436">AÑO</string>
+  <string id="31438">GÉNERO</string>
+  <string id="31439">VISTOS</string>
+  <string id="31440">NO VISTOS</string>
+  <string id="31441">FECHA NO DISPONIBLE </string>
+  <string id="31442">FECHA MODIFICACIÓN NO DISPONIBLE</string>
+  <string id="31443">RESOLUCIÓN NO DISPONIBLE</string>
+  <string id="31444">TAMAÑO DE ARCHIVO NO DISPONIBLE</string>
  
 <!--  Aeon Assistant  -->
  
@@ -327,7 +355,7 @@
   <string id="31522">DE VUELTA A LO BÁSICO</string>
   <string id="31523">PULSAR SELECCIONAR PARA VOLVER A VER LA VISITA GUIADA DE INTRODUCCIÓN A AEON</string>
   <string id="31524">CONTACTANDO CON EL SERVIDOR DE AEON</string>
-  
+
 <!--  Aeon Assistant Tutorials  -->
  
   <!-- 31550-31590 RESERVED -->
@@ -347,6 +375,9 @@
   <string id="31606">TIPO DE VISTA ACTIVA:</string>
   <string id="31607">REFRESCAR</string>
   <string id="31608">INFO ON/OFF</string>
+  <string id="31609">ESTE BIBLIOTECA ESTÁ VACÍA</string>
+  <string id="31610">POBLARLA A TRAVÉS DE LA VENTANA VíDEOS</string>
+  <string id="31611">POBLARLA A TRAVÉS DE LA VENTANA ARCHVOS</string>
  
 <!-- Welcome screen / Aeon Tour -->
 <!-- ENSURE LOWER/UPPER CASE IS OBEYED --> 
@@ -390,13 +421,17 @@
   
 <!-- View select -->
  
-  <string id="31750">MURAL</string>
-  <string id="31751">VITRINA</string>
-  <string id="31752">LISTA</string>
-  <string id="31753">PANEL</string>  
+  <string id="31750">WALL</string>
+  <string id="31751">SHOWCASE</string>
+  <string id="31752">LISTA COMPLETA</string>
+  <string id="31753">PANEL</string>
   <string id="31754">SELECCIONAR</string>  
-  <string id="31755">ELEGIR VISTA CON LOS CURSORES[CR]CLIC PARA VOLVER</string>  
+  <string id="31755">ELEGIR VISTA CON LOS CURSORES[CR]CLIC PARA VOLVER</string>
   <string id="31756">PARA EPISODIOS SÓLO DISPONIBLE LA VISTA DE LISTA</string>
+  <string id="31757">MULTIPLEX</string>
+  <string id="31578">STRIPSHOW</string>
+  <string id="31579">LISTA FINA</string>
+  <string id="31580">LISTA BAJA</string>
   
 <!-- Aeon Settings panel labels -->
   
@@ -430,11 +465,33 @@
   <string id="31902">ICONOS POR DEFECTO CON ELEMENTOS DE</string>
   <string id="31903">LOCALIZACIÓN</string>
   <string id="31904">TESTING</string>
-  <string id="31905">AEONPROJECT WEBSITE</string>
+  <string id="31905">SITIO WEB AEONPROJECT</string>
   <string id="31906">AGRADECIMIENTOS</string>
   <string id="31907">A TODOS EN LOS FOROS XBMC</string>
   <string id="31908">...Y A TI</string>
   <string id="31909">AEON VOLVERÁ EN</string>
   <string id="31910">FONDOS DE PANTALLA DEL CLIMA</string>
-    
+
+<!-- Submenu / Objects -->
+
+   <string id="31920">RECIENTE</string>
+   <string id="31921">TÍTULOS</string>
+   <string id="31922">GÉNEROS</string>
+   <string id="31923">AÑOS</string>
+   <string id="31924">ACTORES</string>
+   <string id="31925">DIRECTORES</string>
+   <string id="31926">ESTUDIOS</string>
+   <string id="31927">ARTISTAS</string>
+   <string id="31928">ÁLBUMES</string>
+   <string id="31929">L. REPRODUCCIÓN</string>
+   <string id="31930">TOP 100</string>
+   <string id="31931">VÍDEOS</string>
+   <string id="31932">ARCHIVOS</string>
+   <string id="31933">SHOWS</string>
+   <string id="31934">PELíCULAS</string>
+   <string id="31935">ELEMENTOS</string>
+   <string id="31936">PISTAS</string>
+   <string id="31937">TEMPORADAS</string>
+   <string id="31938">EPISODIOS</string>
+	
 </strings>
