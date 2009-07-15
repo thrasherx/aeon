@@ -279,7 +279,7 @@
 			<control type="group">
 				<posx>905</posx>
 				<posy>50</posy>
-				<visible>![Skin.HasSetting(multiplexfanart) | Skin.HasSetting(multiplexbigthumb)]</visible>				
+				<visible>![Skin.HasSetting(multiplexfanart) | Skin.HasSetting(multiplexbigthumb) | Skin.HasSetting(multiplexposter)]</visible>				
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -318,7 +318,8 @@
 					<texture>$INFO[Container(52).ListItem.Path,,extrathumbs/thumb2.jpg]</texture>
 				</control>				
 			</control>
-<!--New Poster Group-->
+			
+			<!--New Poster Group-->
 
 			<control type ="group">
 				<posx>934</posx>
@@ -352,7 +353,7 @@
 				</control>				
 			</control>
 
-<!--End-->
+			<!--End-->
 
 			<control type="group">
 				<posx>575</posx>
