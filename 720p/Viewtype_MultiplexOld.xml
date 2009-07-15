@@ -651,7 +651,7 @@
 				<posy>60</posy>
 				<width>19</width>
 				<height>221</height>
-				<texture flipx="true">OldMultiplex/multiplex_arrow.png</texture>
+				<texture flipx="true">multiplex/old/multiplex_arrow.png</texture>
 				<visible>Control.IsVisible(52)</visible>
 				<animation effect="slide" start="-100" end="0" delay="800" time="400" easing="out" tween="cubic">WindowOpen</animation>
 				<visible>!Control.IsVisible(105)</visible>
@@ -702,7 +702,7 @@
 				<posy>-10</posy>
 				<width>19</width>
 				<height>221</height>
-				<texture flipx="true">OldMultiplex/multiplex_arrow.png</texture>
+				<texture flipx="true">multiplex/old/multiplex_arrow.png</texture>
 				<visible>Control.IsVisible(52)</visible>
 				<animation effect="slide" start="-100" end="0" delay="800" time="400" easing="out" tween="cubic">WindowOpen</animation>
 				<visible>!Control.IsVisible(105)</visible>
