@@ -58,6 +58,11 @@
 					<label>$LOCALIZE[31050] $INFO[Container.ViewMode]</label>
 					<include>Objects_MediaMenuButton</include>
 				</control>
+				
+				<control type="radiobutton" id="16">
+					<label>589</label>
+					<include>Objects_MediaMenuButton</include>
+				</control>
 
 				<include>Objects_FlattenFlowButton</include>
 				
