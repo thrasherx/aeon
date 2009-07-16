@@ -62,6 +62,17 @@
 		<width>772</width>
 		<height>720</height>
 		<texture>info/info_rightpaneltop.png</texture>
+		<visible>!Skin.HasSetting(dark)</visible>
+	</control>
+	
+	<control type="image">
+		<description>background image</description>
+		<posx>508</posx>
+		<posy>0</posy>
+		<width>772</width>
+		<height>720</height>
+		<texture>info/dark/info_rightpaneltop.png</texture>
+		<visible>Skin.HasSetting(dark)</visible>
 	</control>
 
 	<control type="group">

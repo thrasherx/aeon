@@ -26,6 +26,19 @@
 		<width>772</width>
 		<height>720</height>
 		<texture>info/info_rightpaneltop.png</texture>
+		<visible>!Skin.HasSetting(dark)</visible>
+		<animation effect="slide" start="565,0" end="0,0" delay="200" time="400" easing="out" tween="cubic">WindowOpen</animation>		
+		<animation effect="fade" time="200" delay="200" start="100" end="0">WindowClose</animation>
+	</control>
+	
+	<control type="image">
+		<description>background image</description>
+		<posx>638</posx>
+		<posy>0</posy>
+		<width>772</width>
+		<height>720</height>
+		<texture>info/dark/info_rightpaneltop.png</texture>
+		<visible>Skin.HasSetting(dark)</visible>
 		<animation effect="slide" start="565,0" end="0,0" delay="200" time="400" easing="out" tween="cubic">WindowOpen</animation>		
 		<animation effect="fade" time="200" delay="200" start="100" end="0">WindowClose</animation>
 	</control>

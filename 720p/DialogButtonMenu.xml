@@ -29,7 +29,8 @@
 			<posy>-26</posy>
 			<width>308</width>
 			<height>26</height>
-			<texture>dialogs/context_top.png</texture>
+			<include condition="!Skin.HasSetting(dark)">context_top</include>
+			<include condition="Skin.HasSetting(dark)">context_top_dark</include>
 		</control>
 		<control type="image">
 			<description>background image</description>
@@ -38,8 +39,9 @@
 			<width>308</width>
 			<include condition="![system.hasloginscreen | System.HasMediaDVD]">Objects_ButtonMenu10Group</include> 
 			<include condition="[system.hasloginscreen + !System.HasMediaDVD] | [!system.hasloginscreen + System.HasMediaDVD]">Objects_ButtonMenu11Group</include>			
-			<include condition="system.hasloginscreen + System.HasMediaDVD">Objects_ButtonMenu12Group</include>		
-			<texture>dialogs/context_middle.png</texture>
+			<include condition="system.hasloginscreen + System.HasMediaDVD">Objects_ButtonMenu12Group</include>
+			<include condition="!Skin.HasSetting(dark)">context_middle</include>
+			<include condition="Skin.HasSetting(dark)">context_middle_dark</include>
 		</control>
 		<control type="image">
 			<description>background bottom image</description>
@@ -48,8 +50,9 @@
 			<width>308</width>
 			<height>27</height>
 			<animation effect="slide" start="0,-39" end="0,-39" time="0" condition="![system.hasloginscreen | System.HasMediaDVD]">Conditional</animation>
-			<animation effect="slide" start="0,39" end="0,39" time="0" condition="system.hasloginscreen + System.HasMediaDVD">Conditional</animation>			
-			<texture>dialogs/context_bottom.png</texture>
+			<animation effect="slide" start="0,39" end="0,39" time="0" condition="system.hasloginscreen + System.HasMediaDVD">Conditional</animation>
+			<include condition="!Skin.HasSetting(dark)">context_bottom</include>
+			<include condition="Skin.HasSetting(dark)">context_bottom_dark</include>
 		</control>
 		
 		<control type="grouplist" id="4112">

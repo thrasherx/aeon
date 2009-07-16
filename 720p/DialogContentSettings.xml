@@ -23,6 +23,17 @@
 			<width>869</width>
 			<height>317</height>
 			<texture>dialogs/setcontent_back.png</texture>
+			<visible>"Skin.HasSetting(dark)</visible>
+		</control>
+	
+		<control type="image">
+			<description>background image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>869</width>
+			<height>317</height>
+			<texture>dialogs/dark/setcontent_back.png</texture>
+			<visible>Skin.HasSetting(dark)</visible>
 		</control>
 	
 		<control type="label" id="1000">
@@ -64,8 +75,8 @@
 			<width>504</width>
 			<height>41</height>
 			<font>Font_ContextMenuButton</font>
-			<texturefocus>dialogs/setcontent_button_focus.png</texturefocus>
-			<texturenofocus>dialogs/setcontent_button_nofocus.png</texturenofocus>
+			<include condition="!Skin.HasSetting(dark)">button_focus</include>
+			<include condition="Skin.HasSetting(dark)">button_focus_dark</include>
 			<textureup>settings/spin-up.png</textureup>
 			<texturedown>settings/spin-down.png</texturedown>
 			<textureupfocus>settings/spin-up-focus.png</textureupfocus>
@@ -102,6 +113,15 @@
 					<width>174</width>
 					<height>41</height>
 					<texture>dialogs/setcontent_scraper_nofocus.png</texture>
+					<visible>!Skin.HasSetting(dark)</visible>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>174</width>
+					<height>41</height>
+					<texture>dialogs/dark/setcontent_scraper_nofocus.png</texture>
+					<visible>Skin.HasSetting(dark)</visible>
 				</control>
 				<control type="label">
 					<posx>87</posx>
@@ -123,6 +143,15 @@
 					<width>174</width>
 					<height>41</height>
 					<texture>dialogs/setcontent_scraper_focus.png</texture>
+					<visible>!Skin.HasSetting(dark)</visible>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>174</width>
+					<height>41</height>
+					<texture>dialogs/dark/setcontent_scraper_focus.png</texture>
+					<visible>Skin.HasSetting(dark)</visible>
 				</control>
 				<control type="label">
 					<posx>87</posx>
@@ -170,8 +199,8 @@
 			<width>504</width>
 			<height>41</height>
 			<font>Font_ContextMenuButton</font>
-			<texturefocus>dialogs/setcontent_button_focus.png</texturefocus>
-			<texturenofocus>dialogs/setcontent_button_nofocus.png</texturenofocus>
+			<include condition="!Skin.HasSetting(dark)">button_focus</include>
+			<include condition="Skin.HasSetting(dark)">button_focus_dark</include>
 			<textcolor>FF939597</textcolor>
 			<focusedcolor>FFFFFFFF</focusedcolor>
 			<pulseonselect>false</pulseonselect>
@@ -203,7 +232,8 @@
 			<onup>28</onup>
 			<ondown>29</ondown>
 			<texturenofocus>-</texturenofocus>
-			<texturefocus>dialogs/setcontent_rightmenu_highlight.png</texturefocus>
+			<include condition="!Skin.HasSetting(dark)">rightmenu</include>
+			<include condition="Skin.HasSetting(dark)">rightmenu_dark</include>
 		</control>
 	
 		<control type="button" id="28">
@@ -224,7 +254,8 @@
 			<onup>29</onup>
 			<ondown>6</ondown>
 			<texturenofocus>-</texturenofocus>
-			<texturefocus>dialogs/setcontent_rightmenu_highlight.png</texturefocus>
+			<include condition="!Skin.HasSetting(dark)">rightmenu</include>
+			<include condition="Skin.HasSetting(dark)">rightmenu_dark</include>
 		</control>
 
 		<control type="button" id="29">
@@ -245,7 +276,8 @@
 			<onup>6</onup>
 			<ondown>28</ondown>
 			<texturenofocus>-</texturenofocus>
-			<texturefocus>dialogs/setcontent_rightmenu_highlight.png</texturefocus>
+			<include condition="!Skin.HasSetting(dark)">rightmenu</include>
+			<include condition="Skin.HasSetting(dark)">rightmenu_dark</include>
 		</control>
 
 		<control type="image">

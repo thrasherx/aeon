@@ -183,7 +183,16 @@
 			<posx>693</posx>
 			<posy>583</posy>
 			<texture>list/list_spot.png</texture>
-			<visible>Control.IsVisible(50)</visible>				
+			<visible>Control.IsVisible(50) + !Skin.HasSetting(dark)</visible>				
+		</control>
+
+		<control type="image" id="232">
+			<width>587</width>
+			<height>137</height>
+			<posx>693</posx>
+			<posy>583</posy>
+			<texture>list/dark/list_spot.png</texture>
+			<visible>Control.IsVisible(50) + Skin.HasSetting(dark)</visible>				
 		</control>
 	
 		<control type="group">
@@ -205,7 +214,16 @@
 				<width>759</width>
 				<height>647</height>
 				<texture>list/listpanel_back.png</texture>
-				<visible>Control.IsVisible(50)</visible>
+				<visible>Control.IsVisible(50) + !Skin.HasSetting(dark)</visible>
+			</control>
+			
+			<control type="image">
+				<posx>60</posx>
+				<posy>73</posy>
+				<width>759</width>
+				<height>647</height>
+				<texture>list/dark/listpanel_back.png</texture>
+				<visible>Control.IsVisible(50) + Skin.HasSetting(dark)</visible>
 			</control>
 
 			<control type="image">
@@ -248,6 +266,15 @@
 						<height>1</height>
 						<width>739</width>
 						<texture>list/listpanel_line.png</texture>
+						<visible>!Skin.HasSetting(dark)</visible>
+					</control>
+					<control type="image">
+						<posx>12</posx>
+						<posy>64</posy>
+						<height>1</height>
+						<width>739</width>
+						<texture>list/dark/listpanel_line.png</texture>
+						<visible>Skin.HasSetting(dark)</visible>
 					</control>
 					<control type="label">
 						<include>ListLabel_Track</include>
@@ -337,6 +364,15 @@
 						<height>1</height>
 						<width>739</width>
 						<texture>list/listpanel_line.png</texture>
+						<visible>!Skin.HasSetting(dark)</visible>
+					</control>
+					<control type="image">
+						<posx>12</posx>
+						<posy>64</posy>
+						<height>1</height>
+						<width>739</width>
+						<texture>list/dark/listpanel_line.png</texture>
+						<visible>Skin.HasSetting(dark)</visible>
 					</control>
 					<control type="image">
 						<posx>8</posx>
@@ -540,6 +576,15 @@
 						<height>1</height>
 						<width>739</width>
 						<texture>list/listpanel_line.png</texture>
+						<visible>!Skin.HasSetting(dark)</visible>
+					</control>
+					<control type="image">
+						<posx>12</posx>
+						<posy>84</posy>
+						<height>1</height>
+						<width>739</width>
+						<texture>list/dark/listpanel_line.png</texture>
+						<visible>Skin.HasSetting(dark)</visible>
 					</control>
 					<control type="label">
 						<include>ListLabel_TrackSmall</include>
@@ -620,6 +665,15 @@
 						<height>1</height>
 						<width>739</width>
 						<texture>list/listpanel_line.png</texture>
+						<visible>!Skin.HasSetting(dark)</visible>
+					</control>
+					<control type="image">
+						<posx>12</posx>
+						<posy>84</posy>
+						<height>1</height>
+						<width>739</width>
+						<texture>list/dark/listpanel_line.png</texture>
+						<visible>Skin.HasSetting(dark)</visible>
 					</control>
 					<control type="image">
 						<posx>8</posx>

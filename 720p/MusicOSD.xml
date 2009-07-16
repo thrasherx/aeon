@@ -301,7 +301,8 @@
 		<width>270</width>
 		<height>54</height>
 		<description>Visualisation Select Button</description>
-		<texturebg border="5">dialogs/vis_select.png</texturebg>
+		<include condition="!Skin.HasSetting(dark)">vis</include>
+		<include condition="Skin.HasSetting(dark)">vis_dark</include>
 		<onleft>503</onleft>
 		<onright>503</onright>
 		<onup>500</onup>

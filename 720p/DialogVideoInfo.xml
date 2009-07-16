@@ -139,7 +139,18 @@
 		<posy>0</posy>
 		<width>795</width>
 		<height>720</height>
-		<texture>info/lite/info_rightpaneltop.png</texture>
+		<texture>info/info_rightpaneltop.png</texture>
+		<visible>!Skin.HasSetting(dark)</visible>
+	</control>	
+	
+	<control type="image">
+		<description>background image</description>
+		<posx>486</posx>
+		<posy>0</posy>
+		<width>795</width>
+		<height>720</height>
+		<texture>info/dark/info_rightpaneltop.png</texture>
+		<visible>Skin.HasSetting(dark)</visible>
 	</control>	
 
 <!-- Movie info -->
