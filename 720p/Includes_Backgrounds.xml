@@ -7,6 +7,12 @@
 		<height>720</height>
 	</include>
 	
+	<include name="BackgroundTimings">
+		<timeperimage>20000</timeperimage>
+		<randomize>true</randomize>
+		<fadetime>1000</fadetime>
+	</include>
+	
 	<include name="VirtualDimensions">
 		<posx>0</posx>
 		<posy>0</posy>
