@@ -1,7 +1,7 @@
 <window id="2">
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	<views>50,550,51,57,53</views>
+	<views>550,50,51,57,53</views>
 	<controls>
 
     <control type="image" id="101">

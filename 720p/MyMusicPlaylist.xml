@@ -1,7 +1,7 @@
 <window id="500">
-	<defaultcontrol always="true">900</defaultcontrol>
+	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	<views>50,550,57,53</views>
+	<views>550,50</views>
 	<controls>
 
 	<control type="multiimage">
@@ -86,8 +86,8 @@
 			</control>
 		</control>
 		
+		<include>Viewtype_List_Slim</include>		
 		<include>Viewtype_List</include>
-		<include>Viewtype_Showcase</include>
 
 	</control>
 
