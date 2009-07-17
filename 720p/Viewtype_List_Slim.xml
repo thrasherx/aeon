@@ -1,4 +1,11 @@
 <includes>
+	
+	<include name="WatchedOverlay_Slim">
+		<posx>688</posx>
+		<posy>1</posy>
+		<width>80</width>
+		<height>37</height>
+	</include>
 
 	<include name="ListFade2">
 		<control type="image" id="102">
@@ -259,6 +266,11 @@
 						<include>detailcolornofocus</include>
 						<label>[UPPERCASE]$INFO[ListItem.Episode] [/UPPERCASE]$LOCALIZE[31938]</label>
 						<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
+					</control>		
+					<control type="image">
+						<include>WatchedOverlay_Slim</include>
+						<visible>[!Skin.HasSetting(nomovieoverlays) | !Skin.HasSetting(notvoverlays)] + !IsEmpty(ListItem.Overlay)</visible>
+						<info>ListItem.Overlay</info>
 					</control>					
 				</itemlayout>
 				<focusedlayout height="40">
@@ -427,6 +439,11 @@
 						<include>Animation_ButtonFocusFade</include>
 						<label>[UPPERCASE]$INFO[ListItem.Episode] [/UPPERCASE]$LOCALIZE[31938]</label>
 						<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
+					</control>		
+					<control type="image">
+						<include>WatchedOverlay_Slim</include>
+						<visible>[!Skin.HasSetting(nomovieoverlays) | !Skin.HasSetting(notvoverlays)] + !IsEmpty(ListItem.Overlay)</visible>
+						<info>ListItem.Overlay</info>
 					</control>
 					
 				</focusedlayout>

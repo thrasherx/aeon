@@ -1,5 +1,19 @@
 <includes>
 
+	<include name="WatchedOverlay_Movies">
+		<posx>688</posx>
+		<posy>13</posy>
+		<width>80</width>
+		<height>37</height>
+	</include>
+
+	<include name="WatchedOverlay_TV">
+		<posx>688</posx>
+		<posy>22</posy>
+		<width>80</width>
+		<height>37</height>
+	</include>
+
 	<include name="ListFade">
 		<control type="image" id="102">
 			<posx>0</posx>
@@ -356,6 +370,11 @@
 						<colordiffuse>dcbdbdbd</colordiffuse>
 						<visible>![Container.Content(artists) | Container.Content(years) | Container.Content(genres)]</visible>
 					</control>
+					<control type="image">
+						<include>WatchedOverlay_Movies</include>
+						<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+						<info>ListItem.Overlay</info>
+					</control>
 				</itemlayout>
 				<focusedlayout condition="Window.IsActive(2) | Window.IsActive(24) | [Window.IsActive(25) + !Skin.HasSetting(videotv)] | [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]" height="65">
 					<control type="image">
@@ -567,6 +586,11 @@
 						<colordiffuse>FF585858</colordiffuse>
 						<visible>![Container.Content(artists) | Container.Content(years) | Container.Content(genres)]</visible>
 						<include>Animation_ButtonFocusFade</include>						
+					</control>
+					<control type="image">
+						<include>WatchedOverlay_Movies</include>
+						<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+						<info>ListItem.Overlay</info>
 					</control>					
 				</focusedlayout>
 				<itemlayout condition="[Window.IsActive(25) + Skin.HasSetting(videotv)]" height="85">
@@ -656,6 +680,11 @@
 						<info>ListItem.StarRating</info>
 						<colordiffuse>dcbdbdbd</colordiffuse>
 						<visible>![Container.Content(artists) | Container.Content(years) | Container.Content(genres) | Container.Content(seasons)]</visible>
+					</control>
+					<control type="image">						
+						<include>WatchedOverlay_TV</include>
+						<visible>!Skin.HasSetting(notvoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+						<info>ListItem.Overlay</info>
 					</control>
 				</itemlayout>
 				<focusedlayout condition="[Window.IsActive(25) + Skin.HasSetting(videotv)]" height="85">
@@ -848,6 +877,11 @@
 						<include>Animation_ButtonFocusFade</include>						
 						<colordiffuse>FF585858</colordiffuse>
 						<visible>![Container.Content(artists) | Container.Content(years) | Container.Content(genres) | Container.Content(seasons)]</visible>						
+					</control>
+					<control type="image">
+						<include>WatchedOverlay_TV</include>
+						<visible>!Skin.HasSetting(notvoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+						<info>ListItem.Overlay</info>
 					</control>				
 				</focusedlayout>					
 			</control>
