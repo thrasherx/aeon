@@ -13,16 +13,7 @@
 			<posy>0</posy>
 			<width>509</width>
 			<height>91</height>
-			<texture>dialogs/scan_backg.png</texture>
-			<visible>!Skin.HasSetting(dark)</visible>			
-		</control>
-		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>509</width>
-			<height>91</height>
-			<texture>dialogs/dark/scan_backg.png</texture>
-			<visible>Skin.HasSetting(dark)</visible>		
+			<texture>dialogs/scan_backg.png</texture>		
 		</control>	
 	</include>
 
@@ -64,9 +55,7 @@
 		<height>85</height>
 		<reveal>true</reveal>
 		<texturebg>dialogs/scan_blank.png</texturebg>
-		<lefttexture>common/blank.png</lefttexture>
-		<include condition="!Skin.HasSetting(dark)">scan_fill</include>
-		<include condition="Skin.HasSetting(dark)">scan_fill_dark</include>
+		<midtexture>dialogs/scan_fill.png</midtexture>
 		<righttexture>common/blank.png</righttexture>
 		<overlaytexture>-</overlaytexture>
 	</include>
@@ -75,8 +64,7 @@
 		<posx>105</posx>
 		<width>390</width>
 		<height>21</height>
-		<include condition="!Skin.HasSetting(dark)">context_text</include>
-		<include condition="Skin.HasSetting(dark)">context_text_dark</include>
+		<textcolor>FF323232</textcolor>
 		<align>left</align>
 		<font>Font_ProgressLabel</font>		
 	</include>

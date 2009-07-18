@@ -1180,7 +1180,7 @@
 			<orientation>horizontal</orientation>
 			<include>MultiplexFocusTV</include>
 			<scrolltime>200</scrolltime>
-			<visible>[Window.IsActive(25) + !Skin.HasSetting(tvposter)] | [Window.IsActive(25) + Skin.HasSetting(tvposter) + Container.Content(episodes)]</visible>
+			<visible>[Window.IsActive(25) + !Container.Content(movies) + !Skin.HasSetting(tvposter)] | [Window.IsActive(25) + Skin.HasSetting(tvposter) + Container.Content(episodes)]</visible>
 			<include>Animation_HideMultiplex</include>
 			<preloaditems>2</preloaditems>
 			<itemlayout width="219" height="300" condition="Skin.HasSetting(videotv)">
