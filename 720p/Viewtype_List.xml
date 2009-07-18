@@ -1,19 +1,5 @@
 <includes>
 
-	<include name="WatchedOverlay_Movies">
-		<posx>688</posx>
-		<posy>13</posy>
-		<width>80</width>
-		<height>37</height>
-	</include>
-
-	<include name="WatchedOverlay_TV">
-		<posx>688</posx>
-		<posy>22</posy>
-		<width>80</width>
-		<height>37</height>
-	</include>
-
 	<include name="ListFade">
 		<control type="image" id="102">
 			<posx>0</posx>
@@ -197,16 +183,7 @@
 			<posx>693</posx>
 			<posy>583</posy>
 			<texture>list/list_spot.png</texture>
-			<visible>Control.IsVisible(50) + !Skin.HasSetting(dark)</visible>				
-		</control>
-
-		<control type="image" id="232">
-			<width>587</width>
-			<height>137</height>
-			<posx>693</posx>
-			<posy>583</posy>
-			<texture>list/dark/list_spot.png</texture>
-			<visible>Control.IsVisible(50) + Skin.HasSetting(dark)</visible>				
+			<visible>Control.IsVisible(50)</visible>				
 		</control>
 	
 		<control type="group">
@@ -228,16 +205,7 @@
 				<width>759</width>
 				<height>647</height>
 				<texture>list/listpanel_back.png</texture>
-				<visible>Control.IsVisible(50) + !Skin.HasSetting(dark)</visible>
-			</control>
-			
-			<control type="image">
-				<posx>60</posx>
-				<posy>73</posy>
-				<width>759</width>
-				<height>647</height>
-				<texture>list/dark/listpanel_back.png</texture>
-				<visible>Control.IsVisible(50) + Skin.HasSetting(dark)</visible>
+				<visible>Control.IsVisible(50)</visible>
 			</control>
 
 			<control type="image">
@@ -280,15 +248,6 @@
 						<height>1</height>
 						<width>739</width>
 						<texture>list/listpanel_line.png</texture>
-						<visible>!Skin.HasSetting(dark)</visible>
-					</control>
-					<control type="image">
-						<posx>12</posx>
-						<posy>64</posy>
-						<height>1</height>
-						<width>739</width>
-						<texture>list/dark/listpanel_line.png</texture>
-						<visible>Skin.HasSetting(dark)</visible>
 					</control>
 					<control type="label">
 						<include>ListLabel_Track</include>
@@ -370,11 +329,6 @@
 						<colordiffuse>dcbdbdbd</colordiffuse>
 						<visible>![Container.Content(artists) | Container.Content(years) | Container.Content(genres)]</visible>
 					</control>
-					<control type="image">
-						<include>WatchedOverlay_Movies</include>
-						<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
-						<info>ListItem.Overlay</info>
-					</control>
 				</itemlayout>
 				<focusedlayout condition="Window.IsActive(2) | Window.IsActive(24) | [Window.IsActive(25) + !Skin.HasSetting(videotv)] | [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]" height="65">
 					<control type="image">
@@ -383,15 +337,6 @@
 						<height>1</height>
 						<width>739</width>
 						<texture>list/listpanel_line.png</texture>
-						<visible>!Skin.HasSetting(dark)</visible>
-					</control>
-					<control type="image">
-						<posx>12</posx>
-						<posy>64</posy>
-						<height>1</height>
-						<width>739</width>
-						<texture>list/dark/listpanel_line.png</texture>
-						<visible>Skin.HasSetting(dark)</visible>
 					</control>
 					<control type="image">
 						<posx>8</posx>
@@ -586,11 +531,6 @@
 						<colordiffuse>FF585858</colordiffuse>
 						<visible>![Container.Content(artists) | Container.Content(years) | Container.Content(genres)]</visible>
 						<include>Animation_ButtonFocusFade</include>						
-					</control>
-					<control type="image">
-						<include>WatchedOverlay_Movies</include>
-						<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
-						<info>ListItem.Overlay</info>
 					</control>					
 				</focusedlayout>
 				<itemlayout condition="[Window.IsActive(25) + Skin.HasSetting(videotv)]" height="85">
@@ -600,15 +540,6 @@
 						<height>1</height>
 						<width>739</width>
 						<texture>list/listpanel_line.png</texture>
-						<visible>!Skin.HasSetting(dark)</visible>
-					</control>
-					<control type="image">
-						<posx>12</posx>
-						<posy>84</posy>
-						<height>1</height>
-						<width>739</width>
-						<texture>list/dark/listpanel_line.png</texture>
-						<visible>Skin.HasSetting(dark)</visible>
 					</control>
 					<control type="label">
 						<include>ListLabel_TrackSmall</include>
@@ -681,11 +612,6 @@
 						<colordiffuse>dcbdbdbd</colordiffuse>
 						<visible>![Container.Content(artists) | Container.Content(years) | Container.Content(genres) | Container.Content(seasons)]</visible>
 					</control>
-					<control type="image">						
-						<include>WatchedOverlay_TV</include>
-						<visible>!Skin.HasSetting(notvoverlays) + !IsEmpty(ListItem.Overlay)</visible>
-						<info>ListItem.Overlay</info>
-					</control>
 				</itemlayout>
 				<focusedlayout condition="[Window.IsActive(25) + Skin.HasSetting(videotv)]" height="85">
 					<control type="image">
@@ -694,15 +620,6 @@
 						<height>1</height>
 						<width>739</width>
 						<texture>list/listpanel_line.png</texture>
-						<visible>!Skin.HasSetting(dark)</visible>
-					</control>
-					<control type="image">
-						<posx>12</posx>
-						<posy>84</posy>
-						<height>1</height>
-						<width>739</width>
-						<texture>list/dark/listpanel_line.png</texture>
-						<visible>Skin.HasSetting(dark)</visible>
 					</control>
 					<control type="image">
 						<posx>8</posx>
@@ -877,11 +794,6 @@
 						<include>Animation_ButtonFocusFade</include>						
 						<colordiffuse>FF585858</colordiffuse>
 						<visible>![Container.Content(artists) | Container.Content(years) | Container.Content(genres) | Container.Content(seasons)]</visible>						
-					</control>
-					<control type="image">
-						<include>WatchedOverlay_TV</include>
-						<visible>!Skin.HasSetting(notvoverlays) + !IsEmpty(ListItem.Overlay)</visible>
-						<info>ListItem.Overlay</info>
 					</control>				
 				</focusedlayout>					
 			</control>

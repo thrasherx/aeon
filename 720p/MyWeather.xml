@@ -78,8 +78,7 @@
 			<posy>-20</posy>
 			<width>275</width>
 			<height>20</height>
-			<include condition="!Skin.HasSetting(dark)">context_top</include>
-			<include condition="Skin.HasSetting(dark)">context_top_dark</include>
+			<texture>dialogs/context_top.png</texture>
 		</control>
 		<control type="image">
 			<description>background image</description>
@@ -87,8 +86,7 @@
 			<posy>0</posy>
 			<width>275</width>
 			<height>90</height>
-			<include condition="!Skin.HasSetting(dark)">context_middle</include>
-			<include condition="Skin.HasSetting(dark)">context_middle_dark</include>
+			<texture>dialogs/context_middle.png</texture>
 		</control>
 		<control type="image">
 			<description>background bottom image</description>
@@ -96,8 +94,7 @@
 			<posy>90</posy>
 			<width>275</width>
 			<height>18</height>
-		<include condition="!Skin.HasSetting(dark)">context_bottom</include>
-		<include condition="Skin.HasSetting(dark)">context_bottom_dark</include>
+			<texture>dialogs/context_bottom.png</texture>
 		</control>
 		
 		<control type="group">

@@ -1,11 +1,4 @@
 <includes>
-	
-	<include name="WatchedOverlay_Slim">
-		<posx>688</posx>
-		<posy>1</posy>
-		<width>80</width>
-		<height>37</height>
-	</include>
 
 	<include name="ListFade2">
 		<control type="image" id="102">
@@ -94,16 +87,7 @@
 			<posx>693</posx>
 			<posy>583</posy>
 			<texture>list/list_spot.png</texture>
-			<visible>Control.IsVisible(550) + !Skin.HasSetting(dark)</visible>				
-		</control>
-
-		<control type="image" id="232">
-			<width>587</width>
-			<height>137</height>
-			<posx>693</posx>
-			<posy>583</posy>
-			<texture>list/dark/list_spot.png</texture>
-			<visible>Control.IsVisible(550) + Skin.HasSetting(dark)</visible>				
+			<visible>Control.IsVisible(550)</visible>				
 		</control>
 	
 		<control type="group">
@@ -125,16 +109,7 @@
 				<width>759</width>
 				<height>647</height>
 				<texture>list/listpanel_back.png</texture>
-				<visible>Control.IsVisible(550) + !Skin.HasSetting(dark)</visible>
-			</control>
-			
-			<control type="image">
-				<posx>60</posx>
-				<posy>73</posy>
-				<width>759</width>
-				<height>647</height>
-				<texture>list/dark/listpanel_back.png</texture>
-				<visible>Control.IsVisible(550) + Skin.HasSetting(dark)</visible>
+				<visible>Control.IsVisible(550)</visible>
 			</control>
 
 			<control type="image">
@@ -197,15 +172,6 @@
 						<height>1</height>
 						<width>739</width>
 						<texture>list/listpanel_line.png</texture>
-						<visible>!Skin.HasSetting(dark)</visible>
-					</control>
-					<control type="image">
-						<posx>12</posx>
-						<posy>39</posy>
-						<height>1</height>
-						<width>739</width>
-						<texture>list/dark/listpanel_line.png</texture>
-						<visible>Skin.HasSetting(dark)</visible>
 					</control>			
 					<control type="label">
 						<include>ListLabel_TrackSmall_Slim</include>
@@ -266,11 +232,6 @@
 						<include>detailcolornofocus</include>
 						<label>[UPPERCASE]$INFO[ListItem.Episode] [/UPPERCASE]$LOCALIZE[31938]</label>
 						<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
-					</control>		
-					<control type="image">
-						<include>WatchedOverlay_Slim</include>
-						<visible>[!Skin.HasSetting(nomovieoverlays) | !Skin.HasSetting(notvoverlays)] + !IsEmpty(ListItem.Overlay)</visible>
-						<info>ListItem.Overlay</info>
 					</control>					
 				</itemlayout>
 				<focusedlayout height="40">
@@ -280,15 +241,6 @@
 						<height>1</height>
 						<width>739</width>
 						<texture>list/listpanel_line.png</texture>
-						<visible>!Skin.HasSetting(dark)</visible>
-					</control>
-					<control type="image">
-						<posx>12</posx>
-						<posy>39</posy>
-						<height>1</height>
-						<width>739</width>
-						<texture>list/dark/listpanel_line.png</texture>
-						<visible>Skin.HasSetting(dark)</visible>
 					</control>	
 					<control type="image">
 						<posx>8</posx>
@@ -439,11 +391,6 @@
 						<include>Animation_ButtonFocusFade</include>
 						<label>[UPPERCASE]$INFO[ListItem.Episode] [/UPPERCASE]$LOCALIZE[31938]</label>
 						<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
-					</control>		
-					<control type="image">
-						<include>WatchedOverlay_Slim</include>
-						<visible>[!Skin.HasSetting(nomovieoverlays) | !Skin.HasSetting(notvoverlays)] + !IsEmpty(ListItem.Overlay)</visible>
-						<info>ListItem.Overlay</info>
 					</control>
 					
 				</focusedlayout>

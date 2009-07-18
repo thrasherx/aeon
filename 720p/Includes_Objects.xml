@@ -389,8 +389,8 @@
 			<include>Objects_MediaMenuButton</include>				
 			<label>$LOCALIZE[31042]</label>
 			<altlabel>$LOCALIZE[31043]</altlabel>
-			<usealttexture>Skin.HasSetting(dark)</usealttexture>
-			<onclick>Skin.ToggleSetting(dark)</onclick>
+			<usealttexture>Skin.HasSetting(darkshowcase)</usealttexture>
+			<onclick>Skin.ToggleSetting(darkshowcase)</onclick>
 			<onclick>XBMC.ReloadSkin</onclick>
 			<visible>!Control.IsVisible(53)</visible>
 		</control>
@@ -719,103 +719,6 @@
 	</include>
 
 	<!-- Context menus -->
-	
-	<include name="vis">
-		<texturebg border="5">dialogs/vis_select.png</texturebg>
-	</include>
-	
-	<include name="vis_dark">
-		<texturebg border="5">dialogs/dark/vis_select.png</texturebg>
-	</include>
-	
-	<include name="rightmenu">
-		<texturefocus>dialogs/setcontent_rightmenu_highlight.png</texturefocus>
-	</include>
-	
-	<include name="rightmenu_dark">
-		<texturefocus>dialogs/dark/setcontent_rightmenu_highlight.png</texturefocus>
-	</include>
-	
-	<include name="button_focus">
-		<texturefocus>dialogs/setcontent_button_focus.png</texturefocus>
-		<texturenofocus>dialogs/setcontent_button_nofocus.png</texturenofocus>
-	</include>
-	
-	<include name="button_focus_dark">
-		<texturefocus>dialogs/dark/setcontent_button_focus.png</texturefocus>
-		<texturenofocus>dialogs/dark/setcontent_button_nofocus.png</texturenofocus>
-	</include>
-	
-	<include name="context_text">
-		<textcolor>FF383838</textcolor>
-		<focusedcolor>FFdfdfdf</focusedcolor>
-	</include>
-	
-	<include name="context_text_dark">
-		<textcolor>FF8f8f8f</textcolor>
-		<focusedcolor>FFdfdfdf</focusedcolor>
-	</include>
-	
-	<include name="context">
-		<textcolor>FF383838</textcolor>
-		<focusedcolor>FFdfdfdf</focusedcolor>
-		<texturenofocus>dialogs/context_nofocus.png</texturenofocus>
-		<texturefocus>dialogs/context_highlight.png</texturefocus> 
-		<alttexturenofocus>dialogs/context_nofocus.png</alttexturenofocus>
-	</include>
-	
-	<include name="context_dark">
-		<textcolor>FF8f8f8f</textcolor>
-		<focusedcolor>FFdfdfdf</focusedcolor>
-		<texturenofocus>dialogs/dark/context_nofocus.png</texturenofocus>
-		<texturefocus>dialogs/dark/context_highlight.png</texturefocus> 
-		<alttexturenofocus>dialogs/dark/context_nofocus.png</alttexturenofocus>
-	</include>
-
-	<include name="context_top">
-		<texture>dialogs/context_top.png</texture>
-	</include>
-	<include name="context_top_dark">
-		<texture>dialogs/dark/context_top.png</texture>
-	</include>
-	<include name="context_middle">
-		<texture>dialogs/context_middle.png</texture>
-	</include>
-	<include name="context_middle_dark">
-		<texture>dialogs/dark/context_middle.png</texture>
-	</include>
-	<include name="context_bottom">
-		<texture>dialogs/context_bottom.png</texture>
-	</include>
-	<include name="context_bottom_dark">
-		<texture>dialogs/dark/context_bottom.png</texture>
-	</include>
-	
-	<include name="context_radio">
-		<textcolor>FF8f8f8f</textcolor>
-		<focusedcolor>FFFFFFFF</focusedcolor>
-		<texturenofocus>dialogs/context_nofocus.png</texturenofocus>
-		<texturefocus>dialogs/context_highlight.png</texturefocus>
-		<textureradiofocus>settings/settings_radiobuttononfocus.png</textureradiofocus>
-		<textureradionofocus>settings/settings_radiobuttonon.png</textureradionofocus>
-	</include>
-	
-	<include name="context_radio_dark">
-		<textcolor>FFFFFFFF</textcolor>
-		<focusedcolor>FF8f8f8f</focusedcolor>
-		<texturenofocus>dialogs/dark/context_nofocus.png</texturenofocus>
-		<texturefocus>dialogs/dark/context_highlight.png</texturefocus>
-		<textureradiofocus>settings/dark/settings_radiobuttononfocus.png</textureradiofocus>
-		<textureradionofocus>settings/dark/settings_radiobuttonon.png</textureradionofocus>
-	</include>
-	
-	<include name="scan_fill">
-		<midtexture>dialogs/scan_fill.png</midtexture>
-	</include>
-	
-	<include name="scan_fill_dark">
-		<midtexture>dialogs/dark/scan_fill.png</midtexture>
-	</include>
 
 	<include name="Objects_ContextMenuButton">
 		<description>button template</description>
@@ -823,8 +726,12 @@
 		<posy>0</posy>
 		<height>39</height>
 		<width>308</width>
-		<include condition="!Skin.HasSetting(dark)">context</include>
-		<include condition="Skin.HasSetting(dark)">context_dark</include>
+		<textcolor>FF383838</textcolor>
+		<focusedcolor>FFdfdfdf</focusedcolor>
+		<texturenofocus>dialogs/context_nofocus.png</texturenofocus>
+		<texturefocus>dialogs/context_highlight.png</texturefocus> 
+		<alttexturefocus>dialogs/context_highlight.png</alttexturefocus> 
+		<alttexturenofocus>dialogs/context_nofocus.png</alttexturenofocus>
 		<pulseonselect>true</pulseonselect>
 		<align>center</align>
 		<aligny>top</aligny>
@@ -833,14 +740,18 @@
 	</include>
 
 	<include name="Objects_ContextMenuRadioButton">
+		<textcolor>FF8f8f8f</textcolor>
+		<focusedcolor>FFFFFFFF</focusedcolor>
 		<radiowidth>94</radiowidth>
 		<radioposx>190</radioposx>
 		<radioheight>65</radioheight>
 		<aligny>center</aligny>
+		<texturenofocus>dialogs/context_nofocus.png</texturenofocus>
+		<texturefocus>dialogs/context_highlight.png</texturefocus>
+		<textureradiofocus>settings/settings_radiobuttononfocus.png</textureradiofocus>
+		<textureradionofocus>settings/settings_radiobuttonon.png</textureradionofocus>
 		<width>269</width>
 		<height>39</height>
-		<include condition="!Skin.HasSetting(dark)">context_radio</include>
-		<include condition="Skin.HasSetting(dark)">context_radio_dark</include>		
 		<align>left</align>
 		<font>Font_ContextMenuButton</font>
 		<textoffsetx>10</textoffsetx>

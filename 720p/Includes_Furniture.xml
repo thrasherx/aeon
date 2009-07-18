@@ -660,11 +660,11 @@
 	</include>
 
 	<include name="ShowcaseFloorNight">
-		<texture>showcase/dark/showcase_floor.png</texture>	
+		<texture>showcase/showcase_floor.png</texture>	
 	</include>
 	
 	<include name="ShowcaseFloorLight">
-		<texture>showcase/showcase_floor.png</texture>		
+		<texture>showcase/lite/showcase_floor.png</texture>		
 	</include>
 	
 	<include name="Furniture_MediaPanel">
@@ -680,8 +680,8 @@
 			<posy>315</posy>
 			<width>1280</width>
 			<height>405</height>
-			<include condition="!Skin.HasSetting(dark)">ShowcaseFloorLight</include>
-			<include condition="Skin.HasSetting(dark)">ShowcaseFloorNight</include>			
+			<include condition="!Skin.HasSetting(darkshowcase)">ShowcaseFloorLight</include>
+			<include condition="Skin.HasSetting(darkshowcase)">ShowcaseFloorNight</include>			
 			<visible>Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(552)</visible>
 			<include>Animation_CommonFade</include>
 			<include>Animation_HideShowcase</include>
@@ -693,8 +693,8 @@
 			<posy>583</posy>
 			<width>993</width>
 			<height>137</height>
-			<include condition="!Skin.HasSetting(dark)">ShowcaseSpotLight</include>
-			<include condition="Skin.HasSetting(dark)">ShowcaseSpotNight</include>
+			<include condition="!Skin.HasSetting(darkshowcase)">ShowcaseSpotLight</include>
+			<include condition="Skin.HasSetting(darkshowcase)">ShowcaseSpotNight</include>
 			<include>Animation_CommonFade</include>
 			<include>Animation_HideShowcase</include>
 			<include>Animation_HideMultiplex</include>
@@ -718,19 +718,7 @@
 			<width>1280</width>
 			<height>405</height>
 			<texture>list/list_floor.png</texture>
-			<visible>[Control.IsVisible(50) | Control.IsVisible(550)] + !Skin.HasSetting(dark)</visible>
-			<include>Animation_CommonFade</include>
-			<include>Animation_HideShowcase</include>
-			<include>Animation_HideMultiplex</include>				
-		</control>
-		
-		<control type="image">
-			<posx>0</posx>
-			<posy>315</posy>
-			<width>1280</width>
-			<height>405</height>
-			<texture>list/dark/list_floor.png</texture>
-			<visible>[Control.IsVisible(50) | Control.IsVisible(550)] + Skin.HasSetting(dark)</visible>
+			<visible>Control.IsVisible(50) | Control.IsVisible(550)</visible>
 			<include>Animation_CommonFade</include>
 			<include>Animation_HideShowcase</include>
 			<include>Animation_HideMultiplex</include>				
@@ -741,7 +729,7 @@
 			<posy>503</posy>
 			<width>993</width>
 			<height>325</height>
-			<texture>showcase/dark/showcase_spot.png</texture>
+			<texture>showcase/showcase_spot.png</texture>
 			<include>Animation_CommonFade</include>
 			<include>Animation_HideShowcase</include>
 			<include>Animation_HighListSlide</include>
@@ -1038,7 +1026,7 @@
 			<width>1280</width>
 			<height>48</height>
 			<texture>showcase/showcase_gradient.png</texture>
-			<visible>Skin.HasSetting(dark) + [Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(552)]</visible>
+			<visible>Skin.HasSetting(darkshowcase) + [Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(552)]</visible>
 			<include>Animation_CommonFade</include>
 		</control>		
 	</include>

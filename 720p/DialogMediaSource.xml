@@ -23,17 +23,6 @@
 			<width>847</width>
 			<height>328</height>
 			<texture>dialogs/addsource_back.png</texture>
-			<visible>!Skin.HasSetting(dark)</visible>
-		</control>
-	
-		<control type="image">
-			<description>background image</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>847</width>
-			<height>328</height>
-			<texture>dialogs/dark/addsource_back.png</texture>
-			<visible>Skin.HasSetting(dark)</visible>
 		</control>
 	
 		<control type="list" id="10">
@@ -84,17 +73,7 @@
 			<height>174</height>
 			<texture>dialogs/addsource_highlighttop.png</texture>
 			<include>Animation_CommonFade</include>
-			<visible>Control.HasFocus(10) + !Skin.HasSetting(dark)</visible>
-		</control>
-		
-		<control type="image">
-			<posx>18</posx>
-			<posy>46</posy>
-			<width>653</width>
-			<height>174</height>
-			<texture>dialogs/dark/addsource_highlighttop.png</texture>
-			<include>Animation_CommonFade</include>
-			<visible>Control.HasFocus(10) + Skin.HasSetting(dark)</visible>
+			<visible>Control.HasFocus(10)</visible>
 		</control>
 
 		<control type="label" id="0">
@@ -151,17 +130,7 @@
 			<height>51</height>
 			<texture>dialogs/addsource_highlight.png</texture>
 			<include>Animation_CommonFade</include>
-			<visible>Control.HasFocus(12) + !Skin.HasSetting(dark)</visible>
-		</control>
-
-		<control type="image">
-			<posx>18</posx>
-			<posy>255</posy>
-			<width>653</width>
-			<height>51</height>
-			<texture>dialogs/dark/addsource_highlight.png</texture>
-			<include>Animation_CommonFade</include>
-			<visible>Control.HasFocus(12) + Skin.HasSetting(dark)</visible>
+			<visible>Control.HasFocus(12)</visible>
 		</control>
 		
 		<control type="group" id="9000">
@@ -184,8 +153,7 @@
 				<onup>18</onup>
 				<ondown>13</ondown>
 				<texturenofocus>-</texturenofocus>
-				<include condition="!Skin.HasSetting(dark)">rightmenu</include>
-				<include condition="Skin.HasSetting(dark)">rightmenu_dark</include>
+				<texturefocus>dialogs/setcontent_rightmenu_highlight.png</texturefocus>
 			</control>
 			
 			<control type="button" id="13">
@@ -205,8 +173,7 @@
 				<onup>11</onup>
 				<ondown>14</ondown>
 				<texturenofocus>-</texturenofocus>
-				<include condition="!Skin.HasSetting(dark)">rightmenu</include>
-				<include condition="Skin.HasSetting(dark)">rightmenu_dark</include>
+				<texturefocus>dialogs/setcontent_rightmenu_highlight.png</texturefocus>
 			</control>
 			
 			<control type="button" id="14">
@@ -226,8 +193,7 @@
 				<onup>13</onup>
 				<ondown>19</ondown>
 				<texturenofocus>-</texturenofocus>
-				<include condition="!Skin.HasSetting(dark)">rightmenu</include>
-				<include condition="Skin.HasSetting(dark)">rightmenu_dark</include>
+				<texturefocus>dialogs/setcontent_rightmenu_highlight.png</texturefocus>
 			</control>
 
 			<control type="button" id="19">
@@ -247,8 +213,7 @@
 				<onup>14</onup>
 				<ondown>18</ondown>
 				<texturenofocus>-</texturenofocus>
-				<include condition="!Skin.HasSetting(dark)">rightmenu</include>
-				<include condition="Skin.HasSetting(dark)">rightmenu_dark</include>
+				<texturefocus>dialogs/setcontent_rightmenu_highlight.png</texturefocus>
 			</control>
 			
 			<control type="button" id="18">
@@ -267,9 +232,8 @@
 				<onright>12</onright>
 				<onup>19</onup>
 				<ondown>11</ondown>
-				<texturenofocus>-</texturenofocus>			
-				<include condition="!Skin.HasSetting(dark)">rightmenu</include>
-				<include condition="Skin.HasSetting(dark)">rightmenu_dark</include>
+				<texturenofocus>-</texturenofocus>
+				<texturefocus>dialogs/setcontent_rightmenu_highlight.png</texturefocus>
 			</control>
 		</control>
 

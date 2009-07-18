@@ -19,11 +19,11 @@
 	</include>	
 	
 	<include name="StripShowIconBackLight">
-		<texture>stripshow/stripshow_iconback.png</texture>	
+		<texture>stripshow/lite/stripshow_iconback.png</texture>	
 	</include>
 	
 	<include name="StripShowIconBackNight">
-		<texture>stripshow/dark/stripshow_iconback.png</texture>	
+		<texture>stripshow/stripshow_iconback.png</texture>	
 	</include>
 
 	<include name="Viewtype_StripShow">

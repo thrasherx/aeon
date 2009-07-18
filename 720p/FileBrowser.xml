@@ -26,22 +26,6 @@
 				<width>406</width>
 				<height>556</height>
 				<texture>list/filebrowser_sidecar.png</texture>
-				<visible>!Skin.HasSetting(dark)</visible>
-			</control>
-			<control type="image">
-				<posx>809</posx>
-				<posy>103</posy>
-				<width>406</width>
-				<height>556</height>
-				<texture>list/dark/filebrowser_sidecar.png</texture>
-				<visible>Skin.HasSetting(dark)</visible>
-			</control>
-			<control type="image">
-				<posx>809</posx>
-				<posy>103</posy>
-				<width>406</width>
-				<height>556</height>
-				<texture>list/filebrowser_sidecar.png</texture>
 			</control>
 			<control type="image">
 				<width>286</width>
@@ -129,16 +113,6 @@
 			<width>759</width>
 			<height>647</height>
 			<texture>list/listpanel_back_noreflect.png</texture>
-			<visible>!Skin.HasSetting(dark)</visible>
-		</control>
-		
-		<control type="image">
-			<posx>60</posx>
-			<posy>73</posy>
-			<width>759</width>
-			<height>647</height>
-			<texture>list/dark/listpanel_back_noreflect.png</texture>
-			<visible>Skin.HasSetting(dark)</visible>
 		</control>	
 	
 		<control type="image">
@@ -155,16 +129,7 @@
 			<width>759</width>
 			<height>88</height>
 			<texture>list/list_filebrowser_buttons.png</texture>
-			<visible>Window.IsActive(604) + !Skin.HasSetting(dark)</visible>
-		</control>
-		
-		<control type="image">
-			<posx>60</posx>
-			<posy>600</posy>
-			<width>759</width>
-			<height>88</height>
-			<texture>list/dark/list_filebrowser_buttons.png</texture>
-			<visible>Window.IsActive(604) + Skin.HasSetting(dark)</visible>
+			<visible>Window.IsActive(604)</visible>
 		</control>
 		
 		<control type="image">
@@ -173,16 +138,7 @@
 			<width>759</width>
 			<height>88</height>
 			<texture>list/list_filebrowser_3buttons.png</texture>
-			<visible>!Window.IsActive(604) + !Skin.HasSetting(dark)</visible>
-		</control>
-		
-		<control type="image">
-			<posx>60</posx>
-			<posy>600</posy>
-			<width>759</width>
-			<height>88</height>
-			<texture>list/dark/list_filebrowser_3buttons.png</texture>
-			<visible>!Window.IsActive(604) + Skin.HasSetting(dark)</visible>
+			<visible>!Window.IsActive(604)</visible>
 		</control>		
 
 		<control type="label" id="411">
@@ -207,22 +163,13 @@
 			<ondown>451</ondown>
 			<animation effect="fade" start="100" end="50" time="200" condition="!Control.HasFocus(451)">Conditional</animation>
 			<itemlayout height="40">
-					<control type="image">
-						<posx>12</posx>
-						<posy>41</posy>
-						<height>1</height>
-						<width>739</width>
-						<texture>list/listpanel_line.png</texture>
-						<visible>!Skin.HasSetting(dark)</visible>
-					</control>
-					<control type="image">
-						<posx>12</posx>
-						<posy>41</posy>
-						<height>1</height>
-						<width>739</width>
-						<texture>list/dark/listpanel_line.png</texture>
-						<visible>Skin.HasSetting(dark)</visible>
-					</control>
+				<control type="image">
+					<posx>12</posx>
+					<posy>41</posy>
+					<height>1</height>
+					<width>739</width>
+					<texture>list/listpanel_line.png</texture>
+				</control>
 				<control type="label">
 					<include>ListLabel_MainSmall</include>
 					<include>listcolornofocus</include>
@@ -235,22 +182,13 @@
 				</control>
 			</itemlayout>					
 			<focusedlayout height="40">
-					<control type="image">
-						<posx>12</posx>
-						<posy>41</posy>
-						<height>1</height>
-						<width>739</width>
-						<texture>list/listpanel_line.png</texture>
-						<visible>!Skin.HasSetting(dark)</visible>
-					</control>
-					<control type="image">
-						<posx>12</posx>
-						<posy>41</posy>
-						<height>1</height>
-						<width>739</width>
-						<texture>list/dark/listpanel_line.png</texture>
-						<visible>Skin.HasSetting(dark)</visible>
-					</control>
+				<control type="image">
+					<posx>12</posx>
+					<posy>41</posy>
+					<height>1</height>
+					<width>739</width>
+					<texture>list/listpanel_line.png</texture>
+				</control>
 				<control type="image">
 					<posx>8</posx>
 					<posy>-5</posy>

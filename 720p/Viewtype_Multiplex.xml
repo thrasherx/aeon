@@ -78,15 +78,7 @@
 				<width>1130</width>
 				<height>564</height>
 				<texture>multiplex/multiplex_tablet.png</texture>
-				<visible>![Skin.HasSetting(multiplexfanart) | Skin.HasSetting(multiplexbigthumb)] + !Skin.HasSetting(dark)</visible>				
-			</control>			
-
-			<control type="image">
-				<posx>75</posx>
-				<width>1130</width>
-				<height>564</height>
-				<texture>multiplex/dark/multiplex_tablet.png</texture>
-				<visible>![Skin.HasSetting(multiplexfanart) | Skin.HasSetting(multiplexbigthumb)] + Skin.HasSetting(dark)</visible>				
+				<visible>![Skin.HasSetting(multiplexfanart) | Skin.HasSetting(multiplexbigthumb)]</visible>				
 			</control>
 
 			<control type="image">
@@ -94,15 +86,7 @@
 				<width>1130</width>
 				<height>564</height>
 				<texture>multiplex/multiplex_tablet_bigthumb.png</texture>
-				<visible>[Skin.HasSetting(multiplexfanart) | Skin.HasSetting(multiplexbigthumb)] + !Skin.HasSetting(dark)</visible>				
-			</control>
-
-			<control type="image">
-				<posx>75</posx>
-				<width>1130</width>
-				<height>564</height>
-				<texture>multiplex/dark/multiplex_tablet_bigthumb.png</texture>
-				<visible>[Skin.HasSetting(multiplexfanart) | Skin.HasSetting(multiplexbigthumb)] + Skin.HasSetting(dark)</visible>				
+				<visible>Skin.HasSetting(multiplexfanart) | Skin.HasSetting(multiplexbigthumb)</visible>				
 			</control>				
 
 			<control type="group">
@@ -470,15 +454,6 @@
 				<width>1130</width>
 				<height>564</height>
 				<texture>multiplex/multiplex_tvtablet.png</texture>
-				<visible>!Skin.HasSettings(dark)</visible>
-			</control>							
-
-			<control type="image">
-				<posx>75</posx>
-				<width>1130</width>
-				<height>564</height>
-				<texture>multiplex/dark/multiplex_tvtablet.png</texture>
-				<visible>Skin.HasSettings(dark)</visible>
 			</control>	
 
 			<control type="group">
@@ -729,15 +704,7 @@
 				<width>1130</width>
 				<height>570</height>
 				<texture>multiplex/multiplex_tvposter_tablet.png</texture>
-				<visible>!Container.Content(episodes) + !Skin.HasSetting(dark)</visible>
-			</control>			
-
-			<control type="image">
-				<posx>75</posx>
-				<width>1130</width>
-				<height>570</height>
-				<texture>multiplex/dark/multiplex_tvposter_tablet.png</texture>
-				<visible>!Container.Content(episodes) + Skin.HasSetting(dark)</visible>
+				<visible>!Container.Content(episodes)</visible>
 			</control>			
 
 			<control type="image">
@@ -745,15 +712,7 @@
 				<width>1130</width>
 				<height>570</height>
 				<texture>multiplex/multiplex_tvtablet.png</texture>
-				<visible>Container.Content(episodes) + !Skin.HasSetting(dark)</visible>
-			</control>			
-
-			<control type="image">
-				<posx>75</posx>
-				<width>1130</width>
-				<height>570</height>
-				<texture>multiplex/dark/multiplex_tvtablet.png</texture>
-				<visible>Container.Content(episodes) + Skin.HasSetting(dark)</visible>
+				<visible>Container.Content(episodes)</visible>
 			</control>	
 
 			<control type="group">
@@ -1221,7 +1180,7 @@
 			<orientation>horizontal</orientation>
 			<include>MultiplexFocusTV</include>
 			<scrolltime>200</scrolltime>
-			<visible>[Window.IsActive(25) + !Container.Content(movies) + !Skin.HasSetting(tvposter)] | [Window.IsActive(25) + Skin.HasSetting(tvposter) + Container.Content(episodes)]</visible>
+			<visible>[Window.IsActive(25) + !Skin.HasSetting(tvposter)] | [Window.IsActive(25) + Skin.HasSetting(tvposter) + Container.Content(episodes)]</visible>
 			<include>Animation_HideMultiplex</include>
 			<preloaditems>2</preloaditems>
 			<itemlayout width="219" height="300" condition="Skin.HasSetting(videotv)">

@@ -20,16 +20,14 @@
 			<posy>-26</posy>
 			<width>308</width>
 			<height>26</height>
-			<include condition="!Skin.HasSetting(dark)">context_top</include>
-			<include condition="Skin.HasSetting(dark)">context_top_dark</include>
+			<texture>dialogs/context_top.png</texture>
 		</control>
 		<control type="image" id="999">
 			<description>background image</description>
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>308</width>
-			<include condition="!Skin.HasSetting(dark)">context_middle</include>
-			<include condition="Skin.HasSetting(dark)">context_middle_dark</include>
+			<texture>dialogs/context_middle.png</texture>
 		</control>
 		<control type="image" id="998">
 			<description>background bottom image</description>
@@ -37,8 +35,7 @@
 			<posy>390</posy>
 			<width>308</width>
 			<height>27</height>
-			<include condition="!Skin.HasSetting(dark)">context_bottom</include>
-			<include condition="Skin.HasSetting(dark)">context_bottom_dark</include>
+			<texture>dialogs/context_bottom.png</texture>
 		</control>
 		<control type="button" id="1000">
 			<description>button template</description>
@@ -46,8 +43,10 @@
 			<posy>0</posy>
 			<height>39</height>
 			<width>308</width>
-			<include condition="!Skin.HasSetting(dark)">context</include>
-			<include condition="Skin.HasSetting(dark)">context_dark</include>
+			<textcolor>FF383838</textcolor>
+			<focusedcolor>FFdfdfdf</focusedcolor>
+			<texturenofocus>dialogs/context_nofocus.png</texturenofocus>
+			<texturefocus>dialogs/context_highlight.png</texturefocus>
 			<pulseonselect>true</pulseonselect>
 			<align>center</align>
 			<aligny>top</aligny>
