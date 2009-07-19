@@ -200,7 +200,7 @@
 		</control>
 	</include>
 	<include name="Furniture_ListMediaFlags">
-		<visible>[Control.IsVisible(50) | Control.IsVisible(550) | Control.IsVisible(551)] + [Container.Content(movies) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons)] + !Skin.HasSetting(nomediaflags)</visible>
+		<visible>[Control.IsVisible(50) | Control.IsVisible(550)] + [Container.Content(movies) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons)] + !Skin.HasSetting(nomediaflags)</visible>
 		<include>Animation_CommonFade</include>
 		<control type="group">
 			<posx>1105</posx>
