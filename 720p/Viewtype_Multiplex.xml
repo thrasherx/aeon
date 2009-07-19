@@ -749,12 +749,12 @@
 					<posy>122</posy>
 					<control type="label">
 						<include>MultiplexInfoLabel</include>
-						<label>$LOCALIZE[31436]:</label>
+						<label>$LOCALIZE[20416]:</label>
 					</control>
 
 					<control type="label">
 						<include>MultiplexInfoValue</include>				
-						<label fallback="31425">$INFO[Container(552).ListItem.Year]</label>
+						<label fallback="31425">$INFO[Container(552).listitem.premiered]</label>
 					</control>			
 				</control>
 
