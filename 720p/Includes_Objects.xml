@@ -389,8 +389,8 @@
 			<include>Objects_MediaMenuButton</include>				
 			<label>$LOCALIZE[31042]</label>
 			<altlabel>$LOCALIZE[31043]</altlabel>
-			<usealttexture>Skin.HasSetting(darkshowcase)</usealttexture>
-			<onclick>Skin.ToggleSetting(darkshowcase)</onclick>
+			<usealttexture>Skin.HasSetting(darkfloor)</usealttexture>
+			<onclick>Skin.ToggleSetting(darkfloor)</onclick>
 			<onclick>XBMC.ReloadSkin</onclick>
 			<visible>!Control.IsVisible(53)</visible>
 		</control>
@@ -726,8 +726,7 @@
 		<posy>0</posy>
 		<height>39</height>
 		<width>308</width>
-		<include condition="!Skin.HasSetting(darkshowcase)">lighttext</include>
-		<include condition="Skin.HasSetting(darkshowcase)">darktext</include>
+		<textcolor>menutext</textcolor>
 		<focusedcolor>FFdfdfdf</focusedcolor>
 		<texturenofocus>dialogs/context_nofocus.png</texturenofocus>
 		<texturefocus>dialogs/context_highlight.png</texturefocus> 

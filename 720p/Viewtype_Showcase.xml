@@ -68,7 +68,7 @@
         <colordiffuse>d0FFFFFF</colordiffuse>
         <texture background="true" flipy="true" diffuse="thumbs/movieposter_mask_reflect.png">defaultvideobigposter.png</texture>
         <aspectratio scalediffuse="false">stretch</aspectratio>
-		<animation effect="fade" start="70" end="70" time="0" condition="Skin.HasSetting(darkshowcase)">Conditional</animation>			
+		<animation effect="fade" start="70" end="70" time="0" condition="Skin.HasSetting(darkfloor)">Conditional</animation>			
     </include>
 	
 <!-- Movie Showcase Variables: Thumb glass overlays -->
@@ -130,7 +130,7 @@
 			<include>MusicShowcaseThumbReflectionDimensions</include>
 			<colordiffuse>d0FFFFFF</colordiffuse>
 			<texture flipy="true" diffuse="thumbs/cdcover_mask_reflect.png">common/black.png</texture>
-			<animation effect="fade" start="50" end="50" time="0" condition="Skin.HasSetting(darkshowcase)">Conditional</animation>		
+			<animation effect="fade" start="50" end="50" time="0" condition="Skin.HasSetting(darkfloor)">Conditional</animation>		
 		</control>
     </include>	
 	
@@ -147,7 +147,7 @@
         <texture background="true" flipy="true" diffuse="thumbs/cdcover_mask_reflect.png">defaultaudio.png</texture>
 		<include condition="Window.IsActive(2)">MusicShowcaseThumbKeep</include>
 		<include condition="!Window.IsActive(2)">MusicShowcaseThumbStretch</include>	
-		<animation effect="fade" start="50" end="50" time="0" condition="Skin.HasSetting(darkshowcase)">Conditional</animation>		
+		<animation effect="fade" start="50" end="50" time="0" condition="Skin.HasSetting(darkfloor)">Conditional</animation>		
     </include>
 	
     <include name="MusicShowcaseThumbReflectionMain">
@@ -156,7 +156,7 @@
         <texture background="true" flipy="true" diffuse="thumbs/cdcover_mask_reflect.png">defaultaudio.png</texture>
 		<include condition="Window.IsActive(2)">MusicShowcaseThumbKeep</include>
 		<include condition="!Window.IsActive(2)">MusicShowcaseThumbStretch</include>	
-		<animation effect="fade" start="50" end="50" time="0" condition="Skin.HasSetting(darkshowcase)">Conditional</animation>	
+		<animation effect="fade" start="50" end="50" time="0" condition="Skin.HasSetting(darkfloor)">Conditional</animation>	
     </include>
 	
 <!-- Music Showcase Variables: Thumb glass overlays -->
@@ -215,8 +215,8 @@
         <posy>693</posy>
         <width>600</width>
         <font>Font_ShowcaseMainLabel</font>
-        <include condition="!Skin.HasSetting(darkshowcase)">Colour_ShowcaseLabelLightShade</include>
-        <include condition="Skin.HasSetting(darkshowcase)">Colour_ShowcaseLabelNightShade</include>
+        <include condition="!Skin.HasSetting(darkfloor)">Colour_ShowcaseLabelLightShade</include>
+        <include condition="Skin.HasSetting(darkfloor)">Colour_ShowcaseLabelNightShade</include>
 		<visible>!ControlGroup(7000).HasFocus()</visible>		
         <animation effect="slide" end="0,-11" time="200" condition="[!Control.IsVisible(72) | IsEmpty(Control.GetLabel(72))] | Window.IsActive(24)">Conditional</animation>
     </include>
@@ -227,8 +227,8 @@
         <posy>693</posy>
         <width>880</width>
         <font>Font_ShowcaseMainLabel</font>
-        <include condition="!Skin.HasSetting(darkshowcase)">Colour_ShowcaseLabelLightShade</include>
-        <include condition="Skin.HasSetting(darkshowcase)">Colour_ShowcaseLabelNightShade</include>		
+        <include condition="!Skin.HasSetting(darkfloor)">Colour_ShowcaseLabelLightShade</include>
+        <include condition="Skin.HasSetting(darkfloor)">Colour_ShowcaseLabelNightShade</include>		
 		<visible>!ControlGroup(7000).HasFocus()</visible>
         <animation effect="slide" end="0,-11" time="200" condition="!Container.Content(seasons) + [!Control.IsVisible(72) | IsEmpty(Control.GetLabel(72))] | Window.IsActive(24)">Conditional</animation>
     </include>
@@ -239,8 +239,8 @@
         <posy>685</posy>
         <width>600</width>
         <font>Font_ShowcaseMainLabel</font>
-        <include condition="!Skin.HasSetting(darkshowcase)">Colour_ShowcaseLabelLightShade</include>
-        <include condition="Skin.HasSetting(darkshowcase)">Colour_ShowcaseLabelNightShade</include>
+        <include condition="!Skin.HasSetting(darkfloor)">Colour_ShowcaseLabelLightShade</include>
+        <include condition="Skin.HasSetting(darkfloor)">Colour_ShowcaseLabelNightShade</include>
 		<visible>ControlGroup(7000).HasFocus()</visible>		
     </include>	
 	
@@ -251,8 +251,8 @@
         <width>600</width>
         <font>Font_ShowcaseDetailLabel</font>
 		<visible>!ControlGroup(7000).HasFocus()</visible>		
-        <include condition="!Skin.HasSetting(darkshowcase)">Colour_ShowcaseLabelLightShade</include>
-        <include condition="Skin.HasSetting(darkshowcase)">Colour_ShowcaseLabelNightShade</include>
+        <include condition="!Skin.HasSetting(darkfloor)">Colour_ShowcaseLabelLightShade</include>
+        <include condition="Skin.HasSetting(darkfloor)">Colour_ShowcaseLabelNightShade</include>
     </include>
 	
     <control type="image" id="82">

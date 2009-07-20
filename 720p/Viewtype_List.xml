@@ -1,5 +1,13 @@
 <includes>
 
+	<include name="ListSpotNight">
+	    <texture>list/list_spot.png</texture>
+	</include>
+	
+	<include name="ListSpotLight">
+	    <texture>list/lite/list_spot.png</texture>
+	</include>
+
 	<include name="WatchedOverlay_Movies">
 		<posx>688</posx>
 		<posy>13</posy>
@@ -196,7 +204,8 @@
 			<height>137</height>
 			<posx>693</posx>
 			<posy>583</posy>
-			<texture>list/list_spot.png</texture>
+			<include condition="!Skin.HasSetting(darkfloor)">ListSpotLight</include>
+			<include condition="Skin.HasSetting(darkfloor)">ListSpotNight</include>
 			<visible>Control.IsVisible(50)</visible>				
 		</control>
 

@@ -93,7 +93,8 @@
 			<height>137</height>
 			<posx>693</posx>
 			<posy>583</posy>
-			<texture>list/list_spot.png</texture>
+			<include condition="!Skin.HasSetting(darkfloor)">ListSpotLight</include>
+			<include condition="Skin.HasSetting(darkfloor)">ListSpotNight</include>
 			<visible>Control.IsVisible(550)</visible>				
 		</control>
 

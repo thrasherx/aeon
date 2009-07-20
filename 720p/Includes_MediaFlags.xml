@@ -8,8 +8,8 @@
 		<include>Animation_HideShowcase</include>
 		<include>Animation_HideMultiplex</include>
 		<visible>Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(552)</visible>
-		<include condition="!Skin.HasSetting(darkshowcase)">ShowcaseMediaFlagLightShade</include>
-		<include condition="Skin.HasSetting(darkshowcase)">ShowcaseMediaFlagNightShade</include>
+		<include condition="!Skin.HasSetting(darkfloor)">ShowcaseMediaFlagLightShade</include>
+		<include condition="Skin.HasSetting(darkfloor)">ShowcaseMediaFlagNightShade</include>
 	</include>
 	<include name="ShowcaseMediaFlagLightShade">
 		<colordiffuse>74000000</colordiffuse>
@@ -25,8 +25,8 @@
 		<include>Animation_HideShowcase</include>
 		<include>Animation_HideMultiplex</include>
 		<visible>Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(552)</visible>
-		<include condition="!Skin.HasSetting(darkshowcase)">ShowcaseMediaFlagLightShade</include>
-		<include condition="Skin.HasSetting(darkshowcase)">ShowcaseMediaFlagNightShade</include>
+		<include condition="!Skin.HasSetting(darkfloor)">ShowcaseMediaFlagLightShade</include>
+		<include condition="Skin.HasSetting(darkfloor)">ShowcaseMediaFlagNightShade</include>
 	</include>
 	<include name="Furniture_ListMediaFlagsVars">
 		<posy>630</posy>
@@ -35,9 +35,9 @@
 		<include>Animation_CommonFade</include>
 		<include>Animation_HideShowcase</include>
 		<include>Animation_HideMultiplex</include>
-		<visible>Control.IsVisible(50) | Control.IsVisible(550) | Control.IsVisible(551)</visible>
-		<include condition="!Skin.HasSetting(darkshowcase)">ShowcaseMediaFlagLightShade</include>
-		<include condition="Skin.HasSetting(darkshowcase)">ShowcaseMediaFlagNightShade</include>
+		<visible>Control.IsVisible(50) | Control.IsVisible(550)</visible>
+		<include condition="!Skin.HasSetting(darkfloor)">ShowcaseMediaFlagLightShade</include>
+		<include condition="Skin.HasSetting(darkfloor)">ShowcaseMediaFlagNightShade</include>
 	</include>
 	<include name="Furniture_PanelMediaFlagsVars">
 		<posy>454</posy>
@@ -265,7 +265,7 @@
 				<height>151</height>
 				<texture>showcase/flagshade.png</texture>
 				<include>Animation_HideShowcase</include>
-				<visible>!Skin.HasSetting(darkshowcase)</visible>
+				<visible>!Skin.HasSetting(darkfloor)</visible>
 			</control>
 			<control type="image">
 				<posx>982</posx>
@@ -274,7 +274,7 @@
 				<height>151</height>
 				<texture flipx="true">showcase/flagshade.png</texture>
 				<include>Animation_HideShowcase</include>
-				<visible>!Skin.HasSetting(darkshowcase)</visible>
+				<visible>!Skin.HasSetting(darkfloor)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -415,7 +415,7 @@
 				<height>151</height>
 				<texture>showcase/flagshade.png</texture>
 				<include>Animation_HideShowcase</include>
-				<visible>!Skin.HasSetting(darkshowcase)</visible>
+				<visible>!Skin.HasSetting(darkfloor)</visible>
 			</control>
 			<control type="image">
 				<posx>982</posx>
@@ -424,7 +424,7 @@
 				<height>151</height>
 				<texture flipx="true">showcase/flagshade.png</texture>
 				<include>Animation_HideShowcase</include>
-				<visible>!Skin.HasSetting(darkshowcase)</visible>
+				<visible>!Skin.HasSetting(darkfloor)</visible>
 			</control>
 		</control>
 		<control type="group">

@@ -57,14 +57,6 @@
 
 <include name="Colour_ShowcaseLabelNightShade">
 	<textcolor>FFe1e1e1</textcolor>	
-</include>
-
-<include name="lighttext">
-	<textcolor>FF383838</textcolor>
-</include>
-
-<include name="darktext">
-	<textcolor>abFFFFFF</textcolor>
 </include>	
 
 </includes>
