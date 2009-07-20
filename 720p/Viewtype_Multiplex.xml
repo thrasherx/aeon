@@ -1257,7 +1257,7 @@
 					<width>185</width>
 					<height>60</height>
 					<align>center</align>
-					<label>ALL SEASONS</label>
+					<label>[UPPERCASE]$LOCALIZE[310621][/UPPERCASE]</label>
 					<font>Font_MultiplexInfoLabel</font>
 					<visible>Container.Content(seasons) + IsEmpty(ListItem.Season)</visible>
 				</control>					

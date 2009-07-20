@@ -54,6 +54,7 @@
   <string id="31060">LAYOUT: PLATT</string>
   <string id="31061">LAYOUT: FLÖDE</string>
   <string id="31062">SÄSONG</string>
+  <string id="310621">ALLA SÄSONGER</string>
   <string id="31063">AVSNITT</string>
   <string id="31064">FANART</string>
   <string id="31065">FANART</string>
@@ -336,6 +337,7 @@
   <string id="31717">ALBUMNAMN</string>
   <string id="31718">ARTISTNAMN</string>
   <string id="31719">TID FÖRFLUTEN / LÄNGD</string>
+  <string id="31720">STARTTID</string>
   <string id="31750">VÄGG</string>
   <string id="31751">UTSTÄLLNING</string>
   <string id="31752">LISTA</string>
