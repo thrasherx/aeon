@@ -43,7 +43,8 @@
 			<posy>0</posy>
 			<height>39</height>
 			<width>308</width>
-			<textcolor>FF383838</textcolor>
+			<include condition="!Skin.HasSetting(darkshowcase)">lighttext</include>
+			<include condition="Skin.HasSetting(darkshowcase)">darktext</include>
 			<focusedcolor>FFdfdfdf</focusedcolor>
 			<texturenofocus>dialogs/context_nofocus.png</texturenofocus>
 			<texturefocus>dialogs/context_highlight.png</texturefocus>
