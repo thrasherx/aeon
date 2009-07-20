@@ -1237,7 +1237,7 @@
 					<width>185</width>
 					<height>60</height>
 					<align>center</align>
-					<label>[UPPERCASE]$LOCALIZE[31063] $INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
+					<label>[UPPERCASE]$LOCALIZE[31063] $INFO[ListItem.Season].$INFO[ListItem.Episode][/UPPERCASE]</label>
 					<font>Font_MultiplexInfoLabel</font>
 					<visible>Container.Content(episodes)</visible>
 				</control>
@@ -1247,7 +1247,7 @@
 					<width>185</width>
 					<height>60</height>
 					<align>center</align>
-					<label>[UPPERCASE]$LOCALIZE[31062] $INFO[ListItem.Season]</label>
+					<label>[UPPERCASE]$LOCALIZE[31062] $INFO[ListItem.Season][/UPPERCASE]</label>
 					<font>Font_MultiplexInfoLabel</font>
 					<visible>Container.Content(seasons) + !IsEmpty(ListItem.Season)</visible>
 				</control>
@@ -1341,7 +1341,7 @@
 			<width>670</width>
 			<height>41</height>
 			<visible allowhiddenfocus="true">[Control.IsVisible(52) | Control.IsVisible(552)] + Control.HasFocus(60)</visible>
-			<texturesliderbackground>windows/scrollbarback.png</texturesliderbackground>
+			<texturesliderbackground>windows/scrollbarbackshowcase.png</texturesliderbackground>
 			<texturesliderbar>-</texturesliderbar>
 			<texturesliderbarfocus>-</texturesliderbarfocus>
 			<textureslidernib>windows/scrollbarnub-nofocus.png</textureslidernib>
