@@ -32,12 +32,12 @@
 
 <include name="subcolornofocus">
 	<textcolor>ff969696</textcolor>
-	<selectedcolor>ff969696</selectedcolor>
+	<selectedcolor>9b3cd2fd</selectedcolor>
 </include>
 
 <include name="listcolornofocus">
 	<textcolor>dcffffff</textcolor>
-	<selectedcolor>dcffffff</selectedcolor>
+	<selectedcolor>9b3cd2fd</selectedcolor>
 </include>
 
 <include name="subcolorfocus">
