@@ -20,7 +20,7 @@
 				<posy>26</posy>
 				<width>376</width>
 				<height>21</height>
-				<textcolor>FF323232</textcolor>
+				<textcolor>menutext</textcolor>
 				<align>left</align>
 				<font>Font_ProgressLabel</font>
 				<scroll>true</scroll>
@@ -31,7 +31,7 @@
 				<posy>62</posy>
 				<width>98</width>
 				<align>center</align>
-				<textcolor>FF323232</textcolor>
+				<textcolor>menutext</textcolor>
 				<font>Font_ProgressLabel</font>
 				<label>106</label>
 				<include>DialogInfo</include>
@@ -51,7 +51,7 @@
 				<posy>62</posy>
 				<width>98</width>
 				<align>center</align>
-				<textcolor>FF323232</textcolor>
+				<textcolor>menutext</textcolor>
 				<font>Font_ProgressLabel</font>
 				<label>107</label>
 				<include>DialogInfo</include>

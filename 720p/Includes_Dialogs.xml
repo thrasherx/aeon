@@ -64,7 +64,7 @@
 		<posx>105</posx>
 		<width>390</width>
 		<height>21</height>
-		<textcolor>FF323232</textcolor>
+		<textcolor>menutext</textcolor>
 		<align>left</align>
 		<font>Font_ProgressLabel</font>		
 	</include>
