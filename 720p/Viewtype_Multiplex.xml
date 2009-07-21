@@ -329,7 +329,7 @@
 					<width>214</width>
 					<height>330</height>	
 					<fadetime>200</fadetime>
-					<texture diffuse="multiplex/multiplex_mask.png">defaultvideo.png</texture>
+					<texture background="true" diffuse="multiplex/multiplex_mask.png">defaultvideo.png</texture>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<info>ListItem.Icon</info>
 				</control>
@@ -1081,8 +1081,9 @@
 				</control>
 				<control type="image">
 					<include>MultiplexIconDimensionsWrap</include>
-					<texture background="true" diffuse="multiplex/multiplex_mask.png">$INFO[ListItem.Icon]</texture>
+					<texture background="true" diffuse="multiplex/multiplex_mask.png">defaultvideo.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
+					<info>ListItem.Icon</info>
 				</control>
 				<control type="image">
 					<include>MultiplexIconDimensionsWrap</include>
@@ -1097,13 +1098,9 @@
 				</control>				
 				<control type="image">
 					<include>MultiplexIconDimensionsWrapReflect</include>
-					<texture flipy="true" diffuse="multiplex/multiplex_maskreflect.png">defaultvideo.png</texture>
+					<texture background="true" flipy="true" diffuse="multiplex/multiplex_maskreflect.png">defaultvideo.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-				</control>				
-				<control type="image">
-					<include>MultiplexIconDimensionsWrapReflect</include>
-					<texture background="true" flipy="true" diffuse="multiplex/multiplex_maskreflect.png">$INFO[ListItem.Icon]</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
+					<info>ListItem.Icon</info>
 				</control>					
 				<control type="image">
 					<posx>68</posx>
@@ -1125,8 +1122,9 @@
 				</control>      
 				<control type="image">
 					<include>MultiplexIconDimensionsWrap</include>
-					<texture background="true" diffuse="multiplex/multiplex_mask.png">$INFO[ListItem.Icon]</texture>
+					<texture background="true" diffuse="multiplex/multiplex_mask.png">defaultvideo.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
+					<info>ListItem.Icon</info>
 					<include>Animation_MultiplexFocusZoom</include>
 				</control>
 				<control type="image">
@@ -1139,20 +1137,14 @@
 					<include>MultiplexIconDimensionsWrap</include>
 					<texture>multiplex/multiplex_glass.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<include>Animation_MultiplexFocusZoom</include>
-					<colordiffuse>66FFFFFF</colordiffuse>					
+					<include>Animation_MultiplexFocusZoom</include>					
 				</control>        
 				<control type="image">
 					<include>MultiplexIconDimensionsWrapReflect</include>
-					<texture flipy="true" diffuse="multiplex/multiplex_maskreflect.png">defaultvideo.png</texture>
+					<texture background="true" flipy="true" diffuse="multiplex/multiplex_maskreflect.png">defaultvideo.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<include>Animation_MultiplexFocusZoom</include>          
-				</control>        
-				<control type="image">
-					<include>MultiplexIconDimensionsWrapReflect</include>
-					<texture background="true" flipy="true" diffuse="multiplex/multiplex_maskreflect.png">$INFO[ListItem.Icon]</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-					<include>Animation_MultiplexFocusZoom</include>          
+					<info>ListItem.Icon</info>
+					<include>Animation_MultiplexFocusZoom</include>					
 				</control>					
 				<control type="image">
 					<posx>74</posx>
@@ -1192,12 +1184,8 @@
 					<include>MultiplexIconDimensionsTVWrap</include>
 					<texture diffuse="multiplex/multiplex_tvmask.png">defaultvideo.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
+					<info>ListItem.Icon</info>
 				</control>				
-				<control type="image">
-					<include>MultiplexIconDimensionsTVWrap</include>
-					<texture background="true" diffuse="multiplex/multiplex_tvmask.png">$INFO[ListItem.Icon]</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-				</control>
 				<control type="image">
 					<include>MultiplexIconDimensionsTVWrap</include>
 					<bordertexture border="-10">multiplex/multiplex_tvborder.png</bordertexture>
@@ -1217,12 +1205,8 @@
 					<include>MultiplexIconDimensionsTVWrapReflect</include>
 					<texture flipy="true" diffuse="multiplex/multiplex_tvmaskreflect.png">defaultvideo.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
+					<info>ListItem.Icon</info>
 				</control>
-				<control type="image">
-					<include>MultiplexIconDimensionsTVWrapReflect</include>
-					<texture background="true" flipy="true" diffuse="multiplex/multiplex_tvmaskreflect.png">$INFO[ListItem.Icon]</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-				</control>				
 				<control type="image">
 					<posx>14</posx>
 					<posy>92</posy>
@@ -1282,13 +1266,8 @@
 					<include>MultiplexIconDimensionsTVWrap</include>
 					<texture diffuse="multiplex/multiplex_tvmask.png">defaultvideo.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<include>Animation_MultiplexTVFocusZoom</include>					
-				</control>
-				<control type="image">
-					<include>MultiplexIconDimensionsTVWrap</include>
-					<texture background="true" diffuse="multiplex/multiplex_tvmask.png">$INFO[ListItem.Icon]</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-					<include>Animation_MultiplexTVFocusZoom</include>					
+					<info>ListItem.Icon</info>
+					<include>Animation_MultiplexTVFocusZoom</include>
 				</control>							
 				<control type="image">
 					<include>MultiplexIconDimensionsTVWrap</include>
@@ -1312,14 +1291,9 @@
 					<include>MultiplexIconDimensionsTVWrapReflect</include>
 					<texture flipy="true" diffuse="multiplex/multiplex_tvmaskreflect.png">defaultvideo.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
+					<info>ListItem.Icon</info>
 					<include>Animation_MultiplexTVFocusZoom</include>					
 				</control>
-				<control type="image">
-					<include>MultiplexIconDimensionsTVWrapReflect</include>
-					<texture background="true" flipy="true" diffuse="multiplex/multiplex_tvmaskreflect.png">$INFO[ListItem.Icon]</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-					<include>Animation_MultiplexTVFocusZoom</include>					
-				</control>					
 				<control type="image">
 					<posx>170</posx>
 					<posy>39</posy>
