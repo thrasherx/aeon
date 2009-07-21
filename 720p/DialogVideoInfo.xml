@@ -139,7 +139,7 @@
 		<posy>0</posy>
 		<width>795</width>
 		<height>720</height>
-		<texture>info/lite/info_rightpaneltop.png</texture>
+		<texture>info/info_rightpaneltop.png</texture>
 	</control>	
 
 <!-- Movie info -->
