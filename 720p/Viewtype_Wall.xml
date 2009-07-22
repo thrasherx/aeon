@@ -163,6 +163,7 @@
 					<info>ListItem.Icon</info>
 					<fadetime>500</fadetime>					
 					<visible>Window.IsActive(2)</visible>
+<visible>!Container.Content(genres)|Skin.HasSetting(musicgenre_onoff)</visible><!-- <<<<<< Add this -->
 				</control>
 				<control type="image">
 					<include>WallIconDimensions</include>
@@ -171,7 +172,12 @@
 					<info>ListItem.Icon</info>
 					<fadetime>500</fadetime>
 					<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) | Container.Content(episodes)</visible>
-				</control>				
+<visible>!Container.Content(genres)|Skin.HasSetting(musicgenre_onoff)</visible><!-- <<<<<< Add this -->
+				</control>
+
+<include>mod_musicgenre_wall_2</include><!-- <<<<<< Add this -->
+
+				
 				<control type="image">
 					<include>WallIconDimensions</include>
 					<bordertexture border="-3">wall/wall_nfborder.png</bordertexture>
@@ -201,6 +207,7 @@
 					<fadetime>500</fadetime>						
 					<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) | Container.Content(episodes)</visible>
 					<animation effect="zoom" center="66,66" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
+<visible>!Container.Content(genres)|Skin.HasSetting(musicgenre_onoff)</visible><!-- <<<<<< Add this -->
 				</control>
 				<control type="image">
 					<include>WallIconDimensions</include>
@@ -210,7 +217,11 @@
 					<fadetime>500</fadetime>						
 					<visible>Window.IsActive(2)</visible>
 					<animation effect="zoom" center="66,66" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
+<visible>!Container.Content(genres)|Skin.HasSetting(musicgenre_onoff)</visible><!-- <<<<<< Add this -->
 				</control>
+
+<include>mod_musicgenre_wall_2</include><!-- <<<<<< Add this -->
+
 				<control type="image">
 					<include>WallIconDimensions</include>
 					<bordertexture border="-3">wall/wall_nfborder.png</bordertexture>
@@ -236,6 +247,7 @@
 					<texture diffuse="wall/wall_mask.png">defaultpicture.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<visible>Window.IsActive(2)</visible>
+<visible>!Container.Content(genres)|Skin.HasSetting(musicgenre_onoff)</visible><!-- <<<<<< Add this -->
 				</control>
 				<control type="image">
 					<include>WallIconDimensionsSmall</include>
@@ -258,7 +270,12 @@
 					<info>ListItem.Icon</info>
 					<fadetime>500</fadetime>						
 					<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) | Container.Content(episodes)</visible>
+<visible>!Container.Content(genres)|Skin.HasSetting(musicgenre_onoff)</visible><!-- <<<<<< Add this -->
 				</control>				
+
+
+<include>mod_musicgenre_wall_1</include><!-- <<<<<< Add this -->
+
 				<control type="image">
 					<include>WallIconDimensionsSmall</include>
 					<bordertexture border="-3">wall/wall_nfborder.png</bordertexture>
@@ -272,6 +289,7 @@
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) | Container.Content(episodes)</visible>
 					<animation effect="zoom" center="51,51" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
+<visible>!Container.Content(genres)|Skin.HasSetting(musicgenre_onoff)</visible><!-- <<<<<< Add this -->
 				</control>
 				<control type="image">
 					<include>WallIconDimensionsSmall</include>
@@ -297,7 +315,12 @@
 					<fadetime>500</fadetime>						
 					<visible>Window.IsActive(2)</visible>
 					<animation effect="zoom" center="51,51" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
+<visible>!Container.Content(genres)|Skin.HasSetting(musicgenre_onoff)</visible><!-- <<<<<< Add this -->
 				</control>
+
+
+<include>mod_musicgenre_wall_1</include><!-- <<<<<< Add this -->
+
 				<control type="image">
 					<include>WallIconDimensionsSmall</include>
 					<bordertexture border="-3">wall/wall_nfborder.png</bordertexture>
@@ -345,8 +368,10 @@
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<info>ListItem.Icon</info>
 					<fadetime>500</fadetime>					
+<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 				</control>
 
+<include>mod_moviegenre_wall_1</include><!-- <<<<<< Add this -->
 				<control type="image">
 					<include>WallIconMovieDimensions</include>
 					<bordertexture border="-5">wall/wall_movie_nfborder.png</bordertexture>
@@ -367,8 +392,11 @@
 					<info>ListItem.Icon</info>
 					<fadetime>500</fadetime>					
 					<animation effect="zoom" center="62,90" start="100" end="160" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
+<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 				</control>
 
+<include>mod_moviegenre_wall_1</include><!-- <<<<<< Add this -->
+				<control type="image">
 				<control type="image">
 					<include>WallIconMovieDimensions</include>
 					<bordertexture border="-3">wall/wall_movie_nfborder.png</bordertexture>
@@ -401,8 +429,10 @@
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<info>ListItem.Icon</info>
 					<fadetime>500</fadetime>					
+<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 				</control>
 
+<include>mod_moviegenre_wall_2</include><!-- <<<<<< Add this -->
 				<control type="image">
 					<include>WallIconMovieDimensionsSmall</include>
 					<bordertexture border="-4">wall/wall_movie_nfborder.png</bordertexture>
@@ -423,8 +453,10 @@
 					<fadetime>500</fadetime>
 					<info>ListItem.Icon</info>
 					<animation effect="zoom" center="44,71" start="100" end="160" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
+<visible>!Container.Content(genres)|Skin.HasSetting(moviegenre_onoff)</visible><!-- <<<<<< Add this -->
 				</control>
 
+<include>mod_moviegenre_wall_2</include><!-- <<<<<< Add this -->
 				<control type="image">
 					<include>WallIconMovieDimensionsSmall</include>
 					<bordertexture border="-5">wall/wall_movie_nfborder.png</bordertexture>
@@ -452,6 +484,9 @@
 
 		<include>Furniture_WallVignette</include>
 
+		<include condition="Window.IsActive(20) | Window.IsActive(2) | Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)">MusicWall</include>
+		<include condition="Window.IsActive(28) | Window.IsActive(1) | Window.IsActive(24) | Window.IsActive(25)">MovieWall</include>
+	
 		<control type="image">
 			<posx>57</posx>
 			<posy>98</posy>
@@ -476,9 +511,6 @@
 			<animation effect="slide" start="-18" end="-18" time="0" condition="Window.IsActive(2) | Window.IsActive(501) | Window.IsActive(502)">Conditional</animation>				
 		</control>	
 		
-		<include condition="Window.IsActive(20) | Window.IsActive(2) | Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)">MusicWall</include>
-		<include condition="Window.IsActive(28) | Window.IsActive(1) | Window.IsActive(24) | Window.IsActive(25)">MovieWall</include>
-	
 		<control type="group">
 			<posx>115</posx>
 			<posy>655</posy>

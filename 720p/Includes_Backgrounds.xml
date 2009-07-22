@@ -21,16 +21,19 @@
 	</include>	
 	
 	<include name="BackgroundVarsGlobal">
-		<include>FullscreenDimensions</include>
+		<include>FullScreenDimensions</include>
 		<timeperimage>20000</timeperimage>
 		<randomize>true</randomize>
 		<fadetime>1000</fadetime>
 		<include>Animation_BackgroundFade</include>
+		<animation effect="zoom" start="110" end="130" center="auto" time="15000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
+		<animation effect="slide" start="-10,-10" end="20,20" time="7000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
+		<animation effect="rotate" center="360,640" start="-2" end="2" time="11000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
 		<visible>[!Control.IsVisible(52) | [Control.IsVisible(52) + Skin.HasSetting(nocurtains)]] | [!Control.IsVisible(552) | [Control.IsVisible(552) + Skin.HasSetting(nocurtains)]]</visible>
 	</include>
 	
 	<include name="BackgroundVarsMultiplex">
-		<include>FullscreenDimensions</include>
+		<include>FullScreenDimensions</include>
 		<timeperimage>20000</timeperimage>
 		<randomize>true</randomize>
 		<fadetime>1000</fadetime>
@@ -49,10 +52,7 @@
 	<include name="Background_ContextBlack">
 		<control type="image" id="909">
 			<description>Darken screen for Context Menu etc.</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
+			<include>FullScreenDimensions</include>
 			<texture>common/black.png</texture>
 			<colordiffuse>c3FFFFFF</colordiffuse>
 			<include>Animation_CommonFade</include>
@@ -178,7 +178,14 @@
 		<include condition="System.Date(09-23,12-21)">BackgroundVarsWeatherAutumn</include>		
 		<thumb>$INFO[Skin.String(CustomWeather)]</thumb>
 		<info>Skin.String(CustomWeather)</info>		
-	</include>	
+		<imagepath background="true">$INFO[Skin.String(CustomWeather)]</imagepath>		
+	</include>
+<!--Weather Backdrop by Current Weather Conditions -->
+	<include name="BackgroundVarsWeather2">
+		<thumb>$INFO[Skin.String(CustomWeather)]$INFO[Weather.FanartCode]</thumb>
+		<imagepath background="true">$INFO[Skin.String(CustomWeather)]$INFO[Weather.FanartCode]</imagepath>		
+	</include>
+<!-- End-->	
 
 	<include name="MediaBackdropsMovies">
 		<control type="multiimage">
@@ -196,7 +203,7 @@
 
 	<include name="MediaBackdropsTVFanart">
 		<control type="largeimage">
-			<include>FullscreenDimensions</include>
+			<include>FullScreenDimensions</include>
 			<info>Fanart.Image</info>
 			<visible>!Skin.HasSetting(notvfanart) + [Container.Content(seasons) | Container.Content(episodes)]</visible>
 		</control>
@@ -212,12 +219,12 @@
 	<include name="Background_Wallpaper">
 
 		<control type="visualisation">
-			<include>FullscreenDimensions</include>
+			<include>FullScreenDimensions</include>
 			<visible>Skin.HasSetting(homevis) + Player.HasMedia</visible>
 		</control>
 		
 		<control type="videowindow">
-			<include>FullscreenDimensions</include>
+			<include>FullScreenDimensions</include>
 			<visible>Skin.HasSetting(videohome) + Player.HasMedia</visible>
 		</control> 
 

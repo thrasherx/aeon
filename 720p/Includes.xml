@@ -27,6 +27,11 @@
 <include file="Includes_Filemanager.xml" />
 <include file="Viewtype_List_Low.xml" />
 <include file="Includes_LowList.xml" />
+<include file="Viewtype_Music_Multiplex.xml" /><!-- <<<<<< Add this -->
+<include file="Includes_Customise_submenu.xml" /><!-- <<<<<< Add this -->
+
+<include file="Includes_genre.xml" /><!-- <<<<<< Add this -->
+
 
 <!-- Text colours ================================== -->
 

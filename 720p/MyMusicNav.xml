@@ -4,6 +4,11 @@
 	<views>550,50,551,57,53</views>
 	<controls>
 
+<!-- <<<<< ADD this -->
+	<control type="group">
+		<visible>[!Skin.HasSetting(musicgenre_fanart_onoff)+Container.Content(genres)] | !Container.Content(genres)</visible>
+<!-- ADD End -->
+
 	<control type="multiimage">
 		<include>BackgroundVarsGlobal</include>
 		<include>BackgroundVarsMusic</include>
@@ -24,6 +29,16 @@
 		<texture>$INFO[container.property(fanart_image)]</texture>
 		<include>Animation_FanartFade</include>
 	</control>
+<!-- <<<<< ADD this -->
+	</control>
+	 
+	<control type="image">
+		<include>FullscreenDimensions</include>
+		<fadetime>400</fadetime>
+		<texture>musicgenrefanart/$INFO[ListItem.Label].jpg</texture>
+		<visible>[Skin.HasSetting(musicgenre_fanart_onoff)+Container.Content(genres)]</visible>
+	</control>
+<!-- ADD End -->
 	
 	<include>Furniture_WallBackground</include>	
 
@@ -85,6 +100,10 @@
 				<include>Objects_WallGridButton</include>
 				
 				<include>Objects_WallBackdropButton</include>				
+				
+				<include>Objects_CurtainsButton</include>
+
+				<include>Objects_LightNightButtons</include>				
 				
 				<control type="button" id="5">
 					<label>31057</label>

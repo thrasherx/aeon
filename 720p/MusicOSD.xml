@@ -21,14 +21,16 @@
 	</control>
 
 	<control type="grouplist" id="213">
-		<posx>242</posx>
+		<posx>241</posx><!--284 to 241-->
 		<posy>60</posy>
-		<width>803</width>
+		<width>950</width><!--715 to 950-->
 		<height>96</height>
 		<itemgap>-10</itemgap>
 		<onup>-</onup>
 		<ondown>-</ondown>
 		<orientation>horizontal</orientation>	
+
+		<animation effect="slide" start="0,0" end="-75,0" time="0" condition="LastFM.RadioPlaying">Conditional</animation><!-- <<<<< ADD this -->
 
 		<control type="button" id="9">
 			<include>Objects_OSDButton</include>
@@ -69,15 +71,27 @@
 			<include>Objects_OSDButton</include>
 			<onclick>XBMC.ActivateWindow(121)</onclick>
 		</control>
+	<!-- LastFM Love Hate --><!-- <<<<< ADD this -->
+		<control type="button" id="1101">
+			<visible>LastFM.RadioPlaying</visible>
+			<include>Objects_OSDButton</include>
+			<onclick>XBMC.LastFM.Love</onclick>			
+		</control>
+		<control type="button" id="1102">
+			<visible>LastFM.RadioPlaying</visible>
+			<include>Objects_OSDButton</include>
+			<onclick>XBMC.LastFM.Ban</onclick>
 	</control>
 
 	<control type="grouplist" id="214">
-		<posx>242</posx>
+		<posx>241</posx><!--284 to 241-->
 		<posy>60</posy>
-		<width>803</width>
+		<width>925</width><!--702 to 925-->
 		<height>96</height>
 		<itemgap>-10</itemgap>
 		<orientation>horizontal</orientation>
+		
+		<animation effect="slide" start="0,0" end="-75,0" time="0" condition="LastFM.RadioPlaying">Conditional</animation><!-- <<<<< ADD this -->
 		
 		<control type="button">
 			<include>Objects_OSDButtonTop</include>
@@ -131,7 +145,21 @@
 			<texturenofocus>osd/osd_button_settings.png</texturenofocus>
 			<animation effect="fade" start="100" end="50" time="200" condition="!Control.HasFocus(919)">Conditional</animation>			
 		</control>
-	</control>
+	<!-- LastFM Love Hate --><!-- <<<<< ADD this -->
+		<control type="button">
+			<visible>LastFM.RadioPlaying</visible>
+			<include>Objects_OSDButtonTop</include>
+			<texturenofocus>osd/osd_button_love.png</texturenofocus>
+			<animation effect="fade" start="100" end="50" time="200" condition="!Control.HasFocus(1101)">Conditional</animation>			
+		</control>
+		<control type="button">
+			<visible>LastFM.RadioPlaying</visible>
+			<include>Objects_OSDButtonTop</include>
+			<texturenofocus>osd/osd_button_ban.png</texturenofocus>
+			<animation effect="fade" start="100" end="50" time="200" condition="!Control.HasFocus(1102)">Conditional</animation>			
+		</control>
+
+		</control>
 
 	<control type="progress" id="23">
 		<description>Progressbar</description>
