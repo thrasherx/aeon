@@ -118,7 +118,7 @@
 		<font>objects</font>
 		<textcolor>59FFFFFF</textcolor>
 		<include>common-fade-quick</include>
-		<visible>!Control.IsVisible(51) + !Control.IsVisible(57) + !Control.IsVisible(58) + !Control.IsVisible(53)</visible>
+		<visible>!Control.IsVisible(51) + !Control.IsVisible(57) + !Control.IsVisible(58) + !Control.IsVisible(53) + !Control.IsVisible(551) + !Control.IsVisible(552)</visible>
 	</control>
 </include>
 
