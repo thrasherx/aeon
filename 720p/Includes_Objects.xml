@@ -392,7 +392,7 @@
 			<usealttexture>Skin.HasSetting(darkfloor)</usealttexture>
 			<onclick>Skin.ToggleSetting(darkfloor)</onclick>
 			<onclick>XBMC.ReloadSkin</onclick>
-			<visible>!Control.IsVisible(53)</visible>
+			<visible>!Control.IsVisible(53) + !Control.IsVisible(551)</visible>
 		</control>
 	</include>
 
