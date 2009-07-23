@@ -2,14 +2,9 @@
 
 	<include name="Dialogs_Group">
 		<posx>386</posx>
-		<posy>540</posy>
+		<posy>600</posy>
 		<width>509</width>
 		<height>91</height>	
-		<animation effect="slide" end="0,-560" time="0" easing="inout" tween="cubic" condition="Skin.HasSetting(Dialogs_Top)">Conditional</animation>
-		<animation effect="slide" end="0,-150" time="400" easing="inout" tween="cubic" condition="!Skin.HasSetting(Dialogs_Top)+Window.IsActive(Home) + Skin.HasSetting(lowermainmenu)">Conditional</animation>
-		<animation effect="slide" end="0,-400" time="200" easing="inout" tween="circle" condition="!Skin.HasSetting(Dialogs_Top)+Control.IsVisible(57)">Conditional</animation>
-		<animation effect="slide" end="0,600" time="400" easing="inout" tween="circle" condition="!Skin.HasSetting(Dialogs_Top)+[Window.IsVisible(2005) | Window.IsVisible(2006) | Window.IsVisible(2007)]">Conditional</animation>	
-		<animation effect="slide" end="0,-600" time="400" easing="inout" tween="circle" condition="Skin.HasSetting(Dialogs_Top)+[Window.IsVisible(2005) | Window.IsVisible(2006) | Window.IsVisible(2007)]">Conditional</animation>
 	</include>
 
 	<include name="Dialogs_Tablet">
@@ -23,8 +18,6 @@
 	</include>
 
 	<include name="Dialogs_Exclam">
-		<animation effect="slide" end="0,-600" time="0" easing="inout" tween="circle" condition="!Skin.HasSetting(Dialogs_Top)+[Window.IsVisible(2005) | Window.IsVisible(2006) | Window.IsVisible(2007)]">Conditional</animation>	
-		<animation effect="slide" end="0,600" time="0" easing="inout" tween="circle" condition="Skin.HasSetting(Dialogs_Top)+[Window.IsVisible(2005) | Window.IsVisible(2006) | Window.IsVisible(2007)]">Conditional</animation>
 		<control type="image">
 			<posx>9</posx>
 			<posy>9</posy>
@@ -45,8 +38,6 @@
 	</include>
 	
 	<include name="Dialogs_VolumeIcon">
-		<animation effect="slide" end="0,-600" time="0" easing="inout" tween="circle" condition="!Skin.HasSetting(Dialogs_Top)+[Window.IsVisible(2005) | Window.IsVisible(2006) | Window.IsVisible(2007)]">Conditional</animation>	
-		<animation effect="slide" end="0,600" time="0" easing="inout" tween="circle" condition="Skin.HasSetting(Dialogs_Top)+[Window.IsVisible(2005) | Window.IsVisible(2006) | Window.IsVisible(2007)]">Conditional</animation>
 		<control type="image">
 			<posx>6</posx>
 			<posy>4</posy>
@@ -58,13 +49,12 @@
 
 	<include name="Dialogs_Progress">
 		<description>Progressbar</description>
-		<posx>85</posx>
+		<posx>3</posx>
 		<posy>3</posy>
-		<width>411</width>
+		<width>85</width>
 		<height>85</height>
 		<reveal>true</reveal>
 		<texturebg>dialogs/scan_blank.png</texturebg>
-		<lefttexture>common/blank.png</lefttexture>
 		<midtexture>dialogs/scan_fill.png</midtexture>
 		<righttexture>common/blank.png</righttexture>
 		<overlaytexture>-</overlaytexture>

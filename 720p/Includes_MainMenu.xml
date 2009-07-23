@@ -1,7 +1,7 @@
 <includes>
 
 <include name="MainMenu_Label">
-		<posy>0</posy>
+		<posy>1</posy>
 		<height>61</height>
 		<font>Font_MainMenu</font>
 		<posx>80</posx>
@@ -29,7 +29,37 @@
 		<aligny>center</aligny>
 </include>
 
+<include name="PushForSub">
+	<ondown>Skin.SetBool(lowermainmenu)</ondown>
+	<onup>Skin.Reset(lowermainmenu)</onup>
+</include>
+
+<include name="DownForSub">
+	<onup>Skin.Reset(lowermainmenu)</onup>
+	<ondown>351</ondown>
+</include>
+
 <include name="MainMenu">
+
+	<control type="button" id="351">
+		<onfocus>SetFocus(940)</onfocus>
+		<visible>Container(300).HasFocus(6)</visible>
+	</control>
+	
+	<control type="button" id="351">
+		<onfocus>SetFocus(942)</onfocus>
+		<visible>Container(300).HasFocus(7)</visible>
+	</control>	
+	
+	<control type="button" id="351">
+		<onfocus>SetFocus(941)</onfocus>
+		<visible>Container(300).HasFocus(1)</visible>
+	</control>
+
+	<control type="button" id="351">
+		<onfocus>SetFocus(943)</onfocus>
+		<visible>Container(300).HasFocus(9)</visible>
+	</control>		
 
 	<control type="wraplist" id="300">
 		<posx>0</posx>
@@ -42,16 +72,8 @@
 		<orientation>horizontal</orientation>
 		<focusposition>2</focusposition>
 		<scrolltime>200</scrolltime>
-		<!-- Old
 		<include condition="!Skin.HasSetting(onetouch)">DownForSub</include>
-		<include condition="Skin.HasSetting(onetouch)">PushForSub</include>
-		-->
-<!-- Add this >>>>>> -->
-		<ondown>322</ondown>
-		<onup>324</onup>
-		<include>homesubmenu_animation2</include>
-<!-- <<<<<< Add this -->
-
+		<include condition="Skin.HasSetting(onetouch)">PushForSub</include>		
 		<onfocus>SetFocus(299)</onfocus>
 		<animation type="WindowOpen" condition="!Skin.HasSetting(nozooms)" reversible="false">
 			<effect type="slide" start="-1280" end="0" time="400" tween="quadratic" easing="out" />
@@ -117,6 +139,7 @@
 				<onclick>Skin.Reset(videotv)</onclick>
 				<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles,return)</onclick>
 				<visible>!Skin.HasSetting(nomovies)</visible>
+				<visible>[Skin.HasSetting(onetouch) + Skin.HasSetting(nosubmenumovies)] | !Skin.HasSetting(onetouch)</visible>
 			</item>
 			<item id="7">
 				<description>My Videos</description>
@@ -126,6 +149,7 @@
 				<onclick>Skin.Reset(videomovies)</onclick>
 				<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick>
 				<visible>!Skin.HasSetting(notvshows)</visible>
+				<visible>[Skin.HasSetting(onetouch) + Skin.HasSetting(nosubmenutv)] | !Skin.HasSetting(onetouch)</visible>
 			</item>
 			<item id="8">
 				<label>31015</label>
@@ -134,10 +158,9 @@
 				<visible>!Skin.HasSetting(novideos)</visible>
 			</item>
 			<item id="10">
-				<include condition="Skin.HasSetting(CustomWeatherConditions)">BackgroundVarsWeather2</include><!--Weather Backdrop by Current Weather Conditions -->
-				<include condition="!Skin.HasSetting(CustomWeatherConditions)">BackgroundVarsWeather</include><!--Weather Backdrop by Current Weather Conditions -->
 				<description>Weather</description>
 				<label>31017</label>
+				<include>BackgroundVarsWeather</include>					
 				<onclick>xbmc.activatewindow(2600)</onclick>
 				<visible>Skin.HasSetting(weather)</visible>
 			</item>
@@ -210,11 +233,7 @@
 		<orientation>horizontal</orientation>
 		<focusposition>2</focusposition>
 		<scrolltime>200</scrolltime>
-		
-		<!--<visible>![Control.HasFocus(301) | Control.HasFocus(7) | Control.HasFocus(10)]</visible> <<<<<< old -->
-		<visible>![Control.HasFocus(301) | Control.HasFocus(7) | Control.HasFocus(10) | Control.HasFocus(345)]</visible><!-- <<<<<< Add this -->
-
-
+		<visible>![Control.HasFocus(301) | Control.HasFocus(7) | Control.HasFocus(10)]</visible>
 		<animation effect="fade" start="0" end="100" time="200" condition="!Window.Previous(56) + !Window.Previous(12) + !Window.Previous(13) + !Window.Previous(14) + !Window.Previous(15) + !Window.Previous(16) + !Window.Previous(17) + !Window.Previous(18) + !Window.Previous(19)">WindowOpen</animation>
 		<itemlayout width="184" height="40">
 			<control type="label">
@@ -301,8 +320,7 @@
 			<item id="10">
 				<description>Weather</description>
 				<label>31017</label>
-				<include condition="Skin.HasSetting(CustomWeatherConditions)">BackgroundVarsWeather2</include><!--Weather Backdrop by Current Weather Conditions -->
-				<include condition="!Skin.HasSetting(CustomWeatherConditions)">BackgroundVarsWeather</include><!--Weather Backdrop by Current Weather Conditions -->					
+				<include>BackgroundVarsVideo</include>						
 				<onclick>Skin.SetString(custom,CustomWeather)</onclick>
 				<onclick>SetFocus(92)</onclick>
 				<visible>Skin.HasSetting(weather)</visible>
@@ -352,21 +370,13 @@
 		<width>840</width>
 		<onleft>301</onleft>
 		<onright>301</onright>
-		
-		<onup>345</onup><!-- <<<<<< Add this -->
-		<!--<onup>7</onup> <<<<<< old -->
-
+		<onup>7</onup>
 		<ondown>7</ondown>
 		<viewtype>list</viewtype>
 		<orientation>horizontal</orientation>
 		<focusposition>2</focusposition>
 		<scrolltime>200</scrolltime>
-		<!--<visible allowhiddenfocus="true">Control.HasFocus(301) | Control.HasFocus(7)</visible> <<<<<< old -->
-		<visible allowhiddenfocus="true">Control.HasFocus(301) | Control.HasFocus(7) | Control.HasFocus(345)</visible><!-- <<<<<< Add this -->
-
-		<include>homesubmenu_Customiseanimation</include><!-- <<<<< ADD this -->
-
-		<animation effect="fade" start="0" end="100" time="200" condition="!Window.Previous(56) + !Window.Previous(12) + !Window.Previous(13) + !Window.Previous(14) + !Window.Previous(15) + !Window.Previous(16) + !Window.Previous(17) + !Window.Previous(18) + !Window.Previous(19)">WindowOpen</animation>
+		<visible allowhiddenfocus="true">Control.HasFocus(301) | Control.HasFocus(7)</visible>
 		<animation effect="fade" start="0" end="100" time="200" condition="!Window.Previous(56) + !Window.Previous(12) + !Window.Previous(13) + !Window.Previous(14) + !Window.Previous(15) + !Window.Previous(16) + !Window.Previous(17) + !Window.Previous(18) + !Window.Previous(19)">WindowOpen</animation>
 		<itemlayout width="184" height="40">
 			<control type="label">
@@ -481,16 +491,15 @@
 			</item>
 			<item id="10">
 				<label>31017</label>
-				<include condition="Skin.HasSetting(CustomWeatherConditions)">BackgroundVarsWeather2</include><!--Weather Backdrop by Current Weather Conditions -->
-				<include condition="!Skin.HasSetting(CustomWeatherConditions)">BackgroundVarsWeather</include><!--Weather Backdrop by Current Weather Conditions -->				
+				<include>BackgroundVarsWeather</include>					
 				<onclick>Skin.Reset(weather)</onclick>
 				<visible>Skin.HasSetting(weather)</visible>
 			</item>
 			<item id="10">
 				<description>My Pictures</description>
 				<label2>31017</label2>
-				<include condition="Skin.HasSetting(CustomWeatherConditions)">BackgroundVarsWeather2</include><!--Weather Backdrop by Current Weather Conditions -->
-				<include condition="!Skin.HasSetting(CustomWeatherConditions)">BackgroundVarsWeather</include><!--Weather Backdrop by Current Weather Conditions -->				
+				<icon>special://skin/media/backdrops/summer/summer.png</icon>
+				<thumb>$INFO[Skin.String(CustomWeather)]</thumb>				
 				<onclick>Skin.SetBool(weather)</onclick>
 				<visible>!Skin.HasSetting(weather)</visible>
 			</item>

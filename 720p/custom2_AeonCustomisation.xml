@@ -90,7 +90,6 @@
 						<height>99</height>
 						<texture>home/homemenu_back.png</texture>
 						<include>Animation_CommonFade</include>
-						<include>homesubmenu_Customiseanimation</include><!-- <<<<< ADD this -->
 					</control>
 
 					<control type="group">
@@ -102,8 +101,7 @@
 						
 						<include>VirtualMainMenu</include>
 						<include>VirtualMainMenuOptions</include>
-						<include>homeCustomisesubmenu</include><!-- <<<<< ADD this -->	
-
+						
 					</control>
 
 					<control type="image">
