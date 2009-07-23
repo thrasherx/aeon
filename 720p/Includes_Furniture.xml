@@ -996,6 +996,7 @@
 			<animation effect="slide" time="1000" start="0,300" end="0,0" tween="cubic" easing="out">WindowOpen</animation>			
 			<visible>[Control.IsVisible(50) | Control.IsVisible(550)] + Player.HasAudio</visible>
 			<control type="image">
+				<include condition="Skin.HasSetting(dvdcase)">NowPlaylingWidgetXPos</include>
 				<posx>870</posx>
 				<posy>570</posy>
 				<width>318</width>
@@ -1005,6 +1006,7 @@
 
 			<control type="progress" id="20">
 				<description>Progressbar</description>
+				<include condition="Skin.HasSetting(dvdcase)">NowPlaylingWidgetXPosProgress</include>
 				<posx>855</posx>
 				<posy>650</posy>
 				<width>346</width>

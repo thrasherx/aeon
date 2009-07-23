@@ -277,6 +277,13 @@
 	<animation effect="zoom" center="56,80" start="110" end="100" time="200" tween="cubic" easing="inout">Unfocus</animation> 	
 </include>
 
+<!-- DVD Box Zoom -->
+
+<include name="Animation_MultiplexFocusZoomDVD">
+	<animation effect="zoom" center="56,80" start="100" end="125" time="200" tween="cubic" easing="inout">Focus</animation> 
+	<animation effect="zoom" center="56,80" start="125" end="100" time="200" tween="cubic" easing="inout">Unfocus</animation>   
+</include>
+
 <include name="Animation_MultiplexTVFocusZoom">
 	<animation effect="zoom" center="106,50" start="100" end="110" time="200" tween="cubic" easing="inout">Focus</animation> 
 </include>

@@ -29,6 +29,7 @@
 		<include condition="Skin.HasSetting(darkfloor)">ShowcaseMediaFlagNightShade</include>
 	</include>
 	<include name="Furniture_ListMediaFlagsVars">
+		<include condition="Skin.HasSetting(dvdcase)">Furniture_ListMediaFlagsXPos</include>
 		<posy>630</posy>
 		<width>90</width>
 		<height>59</height>

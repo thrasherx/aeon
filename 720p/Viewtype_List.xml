@@ -185,6 +185,7 @@
 	</include>
 
 	<include name="List_NowPlaying">
+		<include condition="Skin.HasSetting(dvdcase)">NowPlaylingWidgetXPosList</include>
 		<posx>960</posx>
 		<width>200</width>
 		<height>18</height>
@@ -202,7 +203,8 @@
 		<control type="image" id="232">
 			<width>587</width>
 			<height>137</height>
-			<posx>693</posx>
+			<include condition="!Skin.HasSetting(dvdcase)">ListSpotXPosNormal</include>
+			<include condition="Skin.HasSetting(dvdcase)">ListSpotXPosDVD</include>
 			<posy>583</posy>
 			<include condition="!Skin.HasSetting(darkfloor)">ListSpotLight</include>
 			<include condition="Skin.HasSetting(darkfloor)">ListSpotNight</include>
@@ -1083,101 +1085,125 @@
 			<animation effect="slide" time="1000" start="600,0" end="0,0" tween="cubic" easing="out">WindowOpen</animation>
 			<animation effect="fade" time="400" start="0" end="100">Visible</animation>
 			<animation effect="fade" time="400" start="100" end="0">Hidden</animation>			
+
+			<!-- DVD back -->			
+			<include>MovieIconFrame</include>
+			
+			<!-- DVD back reflection -->			
+			<include>MovieIconFrameReflect</include>
+
 			<control type="image">
-				<width>346</width>
-				<height>511</height>
+				<include condition="!Skin.HasSetting(dvdcase)">MovieIconDimensionsNormal</include>
+				<include condition="Skin.HasSetting(dvdcase)">MovieIconDimensionsDVDCover</include>
 				<fadetime>400</fadetime>
-				<texture diffuse="list/list_movieicon_mask.png">defaultVideo.png</texture>
+				<include condition="!Skin.HasSetting(dvdcase)">MovieIconMaskNormal</include>
+				<include condition="Skin.HasSetting(dvdcase)">MovieIconMaskDVD</include>
 				<info>ListItem.Icon</info>
-				<bordertexture border="-28">list/list_movieicon_frame.png</bordertexture>
 				<visible>[Window.IsActive(1) + !Skin.HasSetting(listgamessquare)] | [Window.IsActive(24) + !Skin.HasSetting(listvideosquare)] | [Window.IsActive(25) + !Container.Content(episodes) + !Container.Content(musicvideos)]</visible>
 			</control>
 
 			<control type="image">
-				<posy>510</posy>
-				<width>346</width>
-				<height>511</height>
+				<include condition="!Skin.HasSetting(dvdcase)">MovieIconDimensionsNormalReflect</include>
+				<include condition="Skin.HasSetting(dvdcase)">MovieIconDimensionsDVDCoverReflect</include>
 				<fadetime>400</fadetime>
 				<texture flipy="true" diffuse="list/list_movieicon_flipmask.png">$INFO[ListItem.Icon]</texture>
 				<visible>[Window.IsActive(1) + !Skin.HasSetting(listgamessquare)] | [Window.IsActive(24) + !Skin.HasSetting(listvideosquare)] | [Window.IsActive(25) + !Container.Content(episodes) + !Container.Content(musicvideos)]</visible>				
 			</control>			
 
 			<control type="largeimage">
-				<width>346</width>
-				<height>511</height>			
-				<texture diffuse="list/list_movieicon_mask.png">$INFO[listitem.path,,movie.tbn]</texture>
+				<include condition="!Skin.HasSetting(dvdcase)">MovieIconDimensionsNormal</include>
+				<include condition="Skin.HasSetting(dvdcase)">MovieIconDimensionsDVDCover</include>
+				<include condition="!Skin.HasSetting(dvdcase)">MovieIconMaskMovieNormal</include>
+				<include condition="Skin.HasSetting(dvdcase)">MovieIconMaskMovieDVD</include>
 				<animation effect="fade" start="0" end="100" time="000">VisibleChange</animation>
 				<visible>Control.IsVisible(102) + Container.Content(movies)</visible>
 			</control>
 
 			<control type="largeimage">
-				<width>346</width>
-				<height>511</height>			
-				<texture diffuse="list/list_movieicon_mask.png">$INFO[listitem.path,,folder.jpg]</texture>
+				<include condition="!Skin.HasSetting(dvdcase)">MovieIconDimensionsNormal</include>
+				<include condition="Skin.HasSetting(dvdcase)">MovieIconDimensionsDVDCover</include>
+				<include condition="!Skin.HasSetting(dvdcase)">MovieIconMaskFolderNormal</include>
+				<include condition="Skin.HasSetting(dvdcase)">MovieIconMaskFolderDVD</include>
 				<animation effect="fade" start="0" end="100" time="000">VisibleChange</animation>
 				<visible>Control.IsVisible(102) + Container.Content(tvshows)</visible>
+			</control>
+
+			<control type="largeimage">
+				<include condition="!Skin.HasSetting(dvdcase)">MovieIconDimensionsNormal</include>
+				<include condition="Skin.HasSetting(dvdcase)">MovieIconDimensionsDVDCover</include>
+				<include condition="!Skin.HasSetting(dvdcase)">MovieIconMaskPosterNormal</include>
+				<include condition="Skin.HasSetting(dvdcase)">MovieIconMaskPosterDVD</include>
+				<animation effect="fade" start="0" end="100" time="000">VisibleChange</animation>
+				<visible>Control.IsVisible(102) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
 			</control>			
 
 			<control type="image">
-				<width>346</width>
-				<height>511</height>
+				<include condition="!Skin.HasSetting(dvdcase)">MovieIconDimensionsNormal</include>
+				<include condition="Skin.HasSetting(dvdcase)">MovieIconDimensionsDVDCase</include>
 				<fadetime>400</fadetime>			
-				<texture>list/list_movieicon_glass.png</texture>
+				<include condition="!Skin.HasSetting(dvdcase)">MovieIconGlassNormal</include>
+				<include condition="Skin.HasSetting(dvdcase)">MovieIconGlassDVD</include>
 				<visible>[Window.IsActive(1) + !Skin.HasSetting(listgamessquare)] | [Window.IsActive(24) + !Skin.HasSetting(listvideosquare)] | [Window.IsActive(25) + !Container.Content(episodes) + !Container.Content(musicvideos)]</visible>				
 			</control>
 
 			<control type="largeimage">
-				<width>346</width>
-				<height>511</height>
+				<include condition="!Skin.HasSetting(dvdcase)">MovieIconDimensionsNormal</include>
+				<include condition="Skin.HasSetting(dvdcase)">MovieIconDimensionsDVDCover</include>
 				<fadetime>400</fadetime>			
-				<texture diffuse="list/list_movieicon_mask.png">$INFO[listitem.path,,folder.jpg]</texture>
+				<include condition="!Skin.HasSetting(dvdcase)">MovieIconMaskFolderNormal</include>
+				<include condition="Skin.HasSetting(dvdcase)">MovieIconMaskFolderDVD</include>
 				<visible>[Container.Content(tvshows) + !Skin.HasSetting(listvideosquare)] | [Container.Content(seasons) + !Skin.HasSetting(listvideosquare)]</visible>			
 			</control>
+			
+			<!-- DVD front reflection -->
+			<include>MovieIconGlassReflect</include>
+			
+			<!-- CD back -->
+			<include>MusicIconFrame</include>
+			
+			<!-- CD back reflection -->
+			<include>MusicIconFrameReflect</include>
 
 			<control type="image">
-				<posy>165</posy>
-				<width>346</width>
-				<height>346</height>
+				<include condition="!Skin.HasSetting(dvdcase)">MusicIconDimensionsNormal</include>
+				<include condition="Skin.HasSetting(dvdcase)">MusicIconDimensionsCDCover</include>
 				<aspectratio scalediffuse="false">stretch</aspectratio>			
-				<texture diffuse="list/list_musicicon_mask.png">common/black.png</texture>
-				<bordertexture border="-32">list/list_musicicon_frame.png</bordertexture>
+				<include condition="!Skin.HasSetting(dvdcase)">MusicIconMaskNormal</include>
+				<include condition="Skin.HasSetting(dvdcase)">MusicIconMaskCD</include>
 				<visible>[Window.IsActive(1) + Skin.HasSetting(listgamessquare)] | Window.IsActive(2) | Container.Content(episodes) | [Window.IsActive(24) + Skin.HasSetting(listvideosquare)]</visible>
 			</control>
 
 			<control type="image">
-				<posy>165</posy>			
-				<width>346</width>
-				<height>346</height>
+				<include condition="!Skin.HasSetting(dvdcase)">MusicIconDimensionsNormal</include>
+				<include condition="Skin.HasSetting(dvdcase)">MusicIconDimensionsCDCover</include>
 				<fadetime>400</fadetime>
 				<aspectratio scalediffuse="false">keep</aspectratio>			
-				<texture diffuse="list/list_musicicon_mask.png">$INFO[ListItem.Icon]</texture>
+				<include condition="!Skin.HasSetting(dvdcase)">MusicIconMaskIconNormal</include>
+				<include condition="Skin.HasSetting(dvdcase)">MusicIconMaskIconCD</include>
 				<visible>[Window.IsActive(1) + Skin.HasSetting(listgamessquare)] | Window.IsActive(2) | Container.Content(episodes) | [Window.IsActive(24) + Skin.HasSetting(listvideosquare)]</visible>
 			</control>
 
 			<control type="image">
-				<posy>165</posy>
-				<width>346</width>
-				<height>346</height>
+				<include condition="!Skin.HasSetting(dvdcase)">MusicIconDimensionsNormal</include>
+				<include condition="Skin.HasSetting(dvdcase)">MusicIconDimensionsCDCover</include>
 				<aspectratio scalediffuse="false">stretch</aspectratio>			
 				<texture flipy="true" diffuse="list/list_musicicon_flipmask.png">common/black.png</texture>
 				<visible>[Window.IsActive(1) + Skin.HasSetting(listgamessquare)] | Window.IsActive(2) | Container.Content(episodes) | [Window.IsActive(24) + Skin.HasSetting(listvideosquare)]</visible>
 			</control>			
 
 			<control type="image">
-				<posy>165</posy>			
-				<width>346</width>
-				<height>346</height>
+				<include condition="!Skin.HasSetting(dvdcase)">MusicIconDimensionsNormal</include>
+				<include condition="Skin.HasSetting(dvdcase)">MusicIconDimensionsCDCover</include>
 				<fadetime>400</fadetime>
 				<aspectratio scalediffuse="false">stretch</aspectratio>			
-				<texture diffuse="list/list_musicicon_mask.png">$INFO[ListItem.Icon]</texture>
-				<bordertexture border="-27">list/list_musicicon_frame.png</bordertexture>
+				<include condition="!Skin.HasSetting(dvdcase)">MusicIconMaskNormalIcon</include>
+				<include condition="Skin.HasSetting(dvdcase)">MusicIconMaskCDIcon</include>
 				<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)</visible>
 			</control>
 
 			<control type="image">
-				<posy>513</posy>
-				<width>346</width>
-				<height>346</height>
+				<include condition="!Skin.HasSetting(dvdcase)">MusicIconDimensionsNormalReflect</include>
+				<include condition="Skin.HasSetting(dvdcase)">MusicIconDimensionsCDCoverReflect</include>
 				<fadetime>400</fadetime>
 				<aspectratio scalediffuse="false">stretch</aspectratio>			
 				<texture flipy="true" diffuse="list/list_musicicon_flipmask.png">$INFO[ListItem.Icon]</texture>
@@ -1185,14 +1211,18 @@
 			</control>
 
 			<control type="image">
-				<posy>165</posy>			
-				<width>346</width>
-				<height>346</height>
+				<include condition="!Skin.HasSetting(dvdcase)">MusicIconDimensionsNormal</include>
+				<include condition="Skin.HasSetting(dvdcase)">MusicIconDimensionsCDCase</include>
 				<fadetime>400</fadetime>			
-				<texture>list/list_musicicon_glass.png</texture>
+				<include condition="!Skin.HasSetting(dvdcase)">MusicIconGlassNormal</include>
+				<include condition="Skin.HasSetting(dvdcase)">MusicIconGlassCD</include>
 				<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)</visible>
 				<colordiffuse>8eFFFFFF</colordiffuse>
 			</control>
+			
+			<!-- CD front reflection -->
+			<include>MusicIconGlassReflect</include>
+
 		</control>
 
 		<include>Furniture_NowPlayingWidget</include>
