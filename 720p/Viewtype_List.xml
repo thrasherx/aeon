@@ -134,7 +134,7 @@
 		<posy>0</posy>
 		<width>85</width>
 		<height>41</height>
-		<font>Font_ListDetail</font>
+		<font>Font_ListDetailTV</font>
 		<align>center</align>
 		<aligny>center</aligny>	
 	</include>
@@ -566,7 +566,7 @@
 						<info>ListItem.Overlay</info>
 					</control>					
 				</focusedlayout>
-				<itemlayout condition="[Window.IsActive(25) + Skin.HasSetting(videotv) + !Skin.HasSetting(tvlistfull)]" height="85">
+				<itemlayout condition="[Window.IsActive(50) + Skin.HasSetting(videotv) + !Skin.HasSetting(tvlistfull)]" height="85">
 					<control type="image">
 						<posx>12</posx>
 						<posy>84</posy>
@@ -661,9 +661,9 @@
 					</control>
 					<control type="image">
 						<posx>8</posx>
-						<posy>-5</posy>
+						<posy>-6</posy>
 						<width>743</width>
-						<height>95</height>
+						<height>98</height>
 						<texture>list/listpanel_selectbar.png</texture>
 						<include>Animation_ButtonFocusFade</include>
 						<visible>Control.IsVisible(50) | Window.IsActive(106) | Window.IsActive(129) | Window.IsActive(126) | Window.IsActive(601) | Window.IsActive(602) | Window.IsActive(111) | Window.IsActive(2003)</visible>
