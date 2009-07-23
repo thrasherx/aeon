@@ -75,13 +75,6 @@
 			<selected>Skin.HasSetting(debug)</selected>
 		</control>
 		
-		<control type="radiobutton" id="406">
-			<include>Objects_SettingsDefaultRadioButton</include>
-			<label>UNLOCK ALL VIEWS FOR TV SHOWS</label>
-			<onclick>Skin.ToggleSetting(unlockTVviews)</onclick>
-			<selected>Skin.HasSetting(unlockTVviews)</selected>
-		</control>
-		
 		<control type="radiobutton" id="407">
 			<include>Objects_SettingsDefaultRadioButton</include>
 			<label>USE LEGACY 'DARK' MULTIPLEX</label>

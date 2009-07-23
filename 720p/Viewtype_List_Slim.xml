@@ -285,7 +285,7 @@
 				<onright>61</onright>
 				<onup>550</onup>
 				<ondown>550</ondown>
-				<visible>![Window.IsActive(25) + Skin.HasSetting(videotv)] | [Window.IsActive(25) + Skin.HasSetting(videotv) + Skin.HasSetting(unlockTVviews)]</visible>
+				<visible>![Window.IsActive(25) + Skin.HasSetting(videotv)] | [Window.IsActive(25) + Skin.HasSetting(videotv)]</visible>
 				<itemlayout height="40">
 					<control type="image">
 						<posx>12</posx>

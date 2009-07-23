@@ -446,7 +446,7 @@
 				<onup>551</onup>
 				<ondown>551</ondown>
 				<include>Animation_HighListSlide</include>
-				<visible>![Window.IsActive(25) + Skin.HasSetting(videotv)] | [Window.IsActive(25) + Skin.HasSetting(videotv) + Skin.HasSetting(unlockTVviews)]</visible>
+				<visible>![Window.IsActive(25) + Skin.HasSetting(videotv)] | [Window.IsActive(25) + Skin.HasSetting(videotv)]</visible>
 			
 			<!-- Slim item layout -->
 				
