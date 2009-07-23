@@ -303,8 +303,8 @@
 	</include>
 
 	<include name="Objects_ListLayoutStrings">
-		<label>$LOCALIZE[31075]: $LOCALIZE[31071]</label>
-		<altlabel>$LOCALIZE[31075]: $LOCALIZE[31072]</altlabel>	
+		<label>$LOCALIZE[31074] $LOCALIZE[31050] $LOCALIZE[31078]</label>
+		<altlabel>$LOCALIZE[31074] $LOCALIZE[31050] $LOCALIZE[31077]</altlabel>	
 	</include>
 
 	<include name="Objects_FanartToggleStrings">

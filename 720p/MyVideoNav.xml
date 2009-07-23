@@ -83,7 +83,16 @@
 				
 				<include condition="!Skin.HasSetting(nomultiplexstylebuttons)">Objects_MultiplexStyleButtons</include>
 				
-				<include>Objects_PanelDensityButton</include>				
+				<include>Objects_PanelDensityButton</include>
+
+				<control type="togglebutton" id="940">
+					<include>Objects_MediaMenuButton</include>        
+					<include>Objects_ListLayoutStrings</include>
+					<usealttexture>Skin.HasSetting(tvlistfull)</usealttexture>
+					<onclick>Skin.SetBool(tvlistfull)</onclick>
+					<altclick>Skin.Reset(tvlistfull)</altclick>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + Control.IsVisible(50)</visible>
+				</control>				
 				
 				<control type="togglebutton" id="901">
 					<include>Objects_MediaMenuButton</include>				
