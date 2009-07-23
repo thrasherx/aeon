@@ -350,6 +350,7 @@
 					<fadetime>200</fadetime>
 					<texture>multiplex/multiplex_glass.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
+					<colordiffuse>66FFFFFF</colordiffuse>
 				</control>				
 			</control>
 
@@ -1137,7 +1138,8 @@
 					<include>MultiplexIconDimensionsWrap</include>
 					<texture>multiplex/multiplex_glass.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<include>Animation_MultiplexFocusZoom</include>					
+					<include>Animation_MultiplexFocusZoom</include>
+					<colordiffuse>66FFFFFF</colordiffuse>					
 				</control>        
 				<control type="image">
 					<include>MultiplexIconDimensionsWrapReflect</include>
@@ -1195,6 +1197,7 @@
 					<include>MultiplexIconDimensionsTVWrap</include>
 					<texture diffuse="multiplex/multiplex_tvmask.png">multiplex/multiplex_tvglass.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
+					<colordiffuse>66FFFFFF</colordiffuse>
 				</control>				
 				<control type="image">
 					<include>MultiplexIconDimensionsTVWrap</include>
@@ -1279,7 +1282,8 @@
 					<include>MultiplexIconDimensionsTVWrap</include>
 					<texture diffuse="multiplex/multiplex_tvmask.png">multiplex/multiplex_tvglass.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<include>Animation_MultiplexTVFocusZoom</include>					
+					<include>Animation_MultiplexTVFocusZoom</include>
+					<colordiffuse>66FFFFFF</colordiffuse>					
 				</control>				
 				<control type="image">
 					<include>MultiplexIconDimensionsTVWrap</include>
