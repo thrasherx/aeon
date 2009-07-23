@@ -35,7 +35,7 @@
 	<include name="ListLabel_DetailSmall_Slim">
 		<posx>683</posx>
 		<posy>0</posy>
-		<width>85</width>
+		<width>90</width>
 		<height>41</height>
 		<font>Font_ListDetailTV</font>
 		<align>center</align>
