@@ -6,6 +6,13 @@
 		<width>509</width>
 		<height>91</height>	
 	</include>
+	
+	<include name="Dialogs_Slider">
+		<posx>506</posx>
+		<posy>620</posy>
+		<width>298</width>
+		<height>62</height>	
+	</include>
 
 	<include name="Dialogs_Tablet">
 		<control type="image">

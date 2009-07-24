@@ -30,6 +30,12 @@
 <include file="Includes_CDDVDMod.xml" />
 <include file="Includes_NightMod.xml" />
 <include file="Includes_WallMod.xml" />
+<include file="Includes_Latest_Added.xml" />
+<include file="Includes_TitleMod.xml" />
+<include file="Includes_MultiplexFlow.xml" />
+<include file="mod_moviegenre_list1.xml" />
+
+
 
 <!-- Text colours ================================== -->
 

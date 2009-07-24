@@ -79,11 +79,15 @@
 					<include>Objects_MediaMenuButton</include>
 				</control>
 
-				<include condition="!Skin.HasSetting(nomultiplexinfobuttons)">Objects_MultiplexInfoButtons</include>			
+				<include>Objects_MultiplexInfoButtons</include>			
 				
-				<include condition="!Skin.HasSetting(nomultiplexstylebuttons)">Objects_MultiplexStyleButtons</include>
+				<include>Objects_WallInfoButtons</include>		
+				
+				<include>Objects_MultiplexStyleButtons</include>
 				
 				<include>Objects_PanelDensityButton</include>
+
+				<include condition="!Skin.HasSetting(nomultiplexstylebuttons)">Objects_MultiplexCoverStyleButtons</include>
 
 				<control type="togglebutton" id="940">
 					<include>Objects_MediaMenuButton</include>        
@@ -178,6 +182,7 @@
 
 	<include condition="Skin.HasSetting(videomovies)">Furniture_ShowcaseMediaFlags</include>	
 	<include condition="Skin.HasSetting(videotv)">Furniture_EpisodeMediaFlags</include>
+	<include>Furniture_WallMediaFlags</include>
 	
 	<include>Furniture_DarkGradient</include>
 	<!--<include>Background_ContextBlack</include>-->

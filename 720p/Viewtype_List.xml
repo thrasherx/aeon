@@ -266,7 +266,7 @@
 				<onup>50</onup>
 				<ondown>50</ondown>
 				<visible>![Window.IsActive(25) + Skin.HasSetting(videotv)] | [Window.IsActive(25) + Skin.HasSetting(videotv)]</visible>
-				<itemlayout condition="Window.IsActive(2) | Window.IsActive(24) | [Window.IsActive(25) + !Skin.HasSetting(videotv) | [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]" height="65">
+				<itemlayout condition="Window.IsActive(2) | Window.IsActive(24) | [Window.IsActive(25) + !Skin.HasSetting(videotv)] | [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]" height="65">
 					<control type="image">
 						<posx>12</posx>
 						<posy>64</posy>

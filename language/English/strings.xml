@@ -495,5 +495,10 @@
 	<string id="31936">TRACKS</string>
 	<string id="31937">SEASONS</string>
 	<string id="31938">EPISODES</string>
+	 
+<!-- Trailer Mod -->
+
+	<string id="32000">TRAILER</string>
+	<string id="32001">BIG TRAILER</string>
 	
 </strings>

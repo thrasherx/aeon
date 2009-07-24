@@ -5,9 +5,9 @@
 
 		<control type="multiimage">
 			<include>FullscreenDimensions</include>
-			<include>BackgroundTimings</include>
 			<imagepath>backdrops/default_settings</imagepath>
 			<info>Skin.String(CustomSettings)</info>
+			<include>BackgroundTimings</include>
 		</control>
 
 		<include>Furniture_SettingsBackPanel</include>
@@ -132,6 +132,19 @@
 				<onclick>Skin.ToggleSetting(nohomegradient)</onclick>
 				<selected>!Skin.HasSetting(nohomegradient)</selected>
 			</control>		
+			<control type="radiobutton" id="504">
+				<include>Objects_SettingsDefaultRadioButton</include>
+				<label>Enable Latest Added</label>
+				<onclick>Skin.ToggleSetting(homelatest)</onclick>
+				<selected>Skin.HasSetting(homelatest)</selected>
+			</control>
+
+			<control type="radiobutton" id="505">
+				<include>Objects_SettingsDefaultRadioButton</include>
+				<label>Weather Backdrop by Current Weather Conditions</label>
+				<onclick>Skin.ToggleSetting(CustomWeatherConditions)</onclick>
+				<selected>Skin.HasSetting(CustomWeatherConditions)</selected>
+			</control>
 
 		</control>
 

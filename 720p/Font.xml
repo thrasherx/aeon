@@ -523,6 +523,32 @@
       <filename>aeon_edit.ttf</filename>
       <size>17</size>
     </font>
+	  
+    <font>
+      <name>Font_WallInfoLabel</name>
+      <filename>aeon_rss.ttf</filename>
+      <size>12</size>
+    </font>	
+	
+    <font>
+      <name>Font_WallInfoValue</name>
+      <filename>aeon_rss.ttf</filename>
+      <size>13</size>
+    </font>
+	  
+	<font>
+      <name>Font_WallPlot</name>
+      <filename>aeon_player.ttf</filename>
+      <size>14</size>
+	  <linespacing>1.28</linespacing>	  
+    </font>
+	  
+	<font>
+	  <name>Font_WallTitleMod</name>
+	  <filename>aeon_rss.ttf</filename>
+	  <size>17</size>
+	  <shadow>55000000</shadow>
+	</font>
 
 <!-- OSD -->
 
@@ -2993,6 +3019,32 @@
       <filename>aeon_edit.ttf</filename>
       <size>17</size>
     </font>
+		  
+    <font>
+      <name>Font_WallInfoLabel</name>
+      <filename>aeon_rss.ttf</filename>
+      <size>12</size>
+    </font>	
+	
+    <font>
+      <name>Font_WallInfoValue</name>
+      <filename>aeon_rss.ttf</filename>
+      <size>13</size>
+    </font>
+	  
+	<font>
+      <name>Font_WallPlot</name>
+      <filename>aeon_player.ttf</filename>
+      <size>14</size>
+	  <linespacing>1.28</linespacing>	  
+    </font>
+	  
+	<font>
+	  <name>Font_WallTitleMod</name>
+	  <filename>aeon_rss.ttf</filename>
+	  <size>17</size>
+	  <shadow>55000000</shadow>
+	</font>
 
 <!-- OSD -->
 

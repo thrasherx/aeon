@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <includes>
 	<include name="Furniture_EpisodeMediaFlagsVars">
 		<posy>655</posy>
@@ -45,7 +44,7 @@
 		<width>90</width>
 		<height>59</height>
 		<include>Animation_CommonFade</include>
-		<visible>Control.IsVisible(52) | Control.IsVisible(552)</visible>
+		<visible>Control.IsVisible(52) | Control.IsVisible(552) | Control.IsVisible(53)</visible>
 	</include>
 	<include name="Furniture_ShowcaseMediaFlagsBlack">
 		<posy>647</posy>
@@ -499,6 +498,72 @@
 					<texture>$INFO[ListItem.AudioCodec,flags/,.png]</texture>
 				</control>
 			</control>
+		</control>
+	</include>
+	<include name="Furniture_WallMediaFlagsVars">
+		<visible>Window.IsActive(25) + Control.IsVisible(53) + !Skin.HasSetting(nomediaflags) + Container.Content(movies)</visible>
+		<include>Animation_CommonFade</include>
+		<include>Animation_WindowFade200</include>
+		<animation effect="slide" start="0,12" end="0,12" time="0" condition="Skin.HasSetting(smallmoviewall) + [Window.IsActive(1) | Window.IsActive(24) | Window.IsActive(25)] + !Container.Content(episodes)">Conditional</animation>
+		<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
+		<posy>193</posy>
+		<control type="group">
+			<posx>85</posx>
+			<control type="image">
+				<include>Furniture_PanelMediaFlagsVars</include>
+				<texture>flags/default.png</texture>
+				<visible>!Control.IsVisible(91) + !Skin.HasSetting(nodefaultflags)</visible>
+			</control>
+			<control type="image" id="91">
+				<include>Furniture_PanelMediaFlagsVars</include>
+				<texture>$INFO[Container(53).ListItem.studio,flags/studios/,.png]</texture>
+			</control>
+		</control>
+		<control type="group">
+			<posx>305</posx>
+			<control type="image">
+				<include>Furniture_PanelMediaFlagsVars</include>
+				<texture>flags/defaultscreen.png</texture>
+				<visible>!Control.IsVisible(93) + !Skin.HasSetting(nodefaultflags)</visible>
+			</control>
+			<control type="image" id="93">
+				<include>Furniture_PanelMediaFlagsVars</include>
+				<texture>$INFO[Container(53).ListItem.VideoResolution,flags/,.png]</texture>
+			</control>
+		</control>
+		<control type="group">
+			<posx>415</posx>
+			<control type="image">
+				<include>Furniture_PanelMediaFlagsVars</include>
+				<texture>$INFO[Container(53).ListItem.AudioChannels,flags/,ch.png]</texture>
+			</control>
+			<control type="image">
+				<include>Furniture_PanelMediaFlagsVars</include>
+				<texture>$INFO[Container(53).ListItem.AudioCodec,flags/,.png]</texture>
+			</control>
+		</control>
+		<control type="group">
+			<posx>195</posx>
+			<control type="image">
+				<include>Furniture_PanelMediaFlagsVars</include>
+				<texture>flags/defaultsource.png</texture>
+				<visible>!Control.IsVisible(92) + !Skin.HasSetting(nodefaultflags)</visible>
+			</control>
+			<control type="image" id="92">
+				<include>Furniture_PanelMediaFlagsVars</include>
+				<texture>$INFO[Container(53).ListItem.VideoCodec,flags/,.png]</texture>
+			</control>
+		</control>
+	</include>
+	<include name="Furniture_WallMediaFlags">
+		<control type="group">
+			<include>Furniture_WallMediaFlagsVars</include>
+			<visible>[!Skin.HasSetting(smallmoviewall) + [Container(53).Column(0) | Container(53).Column(1) | Container(53).Column(2) | Container(53).Column(3)]] | [Skin.HasSetting(smallmoviewall) + [Container(53).Column(0) | Container(53).Column(1) | Container(53).Column(2) | Container(53).Column(3) | Container(53).Column(4)]]</visible>
+		</control>
+		<control type="group">
+			<posx>688</posx>
+			<include>Furniture_WallMediaFlagsVars</include>
+			<visible>[!Skin.HasSetting(smallmoviewall) + [Container(53).Column(4) | Container(53).Column(5) | Container(53).Column(6) | Container(53).Column(7) | Container(53).Column(8)]] | [Skin.HasSetting(smallmoviewall) + [Container(53).Column(5) | Container(53).Column(6) | Container(53).Column(7) | Container(53).Column(8) | Container(53).Column(9) | Container(53).Column(10)]] </visible>
 		</control>
 	</include>
 </includes>
