@@ -391,7 +391,7 @@
 				</control>
 				<control type="image">
 					<posx>105</posx>
-					<posy>215</posy>
+					<posy>268</posy>
 					<align>center</align>
 					<width>240</width>
 					<height>32</height>
@@ -401,24 +401,24 @@
 				</control>
 				<control type="label">
 					<posx>105</posx>
-					<posy>219</posy>
+					<posy>272</posy>
 					<align>center</align>
 					<width>240</width>
 					<height>32</height>
-					<font>Font_MultiplexTrailer</font>
-					<label>Press Down to see trailer</label>
+					<font>Font_MultiplexPlot</font>
+					<label>Press DOWN to see trailer</label>
 					<visible>!IsEmpty(ListItem.Trailer) + !Player.HasVideo + Control.IsVisible(52) + !Control.HasFocus(197) + [Control.IsVisible(109) | Control.HasFocus(110) | Skin.HasSetting(multiplexinfoon) | [ControlGroup(7000).HasFocus() + Skin.HasSetting(multiplexinfotrigger)]]</visible>
 					<colordiffuse>d0FFFFFF</colordiffuse>
 					<animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
 				</control>
 				<control type="label">
 					<posx>105</posx>
-					<posy>219</posy>
+					<posy>272</posy>
 					<align>center</align>
 					<width>240</width>
 					<height>32</height>
-					<font>Font_MultiplexTrailer</font>
-					<label>Press 'x' to stop</label>
+					<font>Font_MultiplexPlot</font>
+					<label>Press 'X' to stop</label>
 					<visible>!IsEmpty(ListItem.Trailer) + Player.HasVideo + Control.IsVisible(52) + !Control.HasFocus(197) + [Control.IsVisible(109) | Control.HasFocus(110) | Skin.HasSetting(multiplexinfoon) | [ControlGroup(7000).HasFocus() + Skin.HasSetting(multiplexinfotrigger)]]</visible>
 					<colordiffuse>d0FFFFFF</colordiffuse>
 					<animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
@@ -457,7 +457,7 @@
 				</control>
 				<control type="image">
 					<posx>177</posx>
-					<posy>295</posy>
+					<posy>316</posy>
 					<align>center</align>
 					<width>240</width>
 					<height>32</height>
@@ -467,24 +467,24 @@
 				</control>
 				<control type="label">
 					<posx>177</posx>
-					<posy>299</posy>
+					<posy>320</posy>
 					<align>center</align>
 					<width>240</width>
 					<height>32</height>
-					<font>Font_MultiplexTrailer</font>
-					<label>Press Down to see trailer</label>
+					<font>Font_MultiplexPlot</font>
+					<label>Press DOWN to see trailer</label>
 					<visible>!IsEmpty(ListItem.Trailer) + Skin.HasSetting(multiplexbigtrailer) + !Player.HasVideo + Control.IsVisible(52) + !Control.HasFocus(197) + [Control.IsVisible(109) | Control.HasFocus(110) | Skin.HasSetting(multiplexinfoon) | [ControlGroup(7000).HasFocus() + Skin.HasSetting(multiplexinfotrigger)]]</visible>
 					<colordiffuse>d0FFFFFF</colordiffuse>
 					<animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
 				</control>
 				<control type="label">
 					<posx>177</posx>
-					<posy>299</posy>
+					<posy>320</posy>
 					<align>center</align>
 					<width>240</width>
 					<height>32</height>
-					<font>Font_MultiplexTrailer</font>
-					<label>Press 'x' to stop</label>
+					<font>Font_MultiplexPlot</font>
+					<label>Press 'X' to stop</label>
 					<visible>!IsEmpty(ListItem.Trailer) + Skin.HasSetting(multiplexbigtrailer) + Player.HasVideo + Control.IsVisible(52) + !Control.HasFocus(197) + [Control.IsVisible(109) | Control.HasFocus(110) | Skin.HasSetting(multiplexinfoon) | [ControlGroup(7000).HasFocus() + Skin.HasSetting(multiplexinfotrigger)]]</visible>
 					<colordiffuse>d0FFFFFF</colordiffuse>
 					<animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
