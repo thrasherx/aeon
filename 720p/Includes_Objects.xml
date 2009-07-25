@@ -381,7 +381,7 @@
 		</control>
 	</include>
 	<!-- Multiplex Flat/Flow Layout Button -->
-	<include name="Objects_MultiplexCoverStyleButtons">
+<!--	<include name="Objects_MultiplexCoverStyleButtons">
 		<control type="togglebutton" id="998">
 			<include>Objects_MediaMenuButton</include>
 			<label>COVER $LOCALIZE[31060]</label>
@@ -391,7 +391,7 @@
 			<visible>Skin.HasSetting(videomovies) + Control.IsVisible(52)</visible>
 		</control>
 	</include>
-	<include name="Objects_MultiplexInfoButtons">
+-->	<include name="Objects_MultiplexInfoButtons">
 		<control type="button" id="980">
 			<include>Objects_MediaMenuButton</include>
 			<label>$LOCALIZE[31070]: $LOCALIZE[31078]</label>
