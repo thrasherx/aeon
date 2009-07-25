@@ -760,12 +760,12 @@
 
 			<control type="image">
 				<texture diffuse="home/home_latestaddedmusic_small_mask.png">$INFO[Window.Property(LatestSong.6.Thumb)]</texture>
-				<include>coverVarsTV</include>
+				<include>coverVarsMusic</include>
 			</control>
 
 			<control type="image">
 				<texture>home/home_latestaddedmusic_small_glass.png</texture>
-				<include>coverVarsTV</include>
+				<include>coverVarsMusic</include>
 			</control>
 
 		</control>
