@@ -502,7 +502,7 @@
 					<control type="image">
 						<include>WatchedOverlaySlim_Low</include>
 						<include>detailcolornofocus</include>
-						<visible>!Skin.HasSetting(nooverlays) + !IsEmpty(ListItem.Overlay)</visible>
+						<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
 						<info>ListItem.Overlay</info>
 					</control>					
 				</itemlayout>
@@ -562,7 +562,7 @@
 					<control type="image">
 						<include>WatchedOverlaySlim_Low</include>
 						<include>detailcolorfocus</include>
-						<visible>!Skin.HasSetting(nooverlays) + !IsEmpty(ListItem.Overlay)</visible>
+						<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
 						<info>ListItem.Overlay</info>
 					</control>
 				</focusedlayout>
@@ -682,7 +682,7 @@
 					<control type="image">
 						<include>WatchedOverlayFull_Low</include>
 						<include>detailcolornofocus</include>
-						<visible>!Skin.HasSetting(nooverlays) + !IsEmpty(ListItem.Overlay)</visible>
+						<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
 						<info>ListItem.Overlay</info>
 					</control>
 				</itemlayout>
@@ -810,7 +810,7 @@
 					<control type="image">
 						<include>WatchedOverlayFull_Low</include>
 						<include>detailcolorfocus</include>
-						<visible>!Skin.HasSetting(nooverlays) + !IsEmpty(ListItem.Overlay)</visible>
+						<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
 						<info>ListItem.Overlay</info>
 					</control>
 				</focusedlayout>
@@ -861,7 +861,7 @@
 					<control type="image">
 						<include>WatchedOverlaySlim_Low</include>
 						<include>detailcolornofocus</include>
-						<visible>!Skin.HasSetting(nooverlays) + !IsEmpty(ListItem.Overlay)</visible>
+						<visible>!Skin.HasSetting(notvoverlays) + !IsEmpty(ListItem.Overlay)</visible>
 						<info>ListItem.Overlay</info>
 					</control>
 				</itemlayout>
@@ -918,7 +918,7 @@
 					<control type="image">
 						<include>WatchedOverlaySlim_Low</include>
 						<include>detailcolorfocus</include>
-						<visible>!Skin.HasSetting(nooverlays) + !IsEmpty(ListItem.Overlay)</visible>
+						<visible>!Skin.HasSetting(notvoverlays) + !IsEmpty(ListItem.Overlay)</visible>
 						<info>ListItem.Overlay</info>
 					</control>
 				</focusedlayout>					

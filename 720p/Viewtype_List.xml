@@ -568,7 +568,7 @@
 						<info>ListItem.Overlay</info>
 					</control>					
 				</focusedlayout>
-				<itemlayout condition="[Window.IsActive(50) + Skin.HasSetting(videotv) + !Skin.HasSetting(tvlistfull)]" height="85">
+				<itemlayout condition="[Window.IsActive(25) + Skin.HasSetting(videotv) + !Skin.HasSetting(tvlistfull)]" height="85">
 					<control type="image">
 						<posx>12</posx>
 						<posy>84</posy>

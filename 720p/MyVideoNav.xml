@@ -128,7 +128,7 @@
 					<altlabel>$LOCALIZE[31066]: $LOCALIZE[31078]</altlabel>
 					<usealttexture>Skin.HasSetting(nomovieoverlays)</usealttexture>
 					<onclick>Skin.ToggleSetting(nomovieoverlays)</onclick>
-					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + !Control.IsVisible(551)</visible>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies)</visible>
 				</control>
 
 				<control type="togglebutton" id="992">
@@ -137,7 +137,7 @@
 					<altlabel>$LOCALIZE[31066]: $LOCALIZE[31078]</altlabel>
 					<usealttexture>Skin.HasSetting(notvoverlays)</usealttexture>
 					<onclick>Skin.ToggleSetting(notvoverlays)</onclick>
-					<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + !Control.IsVisible(551)</visible>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videotv)</visible>
 				</control>				
 
 				<include>Objects_CurtainsButton</include>
