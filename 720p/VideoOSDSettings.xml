@@ -68,19 +68,8 @@
 				<spinheight>65</spinheight>
 				<reverse>yes</reverse>
 				<aligny>center</aligny>
-		</control>
-	
-		<control type="sliderex" id="10">
-			<description>default slider</description>
-			<include>Objects_OSDSettingsButton</include>
-			<sliderwidth>211</sliderwidth>
-			<sliderheight>65</sliderheight>
-			<texturesliderbar>osd/osd_sliderback.png</texturesliderbar>
-			<textureslidernib>osd/osd_slidernub.png</textureslidernib>
-			<textureslidernibfocus>osd/osd_slidernubf.png</textureslidernibfocus>
-		</control>
 			</control>
-
+		
 			<control type="sliderex" id="10">
 				<description>default slider</description>
 				<include>Objects_OSDSettingsButton</include>
@@ -90,6 +79,7 @@
 				<textureslidernib>osd/osd_slidernub.png</textureslidernib>
 				<textureslidernibfocus>osd/osd_slidernubf.png</textureslidernibfocus>
 			</control>
+
 		</control> 
 	</controls>
 
