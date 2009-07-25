@@ -536,6 +536,7 @@
 				<height>564</height>
 				<texture>multiplex/multiplex_tvtablet.png</texture>
 			</control>
+			<!-- Title Mod (-> see Includes_TitleMod.xml) --><include>TitleModTV</include>
 			<control type="group">
 				<posx>105</posx>
 				<posy>30</posy>
@@ -1142,8 +1143,16 @@
 		<control type="image">
 			<include>WatchedOverlayMultiPlexDVD</include>
 			<include>detailcolornofocus</include>
-			<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay) + !Skin.HasSetting(multiplexflow) + !Control.IsVisible(8000)</visible>
+			<visible>Skin.HasSetting(videomovies) + !Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay) + !Skin.HasSetting(multiplexflow) + !Control.IsVisible(8000)</visible>
 			<info>ListItem.Overlay</info>
+			<include>Animation_MultiplexFocusZoomDVD</include>
+		</control>
+		<control type="image">
+			<include>WatchedOverlayMultiPlexDVD</include>
+			<include>detailcolornofocus</include>
+			<visible>Skin.HasSetting(videotv) + !Skin.HasSetting(notvoverlays) + !IsEmpty(ListItem.Overlay) + !Skin.HasSetting(multiplexflow) + !Control.IsVisible(8000)</visible>
+			<info>ListItem.Overlay</info>
+			<include>Animation_MultiplexFocusZoomDVD</include>
 		</control>
 	</include>
 	<include name="MultiplexDVDCoversFocus">
@@ -1201,7 +1210,14 @@
 		<control type="image">
 			<include>WatchedOverlayMultiPlexDVD</include>
 			<include>detailcolornofocus</include>
-			<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay) + !Skin.HasSetting(multiplexflow) + !Control.IsVisible(8000)</visible>
+			<visible>Skin.HasSetting(videomovies) + !Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay) + !Skin.HasSetting(multiplexflow) + !Control.IsVisible(8000)</visible>
+			<info>ListItem.Overlay</info>
+			<include>Animation_MultiplexFocusZoomDVD</include>
+		</control>
+		<control type="image">
+			<include>WatchedOverlayMultiPlexDVD</include>
+			<include>detailcolornofocus</include>
+			<visible>Skin.HasSetting(videotv) + !Skin.HasSetting(notvoverlays) + !IsEmpty(ListItem.Overlay) + !Skin.HasSetting(multiplexflow) + !Control.IsVisible(8000)</visible>
 			<info>ListItem.Overlay</info>
 			<include>Animation_MultiplexFocusZoomDVD</include>
 		</control>
@@ -1505,6 +1521,8 @@
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<info>ListItem.Icon</info>
 				</control>
+				<include condition="!Skin.HasSetting(dvdcase)">MultiplexTVCaseNormalNoFocus</include>
+				<include condition="Skin.HasSetting(dvdcase)">MultiplexTVCaseDVDNoFocus</include>
 				<control type="image">
 					<posx>14</posx>
 					<posy>92</posy>
