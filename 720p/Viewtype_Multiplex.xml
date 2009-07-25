@@ -1860,17 +1860,6 @@
 					<visible>Container.Content(seasons) + IsEmpty(ListItem.Season)</visible>
 				</control>
 
-				<control type="image">
-					<posx>160</posx>
-					<posy>39</posy>
-					<width>48</width>
-					<height>52</height>
-					<info>ListItem.Overlay</info>
-					<visible>!Skin.HasSetting(notvoverlays) + !IsEmpty(ListItem.Overlay)</visible>
-					<include>Animation_VisibleChange200</include>
-					<visible>true</visible>
-				</control>
-
 			</itemlayout>
 			<focusedlayout width="219" height="300" condition="Skin.HasSetting(videotv)">
 				<control type="image">
@@ -1915,17 +1904,6 @@
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<info>ListItem.Icon</info>
 					<include>Animation_MultiplexTVFocusZoom</include>
-				</control>
-
-				<control type="image">
-					<posx>170</posx>
-					<posy>39</posy>
-					<width>48</width>
-					<height>52</height>
-					<info>ListItem.Overlay</info>
-					<visible>!Skin.HasSetting(notvoverlays) + !IsEmpty(ListItem.Overlay)</visible>
-					<include>Animation_VisibleChange200</include>
-					<visible>true</visible>
 				</control>
 
 				<include condition="!Skin.HasSetting(dvdcase)">MultiplexTVCaseNormalFocus</include>
