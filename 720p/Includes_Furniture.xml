@@ -1,21 +1,19 @@
 <includes>
-
-<!-- Time -->
-
+	<!-- Time -->
 	<include name="Furniture_TimeGroupVars">
 		<posx>900</posx>
 		<posy>316</posy>
 		<width>451</width>
-		<height>27</height>	
+		<height>27</height>
 	</include>
-	
+
 	<include name="Furniture_TimeGroupHighVars">
 		<posx>900</posx>
 		<posy>0</posy>
 		<width>451</width>
 		<height>27</height>
 	</include>
-	
+
 	<include name="Furniture_TimeGroupWindowVars">
 		<posx>900</posx>
 		<posy>45</posy>
@@ -31,9 +29,9 @@
 			<height>27</height>
 			<texture>common/timepanel_mid.png</texture>
 			<animation type="Conditional" condition="Skin.HasSetting(bighome)">
-				<effect type="slide" start="-200,-7" end="-200,-7" time="0" /> 
+				<effect type="slide" start="-200,-7" end="-200,-7" time="0" />
 				<effect type="zoom" start="125" end="125" time="0" />
-			</animation>	
+			</animation>
 		</control>
 
 		<control type="label" id="70">
@@ -56,9 +54,10 @@
 			<include>Colour_WhiteAlpha80</include>
 			<visible>Skin.HasSetting(bighome)</visible>
 			<label>[COLOR FFe5e5e5][UPPERCASE]$INFO[System.Date][/UPPERCASE]  |  [/COLOR][COLOR FFcdcdcd]$INFO[System.Time][/COLOR]</label>
-		</control>		
+		</control>
+
 	</include>
-	
+
 	<include name="Furniture_TimePanelHigh">
 		<control type="image">
 			<posx>40</posx>
@@ -67,9 +66,9 @@
 			<height>27</height>
 			<texture flipy="true">common/timepanel_mid.png</texture>
 			<animation type="Conditional" condition="Skin.HasSetting(bighome)">
-				<effect type="slide" start="-200,0" end="-200,0" time="0" /> 
+				<effect type="slide" start="-200,0" end="-200,0" time="0" />
 				<effect type="zoom" start="125" end="125" time="0" />
-			</animation>				
+			</animation>
 		</control>
 
 		<control type="label" id="70">
@@ -79,7 +78,7 @@
 			<font>Font_Time</font>
 			<align>right</align>
 			<include>Colour_WhiteAlpha80</include>
-			<visible>!Skin.HasSetting(bighome)</visible>			
+			<visible>!Skin.HasSetting(bighome)</visible>
 			<label>[COLOR FFe5e5e5][UPPERCASE]$INFO[System.Date][/UPPERCASE]  |  [/COLOR][COLOR FFcdcdcd]$INFO[System.Time][/COLOR]</label>
 		</control>
 
@@ -92,46 +91,54 @@
 			<include>Colour_WhiteAlpha80</include>
 			<visible>Skin.HasSetting(bighome)</visible>
 			<label>[COLOR FFe5e5e5][UPPERCASE]$INFO[System.Date][/UPPERCASE]  |  [/COLOR][COLOR FFcdcdcd]$INFO[System.Time][/COLOR]</label>
-		</control>			
+		</control>
+
 	</include>
 
 	<include name="Furniture_Time">
 		<control type="group">
+
 			<include>Furniture_TimeGroupVars</include>
 			<visible>!Skin.HasSetting(highertime) + Window.IsActive(Home) + !Control.IsVisible(51) + !Control.IsVisible(52) + !Control.IsVisible(552) + !Control.IsVisible(57) + !Control.IsVisible(50) + !Control.IsVisible(53) + !Control.IsVisible(550) + !Control.IsVisible(551) + !Skin.HasSetting(notime)</visible>
-	     	<animation effect="slide" start="0,0" end="0,225" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,225" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
 			<include>Animation_OpenCloseZoom</include>
 			<include>Furniture_TimePanel</include>
 		</control>
-		
+
 		<control type="group">
+
 			<include>Furniture_TimeGroupHighVars</include>
 			<visible>[[Skin.HasSetting(highertime) + Window.IsActive(Home)] | [Control.IsVisible(50) | Control.IsVisible(52) | Control.IsVisible(552) | Control.IsVisible(57) | Control.IsVisible(550) | Control.IsVisible(551)]] + !Skin.HasSetting(notime)</visible>
 			<animation effect="slide" start="0,0" end="0,-27" time="200" condition="[Control.IsVisible(52) + !Control.HasFocus(52) + !Control.HasFocus(71) + !Control.HasFocus(60) + !Control.HasFocus(110)] | [Control.IsVisible(552) + !Control.HasFocus(552) + !Control.HasFocus(71) + !Control.HasFocus(60) + !Control.HasFocus(110)] | [Control.IsVisible(50) + !Control.HasFocus(50) + !Control.HasFocus(71) + !Control.HasFocus(61)] | [Control.IsVisible(550) + !Control.HasFocus(550) + !Control.HasFocus(71) + !Control.HasFocus(61)] | [Control.IsVisible(551) + !Control.HasFocus(551) + !Control.HasFocus(71) + !Control.HasFocus(61)] | [Control.IsVisible(53) + !Control.HasFocus(53) + !Control.HasFocus(71)] | [Control.IsVisible(57) + ![Control.HasFocus(57) | Control.HasFocus(71) | Control.HasFocus(85) | Control.HasFocus(60)]]">Conditional</animation>
 			<include>Animation_CommonFade</include>
 			<include>Furniture_TimePanelHigh</include>
-		</control>		
-		
+		</control>
+
 		<control type="group">
+
 			<include>Furniture_TimeGroupWindowVars</include>
 			<visible>!Window.IsActive(Home) + !Control.IsVisible(51) + !Control.IsVisible(52) + !Control.IsVisible(552) + !Control.IsVisible(57) + !Control.IsVisible(50) + !Control.IsVisible(550) + !Control.IsVisible(551) + !Control.IsVisible(53) + !Skin.HasSetting(notime)</visible>
 			<include>Animation_CommonFade</include>
 			<include>Furniture_TimePanel</include>
 		</control>
+
 	</include>
-	
+
 	<include name="Furniture_WallTime">
 		<control type="group">
+
 			<include>Furniture_TimeGroupHighVars</include>
 			<animation effect="slide" start="0,0" end="0,-27" time="200" condition="[Control.IsVisible(51) + !Control.HasFocus(51) + !Control.HasFocus(71)] | [Control.IsVisible(53) + !Control.HasFocus(53) + !Control.HasFocus(71)] | [Control.IsVisible(57) + ![Control.HasFocus(57) | Control.HasFocus(71) | Control.HasFocus(85) | Control.HasFocus(60)]]">Conditional</animation>
 			<include>Animation_CommonFade</include>
 			<include>Furniture_TimePanelHigh</include>
 			<visible>[Control.IsVisible(51) | Control.IsVisible(53)] + !Skin.HasSetting(notime)</visible>
-		</control>		
+		</control>
+
 	</include>
 
 	<include name="Furniture_VirtualTime">
 		<control type="group">
+
 			<posx>586</posx>
 			<posy>208</posy>
 			<width>297</width>
@@ -139,7 +146,6 @@
 			<visible>!Window.IsActive(Home) + !Skin.HasSetting(highertime)</visible>
 			<animation effect="slide" start="0,0" end="0,150" time="200" easing="inout" tween="circle" condition="Skin.HasSetting(lowermainmenu) + !Control.HasFocus(92)">Conditional</animation>
 			<include>Animation_CommonFade</include>
-	
 			<control type="image">
 				<posx>-43</posx>
 				<posy>0</posy>
@@ -161,13 +167,13 @@
 		</control>
 
 		<control type="group">
+
 			<posx>586</posx>
 			<posy>0</posy>
 			<width>297</width>
 			<height>18</height>
 			<visible>Skin.HasSetting(highertime)</visible>
 			<include>Animation_CommonFade</include>
-			
 			<control type="image">
 				<posx>-43</posx>
 				<posy>0</posy>
@@ -187,57 +193,57 @@
 			</control>
 
 		</control>
+
 	</include>
-	
-<!-- RSS Feeds -->
-	
+
+	<!-- RSS Feeds -->
 	<include name="Furniture_WallRSS">
 		<control type="group">
+
 			<posx>-300</posx>
 			<posy>0</posy>
 			<width>1280</width>
 			<height>57</height>
 			<visible>[Control.IsVisible(53) + Skin.HasSetting(wallrss)]</visible>
-			<animation effect="slide" start="0,0" end="0,-27" time="200" condition="[Control.IsVisible(53) + !Control.HasFocus(53) + !Control.HasFocus(71)] | [Control.IsVisible(57) + ![Control.HasFocus(57) | Control.HasFocus(71) | Control.HasFocus(85) | Control.HasFocus(60)]]">Conditional</animation>			
+			<animation effect="slide" start="0,0" end="0,-27" time="200" condition="[Control.IsVisible(53) + !Control.HasFocus(53) + !Control.HasFocus(71)] | [Control.IsVisible(57) + ![Control.HasFocus(57) | Control.HasFocus(71) | Control.HasFocus(85) | Control.HasFocus(60)]]">Conditional</animation>
 			<include>Animation_CommonFade</include>
-
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1253</width>
 				<height>27</height>
 				<texture>common/rssbar_fs.png</texture>
-			    <include>Animation_CommonFade</include>
+				<include>Animation_CommonFade</include>
 				<visible>system.getbool(lookandfeel.enablerssfeeds) | [!system.getbool(lookandfeel.enablerssfeeds) + Player.HasAudio]</visible>
 				<animation type="Conditional" condition="Skin.HasSetting(bighome)">
-					<effect type="slide" start="-500,0" end="-500,0" time="0" /> 
+					<effect type="slide" start="-500,0" end="-500,0" time="0" />
 					<effect type="zoom" start="125" end="125" time="0" />
 				</animation>
 			</control>
-			
+
 			<control type="rss" id="1">
-			    <description>My First RSS control</description>
-			    <posx>-70</posx>
-			    <posy>3</posy>
-			    <width>1280</width>
-			    <visible>![Player.HasAudio | Skin.HasSetting(bighome)]</visible>
-			    <font>Font_Time</font>
-			    <urlset>1</urlset>
+				<description>My First RSS control</description>
+				<posx>-70</posx>
+				<posy>3</posy>
+				<width>1280</width>
+				<visible>![Player.HasAudio | Skin.HasSetting(bighome)]</visible>
+				<font>Font_Time</font>
+				<urlset>1</urlset>
 				<include>Colour_RSSLight</include>
-			    <include>Animation_CommonFade</include>
+				<include>Animation_CommonFade</include>
 			</control>
-			
+
 			<control type="rss" id="1">
-			    <posx>-70</posx>
-			    <posy>3</posy>
-			    <width>1170</width>
-			    <font>Font_BigRSS</font>
+				<posx>-70</posx>
+				<posy>3</posy>
+				<width>1170</width>
+				<font>Font_BigRSS</font>
 				<include>Colour_RSSLight</include>
 				<urlset>1</urlset>
-			    <include>Animation_CommonFade</include>
+				<include>Animation_CommonFade</include>
 				<visible>!Player.HasAudio + Skin.HasSetting(bighome)</visible>
 			</control>
-			
+
 			<control type="label">
 				<posx>310</posx>
 				<posy>3</posy>
@@ -248,7 +254,7 @@
 				<include>Colour_RSSLight</include>
 				<include>Animation_WindowRSS</include>
 			</control>
-			
+
 			<control type="fadelabel">
 				<posx>310</posx>
 				<posy>3</posy>
@@ -261,36 +267,38 @@
 				<label>$LOCALIZE[31041] $INFO[MusicPlayer.Artist] ($INFO[Player.Time] / $INFO[Player.Duration])</label>
 				<include>Colour_RSSLight</include>
 				<include>Animation_WindowRSS</include>
-			</control>			
-			
+			</control>
+
 			<control type="image">
 				<posx>1102</posx>
 				<posy>0</posy>
 				<width>133</width>
 				<height>27</height>
 				<texture flipx="true">common/rssbar_mid_fs.png</texture>
-				<colordiffuse>e3FFFFFF</colordiffuse>				
-			    <include>Animation_CommonFade</include>
+				<colordiffuse>e3FFFFFF</colordiffuse>
+				<include>Animation_CommonFade</include>
 				<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
 				<animation type="Conditional" condition="Skin.HasSetting(bighome)">
-					<effect type="slide" start="-500,0" end="-500,0" time="0" /> 
+					<effect type="slide" start="-500,0" end="-500,0" time="0" />
 					<effect type="zoom" start="125" end="125" time="0" />
 				</animation>
-			</control>	
-		</control>		
+			</control>
+
+		</control>
+
 	</include>
-	
+
 	<include name="Furniture_HomeRSS">
 		<control type="group">
+
 			<posx>0</posx>
 			<posy>406</posy>
 			<width>1280</width>
 			<height>57</height>
 			<visible>!Skin.HasSetting(lowerrss) + system.getbool(lookandfeel.enablerssfeeds) + ![ControlGroup(940).HasFocus() | ControlGroup(941).HasFocus() | ControlGroup(942).HasFocus() | ControlGroup(943).HasFocus()]</visible>
-	    	<animation effect="slide" start="0,0" end="0,225" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,225" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
 			<include>Animation_OpenCloseZoom</include>
 			<include>Animation_VisibleChange200</include>
-
 			<control type="image">
 				<posx>54</posx>
 				<posy>0</posy>
@@ -298,53 +306,54 @@
 				<height>57</height>
 				<texture>common/rssbar_mid.png</texture>
 				<animation type="Conditional" condition="Skin.HasSetting(bighome)">
-					<effect type="slide" start="0,1" end="0,1" time="0" /> 
+					<effect type="slide" start="0,1" end="0,1" time="0" />
 					<effect type="zoom" start="125" end="125" time="0" />
 				</animation>
-			    <include>Animation_CommonFade</include>
+				<include>Animation_CommonFade</include>
 			</control>
-			
+
 			<control type="rss" id="1">
-			    <posx>110</posx>
-			    <posy>5</posy>
-			    <width>1170</width>
-			    <visible>true</visible>
-			    <font>Font_RSS</font>
+				<posx>110</posx>
+				<posy>5</posy>
+				<width>1170</width>
+				<visible>true</visible>
+				<font>Font_RSS</font>
 				<include>Colour_RSS</include>
 				<urlset>1</urlset>
-			    <include>Animation_CommonFade</include>
+				<include>Animation_CommonFade</include>
 				<visible>!Skin.HasSetting(bighome)</visible>
 			</control>
-			
+
 			<control type="rss" id="1">
-			    <posx>110</posx>
-			    <posy>3</posy>
-			    <width>1170</width>
-			    <visible>true</visible>
-			    <font>Font_BigRSS</font>
+				<posx>110</posx>
+				<posy>3</posy>
+				<width>1170</width>
+				<visible>true</visible>
+				<font>Font_BigRSS</font>
 				<include>Colour_RSS</include>
 				<urlset>1</urlset>
-			    <include>Animation_CommonFade</include>
+				<include>Animation_CommonFade</include>
 				<visible>Skin.HasSetting(bighome)</visible>
 			</control>
-			
+
 			<control type="image">
 				<posx>77</posx>
 				<posy>0</posy>
 				<width>133</width>
 				<height>27</height>
 				<texture>common/rssbar_mid_fade.png</texture>
-				<colordiffuse>e3FFFFFF</colordiffuse>				
-			    <include>Animation_CommonFade</include>
+				<colordiffuse>e3FFFFFF</colordiffuse>
+				<include>Animation_CommonFade</include>
 				<animation type="Conditional" condition="Skin.HasSetting(bighome)">
-					<effect type="slide" start="0,1" end="0,1" time="0" /> 
+					<effect type="slide" start="0,1" end="0,1" time="0" />
 					<effect type="zoom" start="125" end="125" time="0" />
 				</animation>
-			</control>				
-			
+			</control>
+
 		</control>
-		
+
 		<control type="group">
+
 			<posx>0</posx>
 			<posy>664</posy>
 			<width>1280</width>
@@ -352,7 +361,7 @@
 			<visible>Skin.HasSetting(lowerrss) + system.getbool(lookandfeel.enablerssfeeds) + ![ControlGroup(940).HasFocus() | ControlGroup(941).HasFocus() | ControlGroup(942).HasFocus() | ControlGroup(943).HasFocus()]</visible>
 			<include>Animation_CommonFade</include>
 			<animation type="Conditional" condition="Skin.HasSetting(bighome)">
-				<effect type="slide" start="0,-181" end="0,-181" time="0" /> 
+				<effect type="slide" start="0,-181" end="0,-181" time="0" />
 				<effect type="zoom" start="125" end="125" time="0" />
 			</animation>
 			<control type="image">
@@ -361,37 +370,38 @@
 				<width>1253</width>
 				<height>57</height>
 				<texture flipy="true">common/rssbar_mid.png</texture>
-			    <include>Animation_CommonFade</include>
+				<include>Animation_CommonFade</include>
 			</control>
-			
+
 			<control type="rss" id="1">
-			    <posx>110</posx>
-			    <posy>34</posy>
-			    <width>1280</width>
-			    <visible>true</visible>
-			    <font>Font_RSS</font>
+				<posx>110</posx>
+				<posy>34</posy>
+				<width>1280</width>
+				<visible>true</visible>
+				<font>Font_RSS</font>
 				<include>Colour_RSS</include>
-			    <urlset>1</urlset>
-			    <include>Animation_CommonFade</include>
+				<urlset>1</urlset>
+				<include>Animation_CommonFade</include>
 			</control>
-			
+
 			<control type="image">
 				<posx>77</posx>
 				<posy>30</posy>
 				<width>133</width>
 				<height>27</height>
 				<texture flipy="true">common/rssbar_mid_fade.png</texture>
-			    <include>Animation_CommonFade</include>
-			</control>				
-			
+				<include>Animation_CommonFade</include>
+			</control>
+
 		</control>
+
 	</include>
 
 	<include name="Furniture_VirtualOSD">
 		<control type="group">
+
 			<width>840</width>
 			<height>471</height>
-			
 			<control type="progress" id="23">
 				<description>Progressbar</description>
 				<posx>0</posx>
@@ -404,10 +414,10 @@
 				<midtexture>osd/osd_progressmid.png</midtexture>
 				<righttexture>-</righttexture>
 				<overlaytexture>-</overlaytexture>
-			    <include>Animation_CommonFade</include>				
+				<include>Animation_CommonFade</include>
 				<visible>!Skin.HasSetting(noosdprogress) + !Control.IsVisible(213)</visible>
 			</control>
-			
+
 			<control type="image">
 				<posy>372</posy>
 				<width>840</width>
@@ -416,74 +426,80 @@
 			</control>
 
 			<control type="group">
+
 				<visible>!Skin.HasSetting(osdbigtop)</visible>
-			    <include>Animation_CommonFade</include>				
+				<include>Animation_CommonFade</include>
 				<control type="image">
 					<width>840</width>
 					<height>32</height>
 					<texture>osd/fullscreen_top.png</texture>
-				</control>			
+				</control>
+
 				<control type="label">
 					<posx>13</posx>
 					<posy>0</posy>
 					<width>394</width>
-					<height>31</height>			
+					<height>31</height>
 					<aligny>center</aligny>
 					<font>Font_OSDCodecInfo_Virtual</font>
 					<label>[COLOR AAa7a4a4]$LOCALIZE[31700][/COLOR][COLOR AAFFFFFF] $INFO[MusicPlayer.Codec] [/COLOR][COLOR AAa7a4a4]$LOCALIZE[31701][/COLOR][COLOR AAFFFFFF] $INFO[MusicPlayer.BitRate,,KPS][/COLOR] [COLOR AAa7a4a4]$LOCALIZE[31702][/COLOR][COLOR AAFFFFFF] $INFO[MusicPlayer.SampleRate,,KHZ] [COLOR AAa7a4a4]$LOCALIZE[31703][/COLOR][COLOR AAFFFFFF] $INFO[MusicPlayer.Channels][/COLOR]</label>
 				</control>
-			
+
 				<control type="label">
 					<posx>827</posx>
 					<posy>0</posy>
 					<width>394</width>
-					<height>31</height>		
+					<height>31</height>
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>Font_OSDCodecInfo_Virtual</font>
 					<label>[COLOR AAa7a4a4]$LOCALIZE[31704][/COLOR][COLOR AAFFFFFF] $INFO[MusicPlayer.Offset(1).Title] [/COLOR]</label>
 				</control>
+
 			</control>
 
 			<control type="group">
+
 				<visible>Skin.HasSetting(osdbigtop)</visible>
-			    <include>Animation_CommonFade</include>				
+				<include>Animation_CommonFade</include>
 				<control type="image">
 					<width>840</width>
 					<height>88</height>
 					<texture>osd/wider_top.png</texture>
-				</control>					
+				</control>
+
 				<control type="label">
 					<posx>13</posx>
 					<posy>28</posy>
 					<width>394</width>
-					<height>31</height>			
+					<height>31</height>
 					<aligny>center</aligny>
 					<font>Font_OSDCodecInfo_Virtual</font>
 					<label>[COLOR AAa7a4a4]$LOCALIZE[31713][/COLOR][COLOR AAFFFFFF] $INFO[MusicPlayer.PlayListLength][/COLOR][CR][COLOR AAa7a4a4]$LOCALIZE[31714][/COLOR][COLOR AAFFFFFF] $INFO[MusicPlayer.PlayListPosition][/COLOR][CR][COLOR AAa7a4a4]$LOCALIZE[31700][/COLOR][COLOR AAFFFFFF] $INFO[MusicPlayer.Codec][CR][COLOR AAa7a4a4]$LOCALIZE[31701][/COLOR][COLOR AAFFFFFF] $INFO[MusicPlayer.BitRate,, KPS][/COLOR]</label>
 				</control>
-				
+
 				<control type="label">
 					<posx>827</posx>
 					<posy>28</posy>
 					<width>394</width>
-					<height>31</height>		
+					<height>31</height>
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>Font_OSDCodecInfo_Virtual</font>
 					<label>[COLOR AAa7a4a4]$LOCALIZE[31715][/COLOR][CR][COLOR AAFFFFFF] $INFO[MusicPlayer.Offset(-1).Title][/COLOR][CR][COLOR AAa7a4a4]$LOCALIZE[31704][/COLOR][CR][COLOR AAFFFFFF] $INFO[MusicPlayer.Offset(1).Title][/COLOR]</label>
 				</control>
-				
+
 				<control type="image">
 					<posx>385</posx>
 					<posy>8</posy>
 					<width>71</width>
 					<height>71</height>
 					<info>MusicPlayer.Cover</info>
-					<bordertexture border="-1">osd/osd_musicthumbframe.png</bordertexture>				
-				</control>				
+					<bordertexture border="-1">osd/osd_musicthumbframe.png</bordertexture>
+				</control>
+
 			</control>
-			
+
 			<control type="label">
 				<posx>0</posx>
 				<posy>402</posy>
@@ -495,9 +511,9 @@
 				<font>Font_OSDMusicArtist_Virtual</font>
 				<label>[COLOR 91FFFFFF]$INFO[MusicPlayer.Artist][/COLOR] [COLOR AA777777]$INFO[MusicPlayer.Album][/COLOR]</label>
 				<animation effect="slide" start="0,0" end="0,-8" time="200" condition="Control.IsVisible(212)">Conditional</animation>
-			    <include>Animation_CommonFade</include>				
+				<include>Animation_CommonFade</include>
 			</control>
-			
+
 			<control type="label">
 				<posx>0</posx>
 				<posy>402</posy>
@@ -508,10 +524,10 @@
 				<visible>!Player.HasAudio</visible>
 				<font>Font_OSDMusicArtist_Virtual</font>
 				<label>[COLOR 91FFFFFF]$LOCALIZE[31718][/COLOR] [COLOR AA777777]$LOCALIZE[31717][/COLOR]</label>
-				<animation effect="slide" start="0,0" end="0,-8" time="200" condition="Control.IsVisible(212)">Conditional</animation>				
-			    <include>Animation_CommonFade</include>				
-			</control>			
-			
+				<animation effect="slide" start="0,0" end="0,-8" time="200" condition="Control.IsVisible(212)">Conditional</animation>
+				<include>Animation_CommonFade</include>
+			</control>
+
 			<control type="label">
 				<posx>0</posx>
 				<posy>421</posy>
@@ -523,7 +539,7 @@
 				<font>Font_OSDMusicTitle_Virtual</font>
 				<label>[COLOR FFFFFFFF]$INFO[MusicPlayer.Title][/COLOR]</label>
 				<animation effect="slide" start="0,0" end="0,-8" time="200" condition="Control.IsVisible(212)">Conditional</animation>
-			    <include>Animation_CommonFade</include>				
+				<include>Animation_CommonFade</include>
 			</control>
 
 			<control type="label">
@@ -537,12 +553,12 @@
 				<font>Font_OSDMusicTitle_Virtual</font>
 				<label>[COLOR FFFFFFFF]$LOCALIZE[31716][/COLOR]</label>
 				<animation effect="slide" start="0,0" end="0,-8" time="200" condition="Control.IsVisible(212)">Conditional</animation>
-			    <include>Animation_CommonFade</include>				
-			</control>			
+				<include>Animation_CommonFade</include>
+			</control>
 
 			<control type="group" id="212">
-				<visible>Skin.HasSetting(osdshowtime)</visible>				
-			    <include>Animation_CommonFade</include>				
+				<visible>Skin.HasSetting(osdshowtime)</visible>
+				<include>Animation_CommonFade</include>
 				<control type="label">
 					<posx>0</posx>
 					<posy>432</posy>
@@ -566,13 +582,16 @@
 					<font>Font_OSDMusicArtist_Virtual</font>
 					<label>[COLOR 91FFFFFF]$LOCALIZE[31719][/COLOR]</label>
 				</control>
+
 			</control>
-			
+
 		</control>
+
 	</include>
-	
+
 	<include name="Furniture_VirtualRSS">
 		<control type="group">
+
 			<posx>0</posx>
 			<posy>266</posy>
 			<width>810</width>
@@ -580,7 +599,6 @@
 			<visible>!Skin.HasSetting(lowerrss) + system.getbool(lookandfeel.enablerssfeeds)</visible>
 			<animation effect="slide" start="0,0" end="0,150" time="200" easing="inout" tween="circle" condition="Skin.HasSetting(lowermainmenu) + !Control.HasFocus(92)">Conditional</animation>
 			<include>Animation_CommonFade</include>
-			
 			<control type="image">
 				<posx>36</posx>
 				<posy>0</posy>
@@ -588,7 +606,7 @@
 				<height>38</height>
 				<texture>common/rssbar_mid.png</texture>
 			</control>
-	
+
 			<control type="rss" id="1">
 				<description>My First RSS control</description>
 				<posx>72</posx>
@@ -599,26 +617,26 @@
 				<include>Colour_RSS</include>
 				<urlset>1</urlset>
 			</control>
-			
+
 			<control type="image">
 				<posx>52</posx>
 				<posy>0</posy>
 				<width>85</width>
 				<height>18</height>
 				<texture>common/rssbar_mid_fade.png</texture>
-				<colordiffuse>e3FFFFFF</colordiffuse>				
-			</control>	
-	
+				<colordiffuse>e3FFFFFF</colordiffuse>
+			</control>
+
 		</control>
 
 		<control type="group">
+
 			<posx>0</posx>
 			<posy>434</posy>
 			<width>810</width>
 			<height>38</height>
 			<visible>Skin.HasSetting(lowerrss) + system.getbool(lookandfeel.enablerssfeeds)</visible>
 			<include>Animation_CommonFade</include>
-			
 			<control type="image">
 				<posx>36</posx>
 				<posy>0</posy>
@@ -626,7 +644,7 @@
 				<height>38</height>
 				<texture flipy="true">common/rssbar_mid.png</texture>
 			</control>
-	
+
 			<control type="rss" id="1">
 				<description>My First RSS control</description>
 				<posx>72</posx>
@@ -637,21 +655,21 @@
 				<include>Colour_RSS</include>
 				<urlset>1</urlset>
 			</control>
-			
+
 			<control type="image">
 				<posx>52</posx>
 				<posy>20</posy>
 				<width>85</width>
 				<height>18</height>
 				<texture flipy="true">common/rssbar_mid_fade.png</texture>
-				<colordiffuse>e3FFFFFF</colordiffuse>				
-			</control>	
+				<colordiffuse>e3FFFFFF</colordiffuse>
+			</control>
 
 		</control>
+
 	</include>
 
-<!-- Media windows -->
-
+	<!-- Media windows -->
 	<include name="Furniture_MediaPanelVars">
 		<posx>0</posx>
 		<posy>-8</posy>
@@ -660,21 +678,21 @@
 	</include>
 
 	<include name="ShowcaseFloorNight">
-		<texture>showcase/showcase_floor.png</texture>	
+		<texture>showcase/showcase_floor.png</texture>
 	</include>
-	
+
 	<include name="ShowcaseFloorLight">
-		<texture>showcase/lite/showcase_floor.png</texture>		
+		<texture>showcase/lite/showcase_floor.png</texture>
 	</include>
 
 	<include name="ListFloorNight">
-		<texture>list/list_floor.png</texture>	
+		<texture>list/list_floor.png</texture>
 	</include>
-	
+
 	<include name="ListFloorLight">
-		<texture>list/lite/list_floor.png</texture>		
+		<texture>list/lite/list_floor.png</texture>
 	</include>
-	
+
 	<include name="Furniture_MediaPanel">
 		<control type="image">
 			<include>FullscreenDimensions</include>
@@ -682,20 +700,20 @@
 			<colordiffuse>d0FFFFFF</colordiffuse>
 			<visible>Control.IsVisible(50) | Control.IsVisible(550) | Control.IsVisible(551)</visible>
 		</control>
-		
+
 		<control type="image">
 			<posx>0</posx>
 			<posy>315</posy>
 			<width>1280</width>
 			<height>405</height>
 			<include condition="!Skin.HasSetting(darkfloor)">ShowcaseFloorLight</include>
-			<include condition="Skin.HasSetting(darkfloor)">ShowcaseFloorNight</include>			
+			<include condition="Skin.HasSetting(darkfloor)">ShowcaseFloorNight</include>
 			<visible>Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(552)</visible>
 			<include>Animation_CommonFade</include>
 			<include>Animation_HideShowcase</include>
-			<include>Animation_HideMultiplex</include>			
+			<include>Animation_HideMultiplex</include>
 		</control>
-		
+
 		<control type="image">
 			<posx>144</posx>
 			<posy>583</posy>
@@ -708,7 +726,7 @@
 			<include>Animation_HideMultiplex</include>
 			<visible>Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(552)</visible>
 		</control>
-	
+
 		<control type="image">
 			<posx>144</posx>
 			<posy>583</posy>
@@ -719,20 +737,20 @@
 			<include>Animation_HideShowcase</include>
 			<visible>Control.IsVisible(50) | Control.IsVisible(550)</visible>
 		</control>
-		
+
 		<control type="image">
 			<posx>0</posx>
 			<posy>315</posy>
 			<width>1280</width>
 			<height>405</height>
 			<include condition="!Skin.HasSetting(darkfloor)">ListFloorLight</include>
-			<include condition="Skin.HasSetting(darkfloor)">ListFloorNight</include>			
+			<include condition="Skin.HasSetting(darkfloor)">ListFloorNight</include>
 			<visible>Control.IsVisible(50) | Control.IsVisible(550)</visible>
 			<include>Animation_CommonFade</include>
 			<include>Animation_HideShowcase</include>
-			<include>Animation_HideMultiplex</include>				
+			<include>Animation_HideMultiplex</include>
 		</control>
-        
+
 		<control type="image">
 			<posx>140</posx>
 			<posy>503</posy>
@@ -745,8 +763,8 @@
 			<visible>Control.IsVisible(551)</visible>
 			<animation effect="fade" start="100" end="60" time="50" condition="!Skin.HasSetting(listpanelthin)">Conditional</animation>
 			<animation effect="fade" start="100" end="10" time="50" condition="Skin.HasSetting(listpanelthin)">Conditional</animation>
-		</control>		
-		
+		</control>
+
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -796,10 +814,10 @@
 				<effect type="slide" start="0,0" end="464,0" time="400" easing="inout" tween="cubic" />
 			</animation>
 		</control>
-	</include>
-	
-<!-- Home Now Playing panel -->
 
+	</include>
+
+	<!-- Home Now Playing panel -->
 	<include name="Furniture_HomeNowPlayingObjects">
 		<control type="image">
 			<posx>18</posx>
@@ -835,17 +853,18 @@
 			<width>242</width>
 			<texture>home/nowplaying_overlay.png</texture>
 			<visible>Player.HasAudio</visible>
-		</control>		
+		</control>
+
 	</include>
 
 	<include name="Furniture_HomeNowPlayingMetrics">
 		<posx>296</posx>
 		<width>533</width>
 		<height>25</height>
-		<aligny>left</aligny>	
+		<aligny>left</aligny>
 		<visible>Player.HasAudio + !Control.HasFocus(93)</visible>
 	</include>
-	
+
 	<include name="Furniture_HomeNowPlayingInfo">
 		<control type="label">
 			<posy>478</posy>
@@ -861,7 +880,7 @@
 			<label>[UPPERCASE]$INFO[MusicPlayer.Album][/UPPERCASE]</label>
 			<font>Font_HomeNowPlayingAlbum</font>
 		</control>
-		
+
 		<control type="label">
 			<include>Furniture_HomeNowPlayingMetrics</include>
 			<posy>634</posy>
@@ -870,7 +889,7 @@
 			<font>Font_HomeNowPlayingAlbum</font>
 			<visible>!Player.Paused</visible>
 		</control>
-		
+
 		<control type="label">
 			<include>Furniture_HomeNowPlayingMetrics</include>
 			<posy>634</posy>
@@ -886,7 +905,8 @@
 			<textcolor>abFFFFFF</textcolor>
 			<label>[UPPERCASE]$INFO[MusicPlayer.Title][/UPPERCASE]</label>
 			<font>Font_HomeNowPlayingTrack</font>
-		</control>	
+		</control>
+
 	</include>
 
 	<include name="Furniture_HomeNowPlaying">
@@ -909,6 +929,7 @@
 		</control>
 
 		<control type="group">
+
 			<posx>0</posx>
 			<posy>0</posy>
 			<height>720</height>
@@ -927,8 +948,9 @@
 			<include>Furniture_HomeNowPlayingObjects</include>
 			<include>Furniture_HomeNowPlayingInfo</include>
 		</control>
-		
+
 		<control type="group">
+
 			<posx>0</posx>
 			<posy>-30</posy>
 			<height>720</height>
@@ -942,13 +964,14 @@
 				<effect type="fade" start="100" end="0" time="200" />
 			</animation>
 			<animation effect="slide" time="400" tween="cubic" easing="inout" end="0,-120" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
-			<animation effect="slide" time="200" start="0,0" end="0,30" condition="ControlGroup(940).HasFocus() | ControlGroup(941).HasFocus() | ControlGroup(942).HasFocus()">Conditional</animation>			
+			<animation effect="slide" time="200" start="0,0" end="0,30" condition="ControlGroup(940).HasFocus() | ControlGroup(941).HasFocus() | ControlGroup(942).HasFocus()">Conditional</animation>
 			<include>Animation_VisibleChange200</include>
 			<include>Furniture_HomeNowPlayingObjects</include>
-			<include>Furniture_HomeNowPlayingInfo</include>	
+			<include>Furniture_HomeNowPlayingInfo</include>
 		</control>
-		
+
 		<control type="group">
+
 			<posx>0</posx>
 			<posy>-15</posy>
 			<height>720</height>
@@ -964,10 +987,11 @@
 			<animation effect="slide" time="400" tween="cubic" easing="inout" end="0,-125" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
 			<include>Animation_VisibleChange200</include>
 			<include>Furniture_HomeNowPlayingObjects</include>
-			<include>Furniture_HomeNowPlayingInfo</include>			
+			<include>Furniture_HomeNowPlayingInfo</include>
 		</control>
-		
+
 		<control type="group">
+
 			<posx>0</posx>
 			<posy>-15</posy>
 			<height>720</height>
@@ -981,19 +1005,20 @@
 				<effect type="fade" start="100" end="0" time="200" />
 			</animation>
 			<animation effect="slide" time="400" tween="cubic" easing="inout" end="0,-150" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
-			<animation effect="slide" time="200" start="0,0" end="0,20" condition="ControlGroup(940).HasFocus() | ControlGroup(941).HasFocus() | ControlGroup(942).HasFocus()">Conditional</animation>			
+			<animation effect="slide" time="200" start="0,0" end="0,20" condition="ControlGroup(940).HasFocus() | ControlGroup(941).HasFocus() | ControlGroup(942).HasFocus()">Conditional</animation>
 			<include>Animation_VisibleChange200</include>
 			<include>Furniture_HomeNowPlayingObjects</include>
-			<include>Furniture_HomeNowPlayingInfo</include>			
-		</control>		
+			<include>Furniture_HomeNowPlayingInfo</include>
+		</control>
 
 	</include>
 
 	<include name="Furniture_NowPlayingWidget">
 		<control type="group">
+
 			<animation effect="fade" delay="1500" start="0" end="100" time="400">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="100">Hidden</animation>
-			<animation effect="slide" time="1000" start="0,300" end="0,0" tween="cubic" easing="out">WindowOpen</animation>			
+			<animation effect="slide" time="1000" start="0,300" end="0,0" tween="cubic" easing="out">WindowOpen</animation>
 			<visible>[Control.IsVisible(50) | Control.IsVisible(550)] + Player.HasAudio</visible>
 			<control type="image">
 				<include condition="Skin.HasSetting(dvdcase)">NowPlaylingWidgetXPos</include>
@@ -1027,7 +1052,9 @@
 				<label>[UPPERCASE][COLOR a8FFFFFF]$INFO[MusicPlayer.Artist][/COLOR][CR][COLOR FFFFFFFF]$INFO[MusicPlayer.Title][/COLOR][/UPPERCASE]</label>
 				<visible>true</visible>
 			</control>
+
 		</control>
+
 	</include>
 
 	<include name="Furniture_DarkGradient">
@@ -1039,12 +1066,11 @@
 			<texture>showcase/showcase_gradient.png</texture>
 			<visible>Skin.HasSetting(darkfloor) + [Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(552)]</visible>
 			<include>Animation_CommonFade</include>
-		</control>		
-	</include>
-	
-	
-<!-- Settings windows -->
+		</control>
 
+	</include>
+
+	<!-- Settings windows -->
 	<include name="Furniture_SettingsBackPanel">
 		<control type="image">
 			<description>background image</description>
@@ -1054,6 +1080,7 @@
 			<height>673</height>
 			<texture>settings/settings_panelback.png</texture>
 		</control>
+
 	</include>
 
 	<include name="Furniture_SettingsFrontPanel">
@@ -1065,6 +1092,7 @@
 			<height>651</height>
 			<texture>settings/settings_panelfront.png</texture>
 		</control>
+
 	</include>
 
 	<include name="Furniture_SettingsInternalBackPanel">
@@ -1072,19 +1100,19 @@
 		<posy>40</posy>
 		<width>1035</width>
 		<height>638</height>
-		<texture>settings/settings_intframe_bottom.png</texture>	
+		<texture>settings/settings_intframe_bottom.png</texture>
 	</include>
 
 	<include name="Furniture_SettingsSlideVars">
 		<width>840</width>
-		<height>472</height>	
+		<height>472</height>
 	</include>
-	
+
 	<include name="Furniture_SettingsVHPVars">
 		<width>840</width>
-		<height>472</height>	
+		<height>472</height>
 	</include>
-	
+
 	<include name="Furniture_SettingsTutorialSlide">
 		<include>Furniture_SettingsSlideVars</include>
 		<timeperimage>999999</timeperimage>
@@ -1092,18 +1120,18 @@
 		<randomize>true</randomize>
 		<include>Animation_SettingsSlide</include>
 	</include>
-	
+
 	<include name="Furniture_SettingsNewsSlide">
 		<include>Furniture_SettingsSlideVars</include>
-		<include>Animation_SettingsSlide</include>	
+		<include>Animation_SettingsSlide</include>
 	</include>
-	
+
 	<include name="Furniture_SettingsNewsSlideBig">
 		<width>840</width>
 		<height>602</height>
-		<include>Animation_SettingsSlide</include>		
+		<include>Animation_SettingsSlide</include>
 	</include>
-	
+
 	<include name="Furniture_SettingsVitals">
 		<posy>56</posy>
 		<height>491</height>
@@ -1111,11 +1139,10 @@
 		<align>left</align>
 		<aligny>center</aligny>
 		<textoffsetx>15</textoffsetx>
-		<include>Animation_SettingsSlide</include>	
+		<include>Animation_SettingsSlide</include>
 	</include>
 
-<!-- Assistant -->
-	
+	<!-- Assistant -->
 	<include name="Furniture_AssistantTutorialBox">
 		<posx>0</posx>
 		<posy>0</posy>
@@ -1123,9 +1150,9 @@
 		<timeperimage>10000</timeperimage>
 		<fadetime>200</fadetime>
 		<randomize>false</randomize>
-		<include>Animation_TutorialFade</include>				
+		<include>Animation_TutorialFade</include>
 	</include>
-	
+
 	<include name="Furniture_AssistantBroadcastBox">
 		<posx>0</posx>
 		<posy>0</posy>
@@ -1133,7 +1160,7 @@
 		<timeperimage>200</timeperimage>
 		<fadetime>200</fadetime>
 		<randomize>false</randomize>
-		<include>Animation_TutorialFade</include>				
+		<include>Animation_TutorialFade</include>
 	</include>
 
 	<include name="Furniture_Debug">
@@ -1145,6 +1172,7 @@
 			<label>$LOCALIZE[31600][CR]$LOCALIZE[31601] $INFO[System.FreeMemory][CR]$LOCALIZE[31602] $INFO[System.BuildDate][CR]$LOCALIZE[31603] $INFO[System.FPS][CR]$LOCALIZE[31604] $INFO[System.CurrentWindow][CR]$LOCALIZE[31605] $INFO[System.CurrentControl][CR]$INFO[System.InternetState][CR]$LOCALIZE[31606] $INFO[Container.Viewmode]</label>
 			<visible>Skin.HasSetting(debug) + !Skin.HasSetting(debuginfo)</visible>
 		</control>
+
 	</include>
-	
+
 </includes>

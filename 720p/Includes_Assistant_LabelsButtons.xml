@@ -1,5 +1,4 @@
 <includes>
-
 	<include name="Assistant_CommonButtons">
 		<control type="button" id="6">
 			<description>News</description>
@@ -11,6 +10,7 @@
 			<onfocus>Skin.Reset(bmtransitassistant)</onfocus>
 			<visible allowhiddenfocus="true">![Control.HasFocus(6) | Control.HasFocus(300)]</visible>
 		</control>
+
 		<control type="button" id="6">
 			<description>News</description>
 			<posy>0</posy>
@@ -20,6 +20,7 @@
 			<ondown>7</ondown>
 			<visible>Control.HasFocus(6) | Control.HasFocus(300)</visible>
 		</control>
+
 		<control type="label">
 			<description>News Unfocused</description>
 			<posy>32</posy>
@@ -28,6 +29,7 @@
 			<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 			<visible>![Control.HasFocus(6) | Control.HasFocus(300)]</visible>
 		</control>
+
 		<control type="label">
 			<description>News Focused</description>
 			<posy>32</posy>
@@ -36,6 +38,7 @@
 			<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 			<visible>Control.HasFocus(6) | Control.HasFocus(300)</visible>
 		</control>
+
 		<control type="button" id="7">
 			<description>Vitals</description>
 			<posy>58</posy>
@@ -45,6 +48,7 @@
 			<ondown>8</ondown>
 			<visible allowhiddenfocus="true">![Control.HasFocus(7) | Control.HasFocus(301)]</visible>
 		</control>
+
 		<control type="button" id="7">
 			<description>Vitals</description>
 			<posy>58</posy>
@@ -54,6 +58,7 @@
 			<ondown>8</ondown>
 			<visible>Control.HasFocus(7) | Control.HasFocus(301)</visible>
 		</control>
+
 		<control type="label">
 			<description>Vitals Unfocused</description>
 			<posy>90</posy>
@@ -62,6 +67,7 @@
 			<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 			<visible>![Control.HasFocus(7) | Control.HasFocus(301)]</visible>
 		</control>
+
 		<control type="label">
 			<description>Vitals Sub Unfocused</description>
 			<posy>90</posy>
@@ -70,6 +76,7 @@
 			<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 			<visible>Control.HasFocus(7) | Control.HasFocus(301)</visible>
 		</control>
+
 		<control type="button" id="8">
 			<description>Credits</description>
 			<posy>116</posy>
@@ -79,6 +86,7 @@
 			<ondown>9</ondown>
 			<visible allowhiddenfocus="true">!Control.HasFocus(30) + !Control.HasFocus(31) + !Control.HasFocus(32)</visible>
 		</control>
+
 		<control type="button" id="8">
 			<description>Credits</description>
 			<posy>116</posy>
@@ -88,6 +96,7 @@
 			<ondown>9</ondown>
 			<visible>Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(32)</visible>
 		</control>
+
 		<control type="label">
 			<description>Credits Unfocused</description>
 			<posy>148</posy>
@@ -96,6 +105,7 @@
 			<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 			<visible>!Control.HasFocus(8) + !Control.HasFocus(30) + !Control.HasFocus(31) + !Control.HasFocus(32)</visible>
 		</control>
+
 		<control type="label">
 			<description>Credits Sub Unfocused</description>
 			<posy>148</posy>
@@ -103,7 +113,8 @@
 			<textcolor>FF262728</textcolor>
 			<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 			<visible>Control.HasFocus(8) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(32)</visible>
-		</control>	
+		</control>
+
 	</include>
 
 	<include name="Assistant_TourButton">
@@ -118,6 +129,7 @@
 			<onclick>XBMC.ReplaceWindow(AppearanceSettings)</onclick>
 			<visible allowhiddenfocus="true">!Control.HasFocus(9)</visible>
 		</control>
+
 		<control type="button">
 			<description>Start tour</description>
 			<posy>174</posy>
@@ -129,6 +141,7 @@
 			<onclick>XBMC.ReplaceWindow(AppearanceSettings)</onclick>
 			<visible>Control.HasFocus(9)</visible>
 		</control>
+
 		<control type="label">
 			<description>Start tour subtitle</description>
 			<posy>206</posy>
@@ -137,6 +150,7 @@
 			<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 			<visible>!Control.HasFocus(9) + !Control.HasFocus(40)</visible>
 		</control>
+
 		<control type="label">
 			<description>Start tour subtitle</description>
 			<posy>206</posy>
@@ -144,32 +158,29 @@
 			<textcolor>FF262728</textcolor>
 			<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 			<visible>Control.HasFocus(9) | Control.HasFocus(40)</visible>
-		</control>	
+		</control>
+
 	</include>
 
 	<include name="Assistant_Buttons">
-	
-<!-- Buttons for Home page -->
-	
+		<!-- Buttons for Home page -->
 		<control type="group">
+
 			<include>Settings_ButtonGroupDimensionsXBMC</include>
 			<include>Animation_CommonFade</include>
-
 			<include>Assistant_CommonButtons</include>
-
 			<include>Assistant_TourButton</include>
 			<include>Assistant_COTDButton</include>
-			
 		</control>
-		
+
 	</include>
-	
+
 	<include name="Assistant_WelcomeLabel">
 		<control type="group">
+
 			<description>Labels: Start tour</description>
 			<include>Labels_MainLabelGroup</include>
 			<visible>Control.HasFocus(9)</visible>
-
 			<control type="label">
 				<include>Labels_MainLabelBigVars</include>
 				<label>31522</label>
@@ -181,14 +192,12 @@
 			</control>
 
 		</control>
+
 	</include>
-	
+
 	<include name="Assistant_Labels">
-
-<!-- Labels: Home Page -->
-
-		<include>Assistant_WelcomeLabel</include>	
-
+		<!-- Labels: Home Page -->
+		<include>Assistant_WelcomeLabel</include>
 	</include>
 
 </includes>

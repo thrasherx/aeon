@@ -8,13 +8,11 @@
 	</coordinates>
 	<include>Animation_DialogPopup</include>
 	<controls>
-
 		<control type="group">
 
 			<include>Dialogs_Group</include>
 			<include>Dialogs_Tablet</include>
 			<include>Dialogs_Exclam</include>
-
 			<control type="label" id="2">
 				<posx>105</posx>
 				<posy>26</posy>
@@ -42,7 +40,7 @@
 				<ondown>11</ondown>
 				<include>Animation_CommonFade</include>
 				<animation effect="slide" start="0,-15" end="0,-15" time="0" condition="IsEmpty(Control.GetLabel(3)) + IsEmpty(Control.GetLabel(4))">Conditional</animation>
-				<animation effect="slide" start="0,0" end="0,0" time="0" condition="!IsEmpty(Control.GetLabel(3)) + IsEmpty(Control.GetLabel(4))">Conditional</animation>			
+				<animation effect="slide" start="0,0" end="0,0" time="0" condition="!IsEmpty(Control.GetLabel(3)) + IsEmpty(Control.GetLabel(4))">Conditional</animation>
 				<visible allowhiddenfocus="true">Control.HasFocus(10)</visible>
 			</control>
 
@@ -61,10 +59,10 @@
 				<onup>10</onup>
 				<ondown>10</ondown>
 				<include>Animation_CommonFade</include>
-				<animation effect="slide" start="0,-15" end="0,-15" time="0" condition="IsEmpty(Control.GetLabel(3)) + IsEmpty(Control.GetLabel(4))">Conditional</animation>	
-				<animation effect="slide" start="0,0" end="0,0" time="0" condition="!IsEmpty(Control.GetLabel(3)) + IsEmpty(Control.GetLabel(4))">Conditional</animation>			
-				<visible allowhiddenfocus="true">Control.HasFocus(11)</visible>			
-			</control>	
+				<animation effect="slide" start="0,-15" end="0,-15" time="0" condition="IsEmpty(Control.GetLabel(3)) + IsEmpty(Control.GetLabel(4))">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,0" time="0" condition="!IsEmpty(Control.GetLabel(3)) + IsEmpty(Control.GetLabel(4))">Conditional</animation>
+				<visible allowhiddenfocus="true">Control.HasFocus(11)</visible>
+			</control>
 
 			<control type="label">
 				<posx>84</posx>
@@ -74,7 +72,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>Y</label>
-				<font>Font_KeyboardShapes</font>				
+				<font>Font_KeyboardShapes</font>
 			</control>
 
 			<control type="label">
@@ -85,7 +83,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>Z</label>
-				<font>Font_KeyboardShapes</font>				
+				<font>Font_KeyboardShapes</font>
 			</control>
 
 		</control>

@@ -1,7 +1,6 @@
 <window id="605">
 	<defaultcontrol always="true">6</defaultcontrol>
 	<controls>
-
 		<control type="multiimage">
 			<include>FullscreenDimensions</include>
 			<imagepath>backdrops/default_settings</imagepath>
@@ -12,6 +11,7 @@
 		</control>
 
 		<control type="group">
+
 			<include>FullscreenDimensions</include>
 			<animation type="WindowOpen" reversible="false" condition="!Window.Previous(12) + !Window.Previous(13) + !Window.Previous(14) + !Window.Previous(15) + !Window.Previous(16) + !Window.Previous(18) + !Window.Previous(19) + !Window.Previous(17) + !Window.Previous(604) + !Window.Previous(56) | Skin.HasSetting(bmtransit)">
 				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
@@ -21,34 +21,31 @@
 				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
 				<effect type="fade" start="100" end="0" time="300" />
 			</animation>
-
 			<include>Furniture_SettingsBackPanel</include>
-
 			<control type="label">
 				<description>sectiontitle</description>
 				<label>31510</label>
 				<include>Objects_SettingsSectionTitle</include>
 			</control>
-			
-			<include>Assistant_Buttons</include>
 
+			<include>Assistant_Buttons</include>
 			<control type="image">
 				<include>Furniture_SettingsInternalBackPanel</include>
 				<include>Animation_SettingsInternalPanel</include>
 			</control>
 
 			<control type="group">
+
 				<posx>332</posx>
 				<posy>58</posy>
 				<width>840</width>
 				<height>580</height>
-
 				<control type="image">
 					<include>Furniture_SettingsNewsSlideBig</include>
 					<texture>assistant/assistant_transmit.png</texture>
 					<visible>Control.HasFocus(6)</visible>
 				</control>
-				
+
 				<control type="label">
 					<posx>0</posx>
 					<posy>300</posy>
@@ -56,10 +53,10 @@
 					<label>31524</label>
 					<align>center</align>
 					<include>Colour_Grey</include>
-					<font>Font_ProgressLabelMid</font>					
+					<font>Font_ProgressLabelMid</font>
 					<visible>Control.HasFocus(6)</visible>
 				</control>
-				
+
 				<control type="largeimage">
 					<include>Furniture_SettingsNewsSlideBig</include>
 					<texture>http://www.aeonproject.com/dropbin/latestnews.jpg</texture>
@@ -72,7 +69,7 @@
 					<texture>assistant/assistant_vitalsback.png</texture>
 					<visible>Control.HasFocus(7)</visible>
 				</control>
-				
+
 				<control type="label">
 					<posx>20</posx>
 					<width>285</width>
@@ -81,7 +78,7 @@
 					<visible>Control.HasFocus(7)</visible>
 					<label>31598</label>
 				</control>
-				
+
 				<control type="label">
 					<posx>305</posx>
 					<width>553</width>
@@ -90,7 +87,7 @@
 					<visible>Control.HasFocus(7)</visible>
 					<label>$INFO[System.BuildDate][CR]$LOCALIZE[31000][CR]$INFO[Skin.CurrentTheme][CR]$INFO[System.Language][CR]$INFO[System.ScreenResolution][CR]$INFO[System.FreeMemory][CR]$INFO[System.UsedspacePercent][CR]$INFO[System.CPUTemperature][CR]$INFO[System.GPUTemperature][CR]$INFO[System.Uptime][CR]$INFO[System.Internetstate][CR]$INFO[Network.IPAddress][CR]$INFO[System.DVDLabel]</label>
 				</control>
-				
+
 				<control type="image">
 					<width>840</width>
 					<height>602</height>
@@ -125,18 +122,17 @@
 					<animation type="Visible">
 						<effect type="fade" start="0" end="100" time="1000" delay="7000" />
 					</animation>
-				</control>				
-			
+				</control>
+
 				<control type="multiimage">
 					<include>Furniture_AssistantTutorialBox</include>
 					<imagepath>assistant/assistant_welcome.jpg</imagepath>
 					<visible>Control.HasFocus(9)</visible>
 				</control>
-			
+
 			</control>
 
 			<include>Furniture_SettingsFrontPanel</include>
-
 			<control type="image">
 				<posx>331</posx>
 				<posy>43</posy>
@@ -146,7 +142,7 @@
 				<include>Animation_SettingsInternalPanel</include>
 				<visible>![Control.HasFocus(6) | Control.HasFocus(7) | Control.HasFocus(8) | Control.HasFocus(13)]</visible>
 			</control>
-		
+
 			<control type="image">
 				<posx>331</posx>
 				<posy>43</posy>
@@ -158,17 +154,15 @@
 			</control>
 
 			<control type="group">
+
 				<description>Main instruction labels</description>
 				<include>FullscreenDimensions</include>
 				<include>Animation_CommonFade</include>
 				<include>Assistant_Labels</include>
 			</control>
 
-	</control>
+		</control>
 
-	<!--<include>Background_ContextBlack</include>-->
-	<include>Furniture_Debug</include>
-
-</controls>
-
+		<!--<include>Background_ContextBlack</include>--><include>Furniture_Debug</include>
+	</controls>
 </window>

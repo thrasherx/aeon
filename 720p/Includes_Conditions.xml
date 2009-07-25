@@ -1,5 +1,4 @@
 <includes>
-
 	<include name="Conditions_NoHomeVisualisation">
 		<visible>[!Player.HasMedia | !Skin.HasSetting(Visualisation) | !Skin.HasSetting(videohome)]</visible>
 	</include>
@@ -37,23 +36,23 @@
 	</include>
 
 	<include name="Conditions_Weather">
-		<visible>Container(300).HasFocus(10) + !Skin.HasSetting(noweatherpopup)</visible>	
+		<visible>Container(300).HasFocus(10) + !Skin.HasSetting(noweatherpopup)</visible>
 	</include>
 
 	<include name="Conditions_WallLeftSmall">
-		<visible>[Container(53).Column(5) | Container(53).Column(6) | Container(53).Column(7) | Container(53).Column(8) | Container(53).Column(9) | Container(53).Column(10)]</visible>	
+		<visible>[Container(53).Column(5) | Container(53).Column(6) | Container(53).Column(7) | Container(53).Column(8) | Container(53).Column(9) | Container(53).Column(10)]</visible>
 	</include>
 
 	<include name="Conditions_WallRightSmall">
-		<visible>[Container(53).Column(0) | Container(53).Column(1) | Container(53).Column(2) | Container(53).Column(3) | Container(53).Column(4)]</visible>		
+		<visible>[Container(53).Column(0) | Container(53).Column(1) | Container(53).Column(2) | Container(53).Column(3) | Container(53).Column(4)]</visible>
 	</include>
 
 	<include name="Conditions_WallLeftBig">
-		<visible>[Container(53).Column(4) | Container(53).Column(5) | Container(53).Column(6) | Container(53).Column(7) | Container(53).Column(8)]</visible>	
+		<visible>[Container(53).Column(4) | Container(53).Column(5) | Container(53).Column(6) | Container(53).Column(7) | Container(53).Column(8)]</visible>
 	</include>
 
 	<include name="Conditions_WallRightBig">
-		<visible>[Container(53).Column(0) | Container(53).Column(1) | Container(53).Column(2) | Container(53).Column(3)]</visible>		
+		<visible>[Container(53).Column(0) | Container(53).Column(1) | Container(53).Column(2) | Container(53).Column(3)]</visible>
 	</include>
 
 </includes>

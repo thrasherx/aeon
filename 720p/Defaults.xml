@@ -3,18 +3,16 @@
 		<description>default image</description>
 		<posx>0</posx>
 		<posy>0</posy>
-		<texture></texture>
+		<texture/>
 	</default>
-
 	<default type="label">
 		<description>default label</description>
 		<posx>80</posx>
 		<posy>60</posy>
-		<label></label>
+		<label/>
 		<font>font13</font>
 		<textcolor>d0FFFFFF</textcolor>
 	</default>
-
 	<default type="button">
 		<description>default button</description>
 		<posx>300</posx>
@@ -30,7 +28,6 @@
 		<textoffsetx>7</textoffsetx>
 		<aligny>center</aligny>
 	</default>
-
 	<default type="buttonM">
 		<description>default buttonm</description>
 		<posx>430</posx>
@@ -46,7 +43,6 @@
 		<colordiffuse>FFffffff</colordiffuse>
 		<disabledcolor>60ffffff</disabledcolor>
 	</default>
-
 	<default type="togglebutton">
 		<description>default togglebutton</description>
 		<posx>185</posx>
@@ -61,7 +57,6 @@
 		<textoffsetx>7</textoffsetx>
 		<aligny>center</aligny>
 	</default>
-
 	<default type="radiobutton">
 		<description>default radio button</description>
 		<posx>50</posx>
@@ -80,7 +75,6 @@
 		<textoffsetx>7</textoffsetx>
 		<aligny>center</aligny>
 	</default>
-
 	<default type="selectbutton">
 		<description>default select button</description>
 		<posx>60</posx>
@@ -107,7 +101,6 @@
 		<textoffsetx>7</textoffsetx>
 		<aligny>center</aligny>
 	</default>
-
 	<default type="listcontrolex">
 		<description>default listcontrolex</description>
 		<posx>274</posx>
@@ -135,7 +128,6 @@
 		<suffix> |</suffix>
 		<aligny>center</aligny>
 	</default>
-
 	<default type="fadelabel">
 		<description>default fadelabel</description>
 		<posx>55</posx>
@@ -145,7 +137,6 @@
 		<font>font13</font>
 		<textcolor>d0ffffff</textcolor>
 	</default>
-
 	<default type="textbox">
 		<description>default textarea</description>
 		<posx>220</posx>
@@ -156,7 +147,7 @@
 		<spinheight>16</spinheight>
 		<spinposx>640</spinposx>
 		<spinposy>520</spinposy>
-		<spinfont></spinfont>
+		<spinfont/>
 		<spincolor>d0ffffff</spincolor>
 		<textureup>scroll-up.png</textureup>
 		<texturedown>scroll-down.png</texturedown>
@@ -167,7 +158,6 @@
 		<textcolor>d0ffffff</textcolor>
 		<colordiffuse>ffffffff</colordiffuse>
 	</default>
-
 	<default type="progress">
 		<description>default progress control </description>
 		<posx>100</posx>
@@ -178,7 +168,6 @@
 		<righttexture>Progress-Right.png</righttexture>
 		<overlaytexture>-</overlaytexture>
 	</default>
-
 	<default type="spincontrol">
 		<description>default spin control</description>
 		<posx>330</posx>
@@ -199,7 +188,6 @@
 		<textoffsety>0</textoffsety>
 		<aligny>-</aligny>
 	</default>
-
 	<default type="spincontrolex">
 		<description>default spincontrolex</description>
 		<posx>530</posx>
@@ -222,7 +210,6 @@
 		<aligny>center</aligny>
 		<reverse>yes</reverse>
 	</default>
-
 	<default type="checkmark">
 		<description>default checkmark</description>
 		<posx>208</posx>
@@ -238,13 +225,11 @@
 		<align>left</align>
 		<shadow>no</shadow>
 	</default>
-
 	<default type="slider">
 		<description>default slider control</description>
 		<controloffsetx>75</controloffsetx>
 		<controloffsety>0</controloffsety>
 	</default>
-
 	<default type="mover">
 		<description>default mover control</description>
 		<posx>60</posx>
@@ -252,7 +237,6 @@
 		<texturefocus>-</texturefocus>
 		<texturenofocus>-</texturenofocus>
 	</default>
-
 	<default type="resize">
 		<description>default resize control</description>
 		<posx>60</posx>

@@ -1,6 +1,5 @@
 <includes>
-
-<include name="resetsettings">
+	<include name="resetsettings">
 		<onclick>Skin.ResetSettings</onclick>
 		<onclick>Skin.SetBool(iconsxbmc01)</onclick>
 		<onclick>Skin.Reset(iconsxbmc01remix)</onclick>
@@ -13,9 +12,9 @@
 		<onclick>Skin.SetString(gametrailerpath,Gametrailers)</onclick>
 		<onclick>Skin.SetString(movietrailerpath,Movietrailers)</onclick>
 		<onclick>Skin.SetString(comicspath,Comics)</onclick>
-</include>
+	</include>
 
-<include name="keepusersettings">
+	<include name="keepusersettings">
 		<onclick>Skin.Reset(visualisation)</onclick>
 		<onclick>Skin.Reset(mediapanel)</onclick>
 		<onclick>Skin.Reset(timepanel)</onclick>
@@ -57,6 +56,6 @@
 		<onclick>Skin.SetString(adultpath,asource)</onclick>
 		<onclick>Skin.SetString(gametrailerpath,Gametrailers)</onclick>
 		<onclick>Skin.SetString(movietrailerpath,Movietrailers)</onclick>
-</include>
+	</include>
 
 </includes>

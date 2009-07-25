@@ -1,17 +1,16 @@
 <includes>
-
 	<include name="Dialogs_Group">
 		<posx>386</posx>
 		<posy>600</posy>
 		<width>509</width>
-		<height>91</height>	
+		<height>91</height>
 	</include>
-	
+
 	<include name="Dialogs_Slider">
 		<posx>506</posx>
 		<posy>620</posy>
 		<width>298</width>
-		<height>62</height>	
+		<height>62</height>
 	</include>
 
 	<include name="Dialogs_Tablet">
@@ -20,8 +19,9 @@
 			<posy>0</posy>
 			<width>509</width>
 			<height>91</height>
-			<texture>dialogs/scan_backg.png</texture>		
-		</control>	
+			<texture>dialogs/scan_backg.png</texture>
+		</control>
+
 	</include>
 
 	<include name="Dialogs_Exclam">
@@ -31,9 +31,10 @@
 			<width>73</width>
 			<height>73</height>
 			<texture>dialogs/exclam_icon.png</texture>
-		</control>	
+		</control>
+
 	</include>
-	
+
 	<include name="Dialogs_HardDrive">
 		<control type="image">
 			<posx>12</posx>
@@ -42,8 +43,9 @@
 			<height>83</height>
 			<texture>dialogs/scan_icon.png</texture>
 		</control>
+
 	</include>
-	
+
 	<include name="Dialogs_VolumeIcon">
 		<control type="image">
 			<posx>6</posx>
@@ -51,7 +53,8 @@
 			<width>81</width>
 			<height>82</height>
 			<texture>dialogs/volume_icon.png</texture>
-		</control>	
+		</control>
+
 	</include>
 
 	<include name="Dialogs_Progress">
@@ -66,37 +69,37 @@
 		<righttexture>common/blank.png</righttexture>
 		<overlaytexture>-</overlaytexture>
 	</include>
-	
+
 	<include name="Dialogs_LabelVars">
 		<posx>105</posx>
 		<width>390</width>
 		<height>21</height>
 		<textcolor>menutext</textcolor>
 		<align>left</align>
-		<font>Font_ProgressLabel</font>		
+		<font>Font_ProgressLabel</font>
 	</include>
 
 	<include name="Dialogs_Pos1">
-		<posy>8</posy>	
+		<posy>8</posy>
 	</include>
-	
+
 	<include name="Dialogs_Pos2">
-		<posy>26</posy>	
+		<posy>26</posy>
 	</include>
 
 	<include name="Dialogs_Pos3">
-		<posy>44</posy>	
+		<posy>44</posy>
 	</include>
 
 	<include name="Dialogs_Pos4">
-		<posy>62</posy>	
-	</include>	
-	
+		<posy>62</posy>
+	</include>
+
 	<include name="Dialogs_Label1">
 		<include>Dialogs_Pos1</include>
 		<include>Dialogs_LabelVars</include>
 	</include>
-	
+
 	<include name="Dialogs_Label2">
 		<include>Dialogs_Pos2</include>
 		<include>Dialogs_LabelVars</include>
@@ -110,6 +113,6 @@
 	<include name="Dialogs_Label4">
 		<include>Dialogs_Pos4</include>
 		<include>Dialogs_LabelVars</include>
-	</include>	
-	
+	</include>
+
 </includes>

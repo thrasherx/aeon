@@ -6,7 +6,6 @@
 		<posy>0</posy>
 	</coordinates>
 	<controls>
-
 		<control type="image">
 			<description>background image</description>
 			<posx>638</posx>
@@ -15,7 +14,7 @@
 			<height>720</height>
 			<texture>info/info_rightpanelbottom.png</texture>
 			<visible>Skin.HasSetting(solidbookmarks)</visible>
-			<animation effect="slide" start="565,0" end="0,0" delay="200" time="400" easing="out" tween="cubic">WindowOpen</animation>		
+			<animation effect="slide" start="565,0" end="0,0" delay="200" time="400" easing="out" tween="cubic">WindowOpen</animation>
 			<animation effect="fade" time="200" delay="200" start="100" end="0">WindowClose</animation>
 		</control>
 
@@ -26,18 +25,18 @@
 			<width>772</width>
 			<height>720</height>
 			<texture>info/info_rightpaneltop.png</texture>
-			<animation effect="slide" start="565,0" end="0,0" delay="200" time="400" easing="out" tween="cubic">WindowOpen</animation>		
+			<animation effect="slide" start="565,0" end="0,0" delay="200" time="400" easing="out" tween="cubic">WindowOpen</animation>
 			<animation effect="fade" time="200" delay="200" start="100" end="0">WindowClose</animation>
 		</control>
 
 		<control type="group">
+
 			<posx>670</posx>
 			<posy>45</posy>
 			<width>695</width>
 			<height>569</height>
 			<animation effect="slide" start="565,0" end="0,0" delay="200" time="400" easing="out" tween="cubic">WindowOpen</animation>
 			<include>Animation_CommonFade</include>
-
 			<control type="image">
 				<description>background image</description>
 				<posx>0</posx>
@@ -135,25 +134,25 @@
 				<include>Colour_OffWhite</include>
 			</control>
 
-			<control type="grouplist" id="9000"> 
-				<include>Objects_BookmarkMenu</include> 
-				<ondown>11</ondown> 
-				<onup>11</onup> 
+			<control type="grouplist" id="9000">
+				<include>Objects_BookmarkMenu</include>
+				<ondown>11</ondown>
+				<onup>11</onup>
+				<control type="button" id="2">
+					<label>294</label>
+					<include>Objects_BookmarkButton</include>
+				</control>
 
-				<control type="button" id="2"> 
-					<label>294</label> 
-					<include>Objects_BookmarkButton</include> 
-				</control> 
+				<control type="button" id="3">
+					<label>296</label>
+					<include>Objects_BookmarkButton</include>
+				</control>
 
-				<control type="button" id="3"> 
-					<label>296</label> 
-					<include>Objects_BookmarkButton</include> 
-				</control> 
+				<control type="button" id="4">
+					<label>20406</label>
+					<include>Objects_BookmarkButton</include>
+				</control>
 
-				<control type="button" id="4"> 
-					<label>20406</label> 
-					<include>Objects_BookmarkButton</include> 
-				</control> 
 			</control>
 
 			<control type="image">
@@ -188,7 +187,8 @@
 						<texture>$INFO[ListItem.Thumb]</texture>
 						<aspectratio scalediffuse="false" aligny="center">scale</aspectratio>
 						<colordiffuse>91FFFFFF</colordiffuse>
-					</control>				
+					</control>
+
 				</itemlayout>
 				<focusedlayout height="299" width="552">
 					<control type="image">
@@ -199,8 +199,9 @@
 						<texture>$INFO[ListItem.Thumb]</texture>
 						<aspectratio scalediffuse="false" aligny="center">scale</aspectratio>
 						<animation effect="fade" start="100" end="60" time="200">Unfocus</animation>
-						<animation effect="fade" start="60" end="100" time="200">Focus</animation>				   
-					</control>		
+						<animation effect="fade" start="60" end="100" time="200">Focus</animation>
+					</control>
+
 				</focusedlayout>
 			</control>
 
@@ -218,8 +219,9 @@
 			</control>
 
 			<control type="group">
-				<visible>![stringcompare(container(11).numitems,1) | stringcompare(container(11).numitems,0)]</visible>		
-				<animation effect="fade" start="0" end="100" time="200">Visible</animation>			
+
+				<visible>![stringcompare(container(11).numitems,1) | stringcompare(container(11).numitems,0)]</visible>
+				<animation effect="fade" start="0" end="100" time="200">Visible</animation>
 				<control type="image">
 					<posx>13</posx>
 					<posy>470</posy>
@@ -248,7 +250,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>Y</label>
-					<font>Font_KeyboardShapes</font>				
+					<font>Font_KeyboardShapes</font>
 				</control>
 
 				<control type="label">
@@ -259,8 +261,9 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>Z</label>
-					<font>Font_KeyboardShapes</font>				
-				</control>				
+					<font>Font_KeyboardShapes</font>
+				</control>
+
 			</control>
 
 			<control type="label">

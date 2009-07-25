@@ -2,13 +2,12 @@
 	<defaultcontrol always="true">1</defaultcontrol>
 	<include>dialogeffect</include>
 	<controls>
-
 		<control type="group">
+
 			<posx>0</posx>
 			<posy>620</posy>
 			<width>1280</width>
 			<height>159</height>
-
 			<animation type="Visible">
 				<effect type="fade" time="400" start="0" end="100" />
 				<effect type="slide" time="400" start="0,151" end="0,0" easing="out" tween="cubic" />
@@ -25,7 +24,6 @@
 				<effect type="fade" time="400" start="100" end="0" />
 				<effect type="slide" time="400" start="0,0" end="0,151" easing="in" tween="cubic" />
 			</animation>
-
 			<control type="image">
 				<description>Panel</description>
 				<posx>0</posx>
@@ -48,7 +46,7 @@
 				<midtexture>osd/osd_progress_mid.png</midtexture>
 				<righttexture>osd/osd_progress_right.png</righttexture>
 				<overlaytexture>-</overlaytexture>
-				<include>Animation_CommonFade</include>				
+				<include>Animation_CommonFade</include>
 			</control>
 
 			<control type="label">
@@ -70,7 +68,7 @@
 				<colordiffuse>d0FFFFFF</colordiffuse>
 				<label>$LOCALIZE[31720]: $INFO[System.Time]</label>
 			</control>
-			
+
 			<control type="label">
 				<posx>0</posx>
 				<posy>64</posy>
@@ -79,8 +77,8 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>Font_OSDMusicTitle</font>
-				<label>$INFO[VideoPlayer.Title]</label>			
-				<animation effect="slide" start="0,0" end="0,-12" time="200" condition="Control.IsVisible(212)">Conditional</animation>			
+				<label>$INFO[VideoPlayer.Title]</label>
+				<animation effect="slide" start="0,0" end="0,-12" time="200" condition="Control.IsVisible(212)">Conditional</animation>
 			</control>
 
 			<control type="label">
@@ -104,6 +102,8 @@
 				<colordiffuse>d0FFFFFF</colordiffuse>
 				<label>$LOCALIZE[31710]: $INFO[Player.FinishTime]</label>
 			</control>
+
 		</control>
+
 	</controls>
 </window>
