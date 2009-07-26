@@ -616,7 +616,7 @@
 			<height>405</height>
 			<include condition="!Skin.HasSetting(darkfloor)">ShowcaseFloorLight</include>
 			<include condition="Skin.HasSetting(darkfloor)">ShowcaseFloorNight</include>
-			<visible>Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(552)</visible>
+			<visible>Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(500) | Control.IsVisible(501) | Control.IsVisible(502) | Control.IsVisible(552)</visible><!--ADDED WALL-->
 			<include>Animation_CommonFade</include>
 			<include>Animation_HideShowcase</include>
 			<include>Animation_HideMultiplex</include>
@@ -631,7 +631,7 @@
 			<include>Animation_CommonFade</include>
 			<include>Animation_HideShowcase</include>
 			<include>Animation_HideMultiplex</include>
-			<visible>Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(552)</visible>
+			<visible>Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(500) | Control.IsVisible(501) | Control.IsVisible(502) | Control.IsVisible(552)</visible><!--ADDED WALL-->
 		</control>
 		<control type="image">
 			<posx>144</posx>
