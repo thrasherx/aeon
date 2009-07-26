@@ -2,7 +2,8 @@
 	<include name="Furniture_WallBackground">
 		<control type="image">
 			<include>FullscreenDimensions</include>
-			<texture>common/black.png</texture>texture><aspectratio scalediffuse="false">scale</aspectratio>
+			<texture>common/black.png</texture>
+			<aspectratio scalediffuse="false">scale</aspectratio>
 		<visible>Control.IsVisible(53) + Window.IsActive(25) + !Skin.HasSetting(transparentwall)</visible>
 		<animation effect="fade" start="0" end="100" time="200">Visible</animation>
 		<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
