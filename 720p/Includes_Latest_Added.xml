@@ -169,6 +169,7 @@
 			</control>
 
 			<control type="image">
+				<posy>55</posy>
 				<texture diffuse="home/home_latestadded_small_mask.png">$INFO[Window.Property(LatestMovie.1.Thumb)]</texture>
 				<include>coverVars</include>
 			</control>
@@ -197,6 +198,7 @@
 			</control>
 
 			<control type="image">
+				<posy>55</posy>
 				<texture diffuse="home/home_latestadded_small_mask.png">$INFO[Window.Property(LatestMovie.2.Thumb)]</texture>
 				<include>coverVars</include>
 			</control>
@@ -225,6 +227,7 @@
 			</control>
 
 			<control type="image">
+				<posy>55</posy>
 				<texture diffuse="home/home_latestadded_small_mask.png">$INFO[Window.Property(LatestMovie.3.Thumb)]</texture>
 				<include>coverVars</include>
 			</control>
@@ -253,6 +256,7 @@
 			</control>
 
 			<control type="image">
+				<posy>55</posy>
 				<texture diffuse="home/home_latestadded_small_mask.png">$INFO[Window.Property(LatestMovie.4.Thumb)]</texture>
 				<include>coverVars</include>
 			</control>
@@ -281,6 +285,7 @@
 			</control>
 
 			<control type="image">
+				<posy>55</posy>
 				<texture diffuse="home/home_latestadded_small_mask.png">$INFO[Window.Property(LatestMovie.5.Thumb)]</texture>
 				<include>coverVars</include>
 			</control>
@@ -309,6 +314,7 @@
 			</control>
 
 			<control type="image">
+				<posy>55</posy>
 				<texture diffuse="home/home_latestadded_small_mask.png">$INFO[Window.Property(LatestMovie.6.Thumb)]</texture>
 				<include>coverVars</include>
 			</control>
