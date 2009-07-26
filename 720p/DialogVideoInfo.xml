@@ -177,7 +177,7 @@
 			<control type="image">
 				<include>Objects_FSInfoCertificate</include>
 				<texture>flags/mpaa_pg.png</texture>
-				<visible>substring(listitem.mpaa,Rated PG f)</visible>
+				<visible>substring(listitem.mpaa,Rated PG) + !substring(listitem.mpaa,Rated PG-13)</visible>
 			</control>
 
 			<control type="image">
