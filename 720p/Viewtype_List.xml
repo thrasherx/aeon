@@ -62,7 +62,7 @@
 		<font>Font_List</font>
 		<aligny>center</aligny>
 		<animation effect="slide" start="60,0" end="60,0" time="0" condition="[Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) | [Window.IsActive(25) + Skin.HasSetting(videotv)]]">Conditional</animation>
-		<animation effect="slide" start="0,10" end="0,10" time="0" condition="Window.IsActive(1) | Window.IsActive(20) | Window.IsActive(24) | [[Window.IsActive(501) | Window.IsActive(502)] + IsEmpty(ListItem.Artist)] | [Window.IsActive(25) + Skin.HasSetting(videomovies) + !Container.Content(movies)] | [Window.IsActive(2) + IsEmpty(ListItem.PictureDateTime)] | [Container.Content(seasons) + !IsEmpty(ListItem.Episode) + !Skin.HasSetting(tvlistfull)] | [Container.Content(episodes) + [[IsEmpty(ListItem.Writer) + !IsEmpty(ListItem.Plot)] | [!IsEmpty(ListItem.Writer) + IsEmpty(ListItem.Plot)]]]">Conditional</animation>
+		<animation effect="slide" start="0,10" end="0,10" time="0" condition="Window.IsActive(1) | Window.IsActive(20) | Window.IsActive(24) | [[Window.IsActive(501) | Window.IsActive(502)] + IsEmpty(ListItem.Artist)] | [Window.IsActive(25) + Skin.HasSetting(videomovies) + !Container.Content(movies)] | [Window.IsActive(2) + IsEmpty(ListItem.PictureDateTime)] | [Container.Content(seasons) + !IsEmpty(ListItem.Episode) + !Skin.HasSetting(tvlistmax)] | [Container.Content(episodes) + [[IsEmpty(ListItem.Writer) + !IsEmpty(ListItem.Plot)] | [!IsEmpty(ListItem.Writer) + IsEmpty(ListItem.Plot)]]]">Conditional</animation>
 		<animation effect="slide" start="0,20" end="0,20" time="0" condition="[Window.IsActive(25) + Skin.HasSetting(videotv) + ![Container.Content(seasons) | Container.Content(episodes) | Container.Content(tvshows)]] | [Container.Content(seasons) + IsEmpty(ListItem.Episode)] | [Container.Content(episodes) + IsEmpty(ListItem.Writer) + IsEmpty(ListItem.Plot)]">Conditional</animation>
 	</include>
 
@@ -106,7 +106,7 @@
 		<font>Font_ListSub</font>
 		<align>left</align>
 		<aligny>center</aligny>
-		<animation effect="slide" start="0,10" end="0,10" time="0" condition="Container.Content(seasons) + !Skin.HasSetting(tvlistfull)">Conditional</animation>
+		<animation effect="slide" start="0,10" end="0,10" time="0" condition="Container.Content(seasons) + !Skin.HasSetting(tvlistmax)">Conditional</animation>
 		<animation effect="slide" start="0,-10" end="0,-10" time="0" condition="Container.Content(episodes) + [[IsEmpty(ListItem.Writer) + !IsEmpty(ListItem.Plot)] | [!IsEmpty(ListItem.Writer) + IsEmpty(ListItem.Plot)]]">Conditional</animation>
 	</include>
 
@@ -157,7 +157,7 @@
 		<font>Font_ListTrack</font>
 		<align>center</align>
 		<aligny>center</aligny>
-		<animation effect="slide" start="0,10" end="0,10" time="0" condition="Window.IsActive(25) + Skin.HasSetting(videotv) + !Skin.HasSetting(tvlistfull)">Conditional</animation>
+		<animation effect="slide" start="0,10" end="0,10" time="0" condition="Window.IsActive(25) + Skin.HasSetting(videotv) + !Skin.HasSetting(tvlistmax)">Conditional</animation>
 	</include>
 
 	<include name="ListLabel_TrackSmall">
@@ -168,7 +168,7 @@
 		<font>Font_ListDetail</font>
 		<align>center</align>
 		<aligny>center</aligny>
-		<animation effect="slide" start="0,10" end="0,10" time="0" condition="Window.IsActive(25) + Skin.HasSetting(videotv) + !Skin.HasSetting(tvlistfull)">Conditional</animation>
+		<animation effect="slide" start="0,10" end="0,10" time="0" condition="Window.IsActive(25) + Skin.HasSetting(videotv) + !Skin.HasSetting(tvlistmax)">Conditional</animation>
 	</include>
 
 	<include name="List_Objects">
@@ -607,7 +607,7 @@
 					</control>
 
 				</focusedlayout>
-				<itemlayout condition="[Window.IsActive(25) + Skin.HasSetting(videotv) + !Skin.HasSetting(tvlistfull)]" height="85">
+				<itemlayout condition="[Window.IsActive(25) + Skin.HasSetting(videotv) + !Skin.HasSetting(tvlistmax)]" height="85">
 					<control type="image">
 						<posx>12</posx>
 						<posy>84</posy>
@@ -705,7 +705,7 @@
 					</control>
 
 				</itemlayout>
-				<focusedlayout condition="[Window.IsActive(25) + Skin.HasSetting(videotv) + !Skin.HasSetting(tvlistfull)]" height="85">
+				<focusedlayout condition="[Window.IsActive(25) + Skin.HasSetting(videotv) + !Skin.HasSetting(tvlistmax)]" height="85">
 					<control type="image">
 						<posx>12</posx>
 						<posy>84</posy>
@@ -917,7 +917,7 @@
 					</control>
 
 				</focusedlayout>
-				<itemlayout condition="[Window.IsActive(25) + Skin.HasSetting(videotv) + Skin.HasSetting(tvlistfull)]" height="65">
+				<itemlayout condition="[Window.IsActive(25) + Skin.HasSetting(videotv) + Skin.HasSetting(tvlistmax)]" height="65">
 					<control type="image">
 						<posx>12</posx>
 						<posy>64</posy>
@@ -985,7 +985,7 @@
 					</control>
 
 				</itemlayout>
-				<focusedlayout condition="[Window.IsActive(25) + Skin.HasSetting(videotv) + Skin.HasSetting(tvlistfull)]" height="65">
+				<focusedlayout condition="[Window.IsActive(25) + Skin.HasSetting(videotv) + Skin.HasSetting(tvlistmax)]" height="65">
 					<control type="image">
 						<posx>12</posx>
 						<posy>64</posy>

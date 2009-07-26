@@ -81,9 +81,9 @@
 					<control type="togglebutton" id="940">
 						<include>Objects_MediaMenuButton</include>
 						<include>Objects_ListLayoutStrings</include>
-						<usealttexture>Skin.HasSetting(tvlistfull)</usealttexture>
-						<onclick>Skin.SetBool(tvlistfull)</onclick>
-						<altclick>Skin.Reset(tvlistfull)</altclick>
+						<usealttexture>Skin.HasSetting(tvlistmax)</usealttexture>
+						<onclick>Skin.SetBool(tvlistmax)</onclick>
+						<altclick>Skin.Reset(tvlistmax)</altclick>
 						<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + Control.IsVisible(50)</visible>
 					</control>
 
