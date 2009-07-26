@@ -9,7 +9,6 @@
 		<align>center</align>
 		<aligny>center</aligny>
 	</include>
-
 	<include name="VirtualMainMenu_Label">
 		<posy>0</posy>
 		<height>40</height>
@@ -19,7 +18,6 @@
 		<align>center</align>
 		<aligny>center</aligny>
 	</include>
-
 	<include name="VirtualMainMenu_Label2">
 		<posx>53</posx>
 		<width>184</width>
@@ -27,39 +25,36 @@
 		<align>center</align>
 		<aligny>center</aligny>
 	</include>
-
 	<include name="LatestAdditions">
 		<onup>SetFocus(510)</onup>
 		<ondown>351</ondown>
 	</include>
-
 	<!-- Weather Backdrop by Current Weather Conditions -->
 	<include name="BackgroundVarsWeather2">
 		<thumb>$INFO[Skin.String(CustomWeather)]$INFO[Weather.FanartCode]</thumb>
 	</include>
-
 	<!-- End -->
 	<include name="MainMenu">
 		<control type="button" id="351">
 			<onfocus>SetFocus(940)</onfocus>
 			<visible>Container(300).HasFocus(6)</visible>
 		</control>
-
 		<control type="button" id="351">
 			<onfocus>SetFocus(942)</onfocus>
 			<visible>Container(300).HasFocus(7)</visible>
 		</control>
-
 		<control type="button" id="351">
 			<onfocus>SetFocus(941)</onfocus>
 			<visible>Container(300).HasFocus(1)</visible>
 		</control>
-
 		<control type="button" id="351">
 			<onfocus>SetFocus(943)</onfocus>
 			<visible>Container(300).HasFocus(9)</visible>
 		</control>
-
+		<control type="button" id="351">
+			<onfocus>SetFocus(944)</onfocus>
+			<visible>Container(300).HasFocus(22)</visible>
+		</control>
 		<control type="wraplist" id="300">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -84,20 +79,17 @@
 					<include>MainMenu_Label</include>
 					<textcolor>48FFFFFF</textcolor>
 				</control>
-
 			</itemlayout>
 			<focusedlayout width="280" height="61">
 				<control type="label">
 					<include>MainMenu_Label</include>
 					<textcolor>48FFFFFF</textcolor>
 				</control>
-
 				<control type="label">
 					<include>MainMenu_Label</include>
 					<textcolor>FFFFFFFF</textcolor>
 					<include>Animation_ButtonFocusFade</include>
 				</control>
-
 			</focusedlayout>
 			<content>
 				<item id="1">
@@ -218,9 +210,7 @@
 				</item>
 			</content>
 		</control>
-
 	</include>
-
 	<include name="VirtualMainMenu">
 		<control type="wraplist" id="300">
 			<posx>0</posx>
@@ -244,7 +234,6 @@
 					<textcolor>48FFFFFF</textcolor>
 					<animation effect="fade" start="100" end="0" time="200" condition="Window.Next(56) | Window.Next(12) | Window.Next(13) | Window.Next(14) | Window.Next(15) | Window.Next(16) | Window.Next(17) | Window.Next(18) | Window.Next(19) | Window.Next(3) | Window.Next(2) | Window.Next(20) | Window.Next(1) | Window.Next(24) | Window.Next(25) | Window.Next(501) | Window.Next(502) | Window.Next(2600)">Conditional</animation>
 				</control>
-
 			</itemlayout>
 			<focusedlayout width="184" height="40">
 				<control type="label">
@@ -253,7 +242,6 @@
 					<textcolor>48FFFFFF</textcolor>
 					<animation effect="fade" start="100" end="0" time="200" condition="Window.Next(56) | Window.Next(12) | Window.Next(13) | Window.Next(14) | Window.Next(15) | Window.Next(16) | Window.Next(17) | Window.Next(18) | Window.Next(19) | Window.Next(3) | Window.Next(2) | Window.Next(20) | Window.Next(1) | Window.Next(24) | Window.Next(25) | Window.Next(501) | Window.Next(502) | Window.Next(2600)">Conditional</animation>
 				</control>
-
 				<control type="label">
 					<include>VirtualMainMenu_Label</include>
 					<info>ListItem.Label</info>
@@ -262,7 +250,6 @@
 					<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
 					<animation effect="fade" start="100" end="0" time="200" condition="Window.Next(3) | Window.Next(2) | Window.Next(20) | Window.Next(1) | Window.Next(24) | Window.Next(25) | Window.Next(501) | Window.Next(502) | Window.Next(2600)">Conditional</animation>
 				</control>
-
 			</focusedlayout>
 			<content>
 				<item id="1">
@@ -363,9 +350,7 @@
 				</item>
 			</content>
 		</control>
-
 	</include>
-
 	<include name="VirtualMainMenuOptions">
 		<control type="wraplist" id="301">
 			<posx>0</posx>
@@ -389,14 +374,12 @@
 					<textcolor>48FFFFFF</textcolor>
 					<animation effect="fade" start="100" end="0" time="200" condition="Window.Next(56) | Window.Next(12) | Window.Next(13) | Window.Next(14) | Window.Next(15) | Window.Next(16) | Window.Next(17) | Window.Next(18) | Window.Next(19) | Window.Next(3) | Window.Next(2) | Window.Next(20) | Window.Next(1) | Window.Next(24) | Window.Next(25) | Window.Next(501) | Window.Next(502) | Window.Next(2600)">Conditional</animation>
 				</control>
-
 				<control type="label">
 					<include>VirtualMainMenu_Label</include>
 					<info>ListItem.Label2</info>
 					<textcolor>48000000</textcolor>
 					<animation effect="fade" start="100" end="0" time="200" condition="Window.Next(56) | Window.Next(12) | Window.Next(13) | Window.Next(14) | Window.Next(15) | Window.Next(16) | Window.Next(17) | Window.Next(18) | Window.Next(19) | Window.Next(3) | Window.Next(2) | Window.Next(20) | Window.Next(1) | Window.Next(24) | Window.Next(25) | Window.Next(501) | Window.Next(502) | Window.Next(2600)">Conditional</animation>
 				</control>
-
 			</itemlayout>
 			<focusedlayout width="184" height="40">
 				<control type="label">
@@ -405,7 +388,6 @@
 					<textcolor>48FFFFFF</textcolor>
 					<animation effect="fade" start="100" end="0" time="200" condition="Window.Next(56) | Window.Next(12) | Window.Next(13) | Window.Next(14) | Window.Next(15) | Window.Next(16) | Window.Next(17) | Window.Next(18) | Window.Next(19) | Window.Next(3) | Window.Next(2) | Window.Next(20) | Window.Next(1) | Window.Next(24) | Window.Next(25) | Window.Next(501) | Window.Next(502) | Window.Next(2600)">Conditional</animation>
 				</control>
-
 				<control type="label">
 					<include>VirtualMainMenu_Label</include>
 					<info>ListItem.Label</info>
@@ -414,14 +396,12 @@
 					<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
 					<animation effect="fade" start="100" end="0" time="200" condition="Window.Next(3) | Window.Next(2) | Window.Next(20) | Window.Next(1) | Window.Next(24) | Window.Next(25) | Window.Next(501) | Window.Next(502) | Window.Next(2600)">Conditional</animation>
 				</control>
-
 				<control type="label">
 					<include>VirtualMainMenu_Label</include>
 					<info>ListItem.Label2</info>
 					<textcolor>48000000</textcolor>
 					<animation effect="fade" start="100" end="0" time="200" condition="Window.Next(3) | Window.Next(2) | Window.Next(20) | Window.Next(1) | Window.Next(24) | Window.Next(25) | Window.Next(501) | Window.Next(502) | Window.Next(2600)">Conditional</animation>
 				</control>
-
 			</focusedlayout>
 			<content>
 				<item id="1">
@@ -583,7 +563,5 @@
 				</item>
 			</content>
 		</control>
-
 	</include>
-
 </includes>

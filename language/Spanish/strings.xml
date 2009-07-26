@@ -178,7 +178,13 @@
   <string id="31208">APAGAR</string>
   <string id="31209">SALIR</string>
   <string id="31210">EXPULSAR</string> 
- 
+<!--  Shutdown Submenu  --> 
+
+  <string id="31211">REINICIAR</string> 
+  <string id="31212">SUSPENDER</string> 
+  <string id="31213">HIBERNAR</string>
+  <string id="31214">DES. TEMPORIZADOR</string>
+  
 <!--  Set Content / Add Source dialogs  --> 
   
   <string id="31220">EL DIRECTORIO CONTIENE:</string>
