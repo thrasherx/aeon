@@ -11,10 +11,10 @@
 
 		<control type="largeimage">
 			<include>FullscreenDimensions</include>
-			<visible>Control.IsVisible(57) + !IsEmpty(listitem.property(fanart_image)) + !Skin.HasSetting(nomoviefanart)</visible>
-			<include>Animation_FanartFade</include>
+			<visible>[Control.IsVisible(50) | Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(552) | Control.IsVisible(550) | Control.IsVisible(551)] + [Window.IsActive(24) + !Skin.HasSetting(novideofanart)] + !IsEmpty(listitem.property(fanart_image))</visible>
 			<fadetime>400</fadetime>
 			<texture>$INFO[listitem.property(fanart_image)]</texture>
+			<include>Animation_FanartFade</include>
 		</control>
 
 		<include>Furniture_WallBackground</include>
@@ -62,7 +62,16 @@
 						<altclick>Skin.Reset(listvideosquare)</altclick>
 						<visible>Control.IsVisible(50) | Control.IsVisible(550) | Control.IsVisible(551)</visible>
 					</control>
-
+					
+					<control type="togglebutton" id="901">
+						<include>Objects_MediaMenuButton</include>
+						<include>Objects_FanartToggleStrings</include>
+						<usealttexture>Skin.HasSetting(novideofanart)</usealttexture>
+						<onclick>Skin.SetBool(novideofanart)</onclick>
+						<altclick>Skin.Reset(novideofanart)</altclick>
+						<visible>Window.IsActive(24) + [Control.IsVisible(50) | Control.IsVisible(550) | Control.IsVisible(551) | Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(552)]</visible>
+					</control>
+					
 					<include>Objects_PanelDensityButton</include>
 					<include>Objects_WallGridButton</include>
 					<include>Objects_WallBackdropButton</include>
