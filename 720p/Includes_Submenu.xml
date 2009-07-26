@@ -21,7 +21,6 @@
 
 	<include name="Submenu">
 		<control type="button" id="352">
-			<onfocus>Skin.SetBool(lowermainmenu)</onfocus>
 			<onfocus>SetFocus(300)</onfocus>
 		</control>
 
