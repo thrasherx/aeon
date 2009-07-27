@@ -97,14 +97,6 @@
 					<include>BackgroundVarsMusic</include>
 					<onclick>XBMC.ActivateWindow(MyMusic,return)</onclick>
 					<visible>!Skin.HasSetting(nomusic)</visible>
-					<visible>[Skin.HasSetting(onetouch) + Skin.HasSetting(nosubmenumusic)] | !Skin.HasSetting(onetouch)</visible>
-				</item>
-				<item id="1">
-					<label>31010</label>
-					<include>BackgroundVarsMusic</include>
-					<onclick>SetFocus(941)</onclick>
-					<visible>!Skin.HasSetting(nomusic)</visible>
-					<visible>Skin.HasSetting(onetouch) + !Skin.HasSetting(nosubmenumusic)</visible>
 				</item>
 				<item id="2">
 					<label>31011</label>
@@ -133,7 +125,6 @@
 					<onclick>Skin.Reset(videotv)</onclick>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles,return)</onclick>
 					<visible>!Skin.HasSetting(nomovies)</visible>
-					<visible>[Skin.HasSetting(onetouch) + Skin.HasSetting(nosubmenumovies)] | !Skin.HasSetting(onetouch)</visible>
 				</item>
 				<item id="7">
 					<description>My Videos</description>
@@ -143,7 +134,6 @@
 					<onclick>Skin.Reset(videomovies)</onclick>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick>
 					<visible>!Skin.HasSetting(notvshows)</visible>
-					<visible>[Skin.HasSetting(onetouch) + Skin.HasSetting(nosubmenutv)] | !Skin.HasSetting(onetouch)</visible>
 				</item>
 				<item id="8">
 					<label>31015</label>
@@ -156,7 +146,7 @@
 					<label>31017</label>
 					<include condition="Skin.HasSetting(CustomWeatherConditions)">BackgroundVarsWeather2</include>
 					<include condition="!Skin.HasSetting(CustomWeatherConditions)">BackgroundVarsWeather</include>
-					<onclick>xbmc.activatewindow(2600)</onclick>
+					<onclick>XBMC.Active.Window(2600)</onclick>
 					<visible>Skin.HasSetting(weather)</visible>
 				</item>
 				<item id="9">
