@@ -12,14 +12,14 @@
 	<control type="image">
 		<include>FullscreenDimensions</include>
 		<texture>wall/wall_background.png</texture>
-		<visible>Control.IsVisible(53) + ![Skin.HasSetting(smallmoviewall) + Window.IsActive(25)] + !Skin.HasSetting(transparentwall)</visible>
+		<visible>[[[Control.IsVisible(53) + !Skin.HasSetting(smallmoviewall)] | Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Skin.HasSetting(transparentwall)</visible>
 		<include>Animation_WindowFade200</include>
 	</control>
 
 	<control type="image">
 		<include>FullscreenDimensions</include>
 		<texture>wall/wall_background_small.png</texture>
-		<visible>Control.IsVisible(53) + Skin.HasSetting(smallmoviewall) + Window.IsActive(25)</visible>
+		<visible>Control.IsVisible(53) + Skin.HasSetting(smallmoviewall) + Window.IsActive(25) + !Skin.HasSetting(transparentwall)</visible>
 		<include>Animation_WindowFade200</include>
 	</control>
 
