@@ -184,7 +184,7 @@
 
 	<string id="31211">REBOOT</string> 
 	<string id="31212">SUSPEND</string> 
-	<string id="31213">HIBARNATE</string>
+	<string id="31213">HIBERNATE</string>
 	<string id="31214">OFF TIMER</string>
 
 <!--  Set Content / Add Source dialogs  --> 
