@@ -12,7 +12,7 @@
 	<control type="image">
 		<include>FullscreenDimensions</include>
 		<texture>wall/wall_background.png</texture>
-		<visible>Control.IsVisible(53) + ![Skin.HasSetting(smallmoviewall) + Window.IsActive(25)]</visible>
+		<visible>Control.IsVisible(53) + ![Skin.HasSetting(smallmoviewall) + Window.IsActive(25)] + !Skin.HasSetting(transparentwall)</visible>
 		<include>Animation_WindowFade200</include>
 	</control>
 
