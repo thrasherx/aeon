@@ -133,11 +133,11 @@
 		<height>540</height>
 		<pagecontrol>61</pagecontrol>
 		<scrolltime>200</scrolltime>
-		<onleft>53</onleft>
+		<onleft>2</onleft>
 		<onright>53</onright>
-		<onup>2</onup>
-		<ondown>2</ondown>
-		<orientation>horizontal</orientation>
+		<onup>53</onup>
+		<ondown>53</ondown>
+		<orientation>vertical</orientation>
 		<visible>Window.IsActive(20) | Window.IsActive(2) | Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)</visible>
 		<itemlayout width="133" height="133" condition="!Skin.HasSetting(smallmusicwall)">
 			<control type="image">
@@ -185,7 +185,7 @@
 				<texture diffuse="wall/wall_mask.png">defaultaudio.png</texture>
 				<aspectratio scalediffuse="false">scale</aspectratio>
 				<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) | Container.Content(episodes)</visible>
-				<animation effect="zoom" center="66,66" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
+				<animation effect="zoom" center="66,90" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
 			</control>
 
 			<control type="image">
@@ -193,7 +193,7 @@
 				<texture diffuse="wall/wall_mask.png">defaultpicture.png</texture>
 				<aspectratio scalediffuse="false">scale</aspectratio>
 				<visible>Window.IsActive(2)</visible>
-				<animation effect="zoom" center="66,66" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
+				<animation effect="zoom" center="66,90" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
 			</control>
 
 			<control type="image">
@@ -203,7 +203,7 @@
 				<info>ListItem.Icon</info>
 				<fadetime>500</fadetime>
 				<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) | Container.Content(episodes)</visible>
-				<animation effect="zoom" center="66,66" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
+				<animation effect="zoom" center="66,90" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
 			</control>
 
 			<control type="image">
@@ -213,7 +213,7 @@
 				<info>ListItem.Icon</info>
 				<fadetime>500</fadetime>
 				<visible>Window.IsActive(2)</visible>
-				<animation effect="zoom" center="66,66" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
+				<animation effect="zoom" center="66,90" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
 			</control>
 
 			<control type="image">
@@ -222,7 +222,7 @@
 				<texture>wall/wall_nfoverlay.png</texture>
 				<animation type="Focus" reversible="false">
 					<effect type="fade" start="100" end="0" time="200" reversible="false" />
-					<effect type="zoom" center="66,66" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false" />
+					<effect type="zoom" center="66,90" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false" />
 				</animation>
 			</control>
 
@@ -232,7 +232,7 @@
 				<texture>common/blank.png</texture>
 				<animation type="Focus" reversible="false">
 					<effect type="fade" start="0" end="100" time="400" reversible="false" />
-					<effect type="zoom" center="66,66" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false" />
+					<effect type="zoom" center="66,90" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false" />
 				</animation>
 			</control>
 
@@ -283,7 +283,7 @@
 				<texture diffuse="wall/wall_mask.png">defaultaudio.png</texture>
 				<aspectratio scalediffuse="false">scale</aspectratio>
 				<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) | Container.Content(episodes)</visible>
-				<animation effect="zoom" center="51,51" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
+				<animation effect="zoom" center="51,60" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
 			</control>
 
 			<control type="image">
@@ -291,7 +291,7 @@
 				<texture diffuse="wall/wall_mask.png">defaultpicture.png</texture>
 				<aspectratio scalediffuse="false">scale</aspectratio>
 				<visible>Window.IsActive(2)</visible>
-				<animation effect="zoom" center="51,51" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
+				<animation effect="zoom" center="51,60" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
 			</control>
 
 			<control type="image">
@@ -301,7 +301,7 @@
 				<info>ListItem.Icon</info>
 				<fadetime>500</fadetime>
 				<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) | Container.Content(episodes)</visible>
-				<animation effect="zoom" center="51,51" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
+				<animation effect="zoom" center="51,60" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
 			</control>
 
 			<control type="image">
@@ -311,7 +311,7 @@
 				<info>ListItem.Icon</info>
 				<fadetime>500</fadetime>
 				<visible>Window.IsActive(2)</visible>
-				<animation effect="zoom" center="51,51" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
+				<animation effect="zoom" center="51,60" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
 			</control>
 
 			<control type="image">
@@ -320,7 +320,7 @@
 				<texture>wall/wall_nfoverlay.png</texture>
 				<animation type="Focus" reversible="false">
 					<effect type="fade" start="100" end="0" time="200" reversible="false" />
-					<effect type="zoom" center="51,51" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false" />
+					<effect type="zoom" center="51,60" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false" />
 				</animation>
 			</control>
 
@@ -330,7 +330,7 @@
 				<texture>common/blank.png</texture>
 				<animation type="Focus" reversible="false">
 					<effect type="fade" start="0" end="100" time="400" reversible="false" />
-					<effect type="zoom" center="51,51" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false" />
+					<effect type="zoom" center="51,60" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false" />
 				</animation>
 			</control>
 
@@ -345,11 +345,11 @@
 		<include condition="Skin.HasSetting(smallmoviewall)">MovieWallSmall</include>
 		<pagecontrol>61</pagecontrol>
 		<scrolltime>200</scrolltime>
-		<onleft>53</onleft>
+		<onleft>2</onleft>
 		<onright>53</onright>
-		<onup>2</onup>
-		<ondown>2</ondown>
-		<orientation>horizontal</orientation>
+		<onup>53</onup>
+		<ondown>53</ondown>
+		<orientation>vertical</orientation>
 		<visible>Window.IsActive(28) | Window.IsActive(1) | Window.IsActive(24) | [Window.IsActive(25) + !Skin.HasSetting(videotv)] | [Window.IsActive(25) + Skin.HasSetting(videotv) + Skin.HasSetting(unlockTVviews)]</visible>
 		<itemlayout width="123" height="179" condition="!Skin.HasSetting(smallmoviewall)">
 			<include condition="!Skin.HasSetting(dvdcase)">WallIconNormal</include>
@@ -403,121 +403,82 @@
 
 </include>
 <include name="Viewtype_Wall">
-	<control type="image">
-		<posx>57</posx>
-		<posy>98</posy>
-		<width>19</width>
-		<height>524</height>
-		<texture>wall/wall_arrow.png</texture>
-		<visible>Control.IsVisible(53)</visible>
-		<animation effect="slide" start="-100" end="0" delay="800" time="400" easing="out" tween="cubic">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="400" condition="Container(53).Column(0) + !ControlGroup(7000).HasFocus()">Conditional</animation>
-		<animation effect="slide" start="18" end="18" time="0" condition="Window.IsActive(2) | Window.IsActive(501) | Window.IsActive(502)">Conditional</animation>
-	</control>
-
-	<control type="image">
-		<posx>1203</posx>
-		<posy>98</posy>
-		<width>19</width>
-		<height>524</height>
-		<texture flipx="true">wall/wall_arrow.png</texture>
-		<visible>Control.IsVisible(53)</visible>
-		<animation effect="slide" start="100" end="0" delay="800" time="400" easing="out" tween="cubic">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="400" condition="[[Window.IsActive(2) | Window.IsActive(501) | Window.IsActive(502)] + Container(53).Column(7)] | [[Window.IsActive(1) | Window.IsActive(24) | Window.IsActive(25)] + Container(53).Column(8)] + !ControlGroup(7000).HasFocus()">Conditional</animation>
-		<animation effect="slide" start="-18" end="-18" time="0" condition="Window.IsActive(2) | Window.IsActive(501) | Window.IsActive(502)">Conditional</animation>
-	</control>
-
+	
 	<include condition="Window.IsActive(20) | Window.IsActive(2) | Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)">MusicWall</include>
 	<include condition="Window.IsActive(28) | Window.IsActive(1) | Window.IsActive(24) | Window.IsActive(25)">MovieWall</include>
-	<control type="group">
+	
 
-		<posx>115</posx>
-		<posy>655</posy>
-		<visible>Control.IsVisible(53)</visible>
-		<include condition="[[Window.IsActive(24) | Window.IsActive(25) | Window.IsActive(1)] + !Skin.HasSetting(smallmoviewall)] | [[Window.IsActive(2) | Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + !Skin.HasSetting(smallmusicwall)]">Conditions_WallLeftBig</include>
-		<include condition="[[Window.IsActive(24) | Window.IsActive(25) | Window.IsActive(1)] + Skin.HasSetting(smallmoviewall)] | [[Window.IsActive(2) | Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + Skin.HasSetting(smallmusicwall)]">Conditions_WallLeftSmall</include>
-		<animation effect="slide" start="-25,0" end="-25,0" time="0" condition="[Window.IsActive(24) | Window.IsActive(25)] + !Container.Content(episodes)">Conditional</animation>
-		<animation effect="slide" start="0,12" end="0,12" time="0" condition="Skin.HasSetting(smallmoviewall) + [Window.IsActive(1) | Window.IsActive(24) | Window.IsActive(25)] + !Container.Content(episodes)">Conditional</animation>
-		<control type="label">
-			<posy>7</posy>
-			<label>$INFO[ListItem.Label]</label>
-			<include>Colour_Grey</include>
-			<include>WallLabelVars</include>
-			<animation effect="slide" start="0,0" end="0,-7" time="200" easing="out" tween="cubic" condition="!IsEmpty(Control.GetLabel(72))">Conditional</animation>
+
+                <!--FLOOR TITLE/DURATION-->
+		<control type="group">
+			<visible>Control.IsVisible(53)</visible>
+			<include>Animation_HideShowcase</include>
+			<control type="fadelabel">
+				<label>31609</label>
+				<label>31610</label>					
+				<scrollout>false</scrollout>
+				<pauseatend>3000</pauseatend>
+				<scroll>false</scroll>
+				<include>ShowcaseMainLabel</include>
+				<visible>Window.IsActive(25) + Control.IsVisible(53) + stringcompare(container(53).numitems,0)</visible>
+			</control>
+			<control type="fadelabel">
+				<label>31609</label>
+				<label>31611</label>					
+				<scrollout>false</scrollout>
+				<pauseatend>3000</pauseatend>
+				<scroll>false</scroll>
+				<include>ShowcaseMainLabel</include>
+				<visible>Window.IsActive(502) + Control.IsVisible(53) + stringcompare(container(53).numitems,0)</visible>
+			</control>				
+			<control type="label">
+				<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+				<include>ShowcaseMainLabel</include>
+				<visible>Container.Content(movies) + !Skin.HasSetting(nomediaflags) + !Window.IsActive(24)</visible>
+			</control>
+			<control type="label">
+				<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+				<include>ShowcaseMainLabelWide</include>
+				<visible>[!Container.Content(movies) | Window.IsActive(24)] | [Container.Content(movies) + Skin.HasSetting(nomediaflags)]</visible>					
+			</control>
+			<control type="label">
+				<label>[UPPERCASE]$INFO[Container.NumItems] $LOCALIZE[31005][/UPPERCASE]</label>
+				<include>ShowcaseItemsLabel</include>
+			</control>				
+			<control type="label" id="72">
+				<label>[UPPERCASE]$INFO[ListItem.Year]  |  $INFO[ListItem.Duration]  |  $INFO[Container(53).ListItem.RatingAndVotes][/UPPERCASE]</label><!--CHANGED GENRE TO YEAR/DURATION/RATING-->
+				<include>ShowcaseDetailLabel</include>
+				<visible>Container.Content(movies) + [!IsEmpty(ListItem.Duration) | !IsEmpty(ListItem.Year)]</visible><!--CHANGED GENRE TO YEAR/DURATION/RATING-->
+			</control>
+			<control type="label" id="72">
+				<label>$INFO[ListItem.Album,, -] $INFO[ListItem.Artist]</label>
+				<include>ShowcaseDetailLabel</include>
+				<visible>Container.Content(songs)</visible>
+			</control>
+			<control type="label" id="72">
+				<info>ListItem.Label2</info>
+				<include>ShowcaseDetailLabel</include>
+				<visible>Window.IsActive(1) | Container.Content(albums) | Window.IsActive(501)</visible>
+			</control>
+			<control type="label" id="72">
+				<label>[UPPERCASE]$INFO[ListItem.Episode] $LOCALIZE[31406][/UPPERCASE]</label>
+				<include>ShowcaseDetailLabel</include>
+				<visible>[Container.Content(tvshows)] + !IsEmpty(ListItem.Episode)</visible>
+			</control>
+			<control type="label" id="72">
+				<label>[UPPERCASE]$LOCALIZE[31432] $INFO[ListItem.Season], $LOCALIZE[31433] $INFO[ListItem.Episode][/UPPERCASE]</label>
+				<include>ShowcaseDetailLabel</include>
+				<visible>Container.Content(episodes) + !IsEmpty(ListItem.Episode)</visible>
+			</control>
+			<control type="label" id="72">
+				<info>ListItem.PictureResolution</info>
+				<include>ShowcaseDetailLabel</include>
+				<visible>Window.IsActive(2) + !IsEmpty(ListItem.PictureResolution)</visible>
+			</control>
 		</control>
 
-		<control type="label" id="72">
-			<posy>19</posy>
-			<label>$INFO[ListItem.Label2]</label>
-			<include>Colour_DarkGrey</include>
-			<include>WallLabelVars</include>
-			<visible>![Window.IsActive(2) | Window.IsActive(24) | Window.IsActive(25)]</visible>
-		</control>
 
-		<control type="label" id="72">
-			<posy>19</posy>
-			<label>$INFO[ListItem.PictureResolution]</label>
-			<include>Colour_DarkGrey</include>
-			<include>WallLabelVars</include>
-			<visible>Window.IsActive(2)</visible>
-		</control>
 
-		<control type="label" id="72">
-			<posy>19</posy>
-			<label>$INFO[ListItem.Year]</label>
-			<include>Colour_DarkGrey</include>
-			<include>WallLabelVars</include>
-			<visible>Window.IsActive(24) | Window.IsActive(25)</visible>
-		</control>
-
-	</control>
-
-	<control type="group">
-
-		<posx>1165</posx>
-		<posy>655</posy>
-		<visible>Control.IsVisible(53)</visible>
-		<include condition="[[Window.IsActive(24) | Window.IsActive(25) | Window.IsActive(1)] + !Skin.HasSetting(smallmoviewall)] | [[Window.IsActive(2) | Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + !Skin.HasSetting(smallmusicwall)]">Conditions_WallRightBig</include>
-		<include condition="[[Window.IsActive(24) | Window.IsActive(25) | Window.IsActive(1)] + Skin.HasSetting(smallmoviewall)] | [[Window.IsActive(2) | Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + Skin.HasSetting(smallmusicwall)]">Conditions_WallRightSmall</include>
-		<animation effect="slide" start="25,0" end="25,0" time="0" condition="[Window.IsActive(24) | Window.IsActive(25)] + !Container.Content(episodes)">Conditional</animation>
-		<animation effect="slide" start="0,12" end="0,12" time="0" condition="Skin.HasSetting(smallmoviewall) + [Window.IsActive(1) | Window.IsActive(24) | Window.IsActive(25)] + !Container.Content(episodes)">Conditional</animation>
-		<control type="label">
-			<posy>7</posy>
-			<align>right</align>
-			<label>$INFO[ListItem.Label]</label>
-			<include>Colour_Grey</include>
-			<include>WallLabelVars</include>
-			<animation effect="slide" start="0,0" end="0,-7" time="200" easing="out" tween="cubic" condition="!IsEmpty(Control.GetLabel(72))">Conditional</animation>
-		</control>
-
-		<control type="label" id="72">
-			<posy>19</posy>
-			<align>right</align>
-			<label>$INFO[ListItem.Label2]</label>
-			<include>Colour_DarkGrey</include>
-			<include>WallLabelVars</include>
-			<visible>![Window.IsActive(2) | Window.IsActive(24) | Window.IsActive(25)]</visible>
-		</control>
-
-		<control type="label" id="72">
-			<posy>19</posy>
-			<align>right</align>
-			<label>$INFO[ListItem.PictureResolution]</label>
-			<include>Colour_DarkGrey</include>
-			<include>WallLabelVars</include>
-			<visible>Window.IsActive(2)</visible>
-		</control>
-
-		<control type="label" id="72">
-			<posy>19</posy>
-			<align>right</align>
-			<label>$INFO[ListItem.Year]</label>
-			<include>Colour_DarkGrey</include>
-			<include>WallLabelVars</include>
-			<visible>Window.IsActive(24) | Window.IsActive(25)</visible>
-		</control>
-
-	</control>
 
 	<control type="label" id="217">
 		<posx>0</posx>
