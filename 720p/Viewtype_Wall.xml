@@ -116,7 +116,7 @@
 	<posx>85</posx>
 	<posy>91</posy>
 	<width>1108</width>
-	<height>545</height>
+	<height>539</height>
 </include>
 <include name="MovieWallSmall">
 	<posx>83</posx>
@@ -130,7 +130,7 @@
 		<include condition="!Skin.HasSetting(smallmusicwall)">WallWidthBig</include>
 		<include condition="Skin.HasSetting(smallmusicwall)">WallWidthSmall</include>
 		<posy>93</posy>
-		<height>540</height>
+		<height>532</height>
 		<pagecontrol>61</pagecontrol>
 		<scrolltime>200</scrolltime>
 		<onleft>2</onleft>
