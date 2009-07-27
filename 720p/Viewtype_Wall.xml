@@ -446,7 +446,7 @@
 				<include>ShowcaseItemsLabel</include>
 			</control>				
 			<control type="label" id="72">
-				<label>[UPPERCASE]$INFO[ListItem.Year]  |  $INFO[ListItem.Duration]  |  $INFO[Container(53).ListItem.RatingAndVotes][/UPPERCASE]</label><!--CHANGED GENRE TO YEAR/DURATION/RATING-->
+				<label>[UPPERCASE]$INFO[ListItem.Year]  |  $INFO[ListItem.Duration]  |  $INFO[Container(53).ListItem.Rating][/UPPERCASE]</label><!--CHANGED GENRE TO YEAR/DURATION/RATING-->
 				<include>ShowcaseDetailLabel</include>
 				<visible>Container.Content(movies) + [!IsEmpty(ListItem.Duration) | !IsEmpty(ListItem.Year)]</visible><!--CHANGED GENRE TO YEAR/DURATION/RATING-->
 			</control>
