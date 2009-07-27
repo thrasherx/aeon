@@ -221,7 +221,7 @@
 				<bordertexture border="-3">wall/wall_nfborder.png</bordertexture>
 				<texture>wall/wall_nfoverlay.png</texture>
 				<animation type="Focus" reversible="false">
-					<effect type="fade" start="100" end="0" time="200" reversible="false" />
+					<!--<effect type="fade" start="100" end="0" time="200" reversible="false" />--><!--REENABLED GLOSS OVERLAY FOR FOCUSED-->
 					<effect type="zoom" center="66,90" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false" />
 				</animation>
 			</control>
@@ -319,7 +319,7 @@
 				<bordertexture border="-3">wall/wall_nfborder.png</bordertexture>
 				<texture>wall/wall_nfoverlay.png</texture>
 				<animation type="Focus" reversible="false">
-					<effect type="fade" start="100" end="0" time="200" reversible="false" />
+					<!--<effect type="fade" start="100" end="0" time="200" reversible="false" />--><!--REENABLED GLOSS OVERLAY FOR FOCUSED-->
 					<effect type="zoom" center="51,60" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false" />
 				</animation>
 			</control>
