@@ -59,12 +59,13 @@
 
 	<include name="Dialogs_Progress">
 		<description>Progressbar</description>
-		<posx>3</posx>
+		<posx>85</posx>
 		<posy>3</posy>
-		<width>85</width>
+		<width>411</width>
 		<height>85</height>
 		<reveal>true</reveal>
 		<texturebg>dialogs/scan_blank.png</texturebg>
+               <lefttexture>common/blank.png</lefttexture>
 		<midtexture>dialogs/scan_fill.png</midtexture>
 		<righttexture>common/blank.png</righttexture>
 		<overlaytexture>-</overlaytexture>
@@ -72,11 +73,12 @@
 
 	<include name="Dialogs_LabelVars">
 		<posx>105</posx>
-		<width>390</width>
+		<width>376</width>
 		<height>21</height>
 		<textcolor>menutext</textcolor>
 		<align>left</align>
 		<font>Font_ProgressLabel</font>
+                <scroll>true</scroll>
 	</include>
 
 	<include name="Dialogs_Pos1">
