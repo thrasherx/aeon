@@ -13,20 +13,23 @@
 			<include>Dialogs_Group</include>
 			<include>Dialogs_Tablet</include>
 			<include>Dialogs_Exclam</include>
+
 			<control type="label" id="2">
-				<posx>105</posx>
-				<posy>26</posy>
-				<width>376</width>
-				<height>21</height>
-				<textcolor>menutext</textcolor>
-				<align>left</align>
-				<font>Font_ProgressLabel</font>
-				<scroll>true</scroll>
+				<include>Dialogs_Label1</include>
+                        </control>
+
+                        <control type="label" id="3">
+                               <include>Dialogs_Label2</include>
+                               <animation effect="slide" start="0,10" end="0,10" time="0" condition="IsEmpty(Control.GetLabel(4))">Conditional</animation>        
 			</control>
 
+                        <control type="label" id="4">
+                               <include>Dialogs_Label2</include>
+                        </control>
+
 			<control type="button" id="10">
-				<posx>110</posx>
-				<posy>62</posy>
+				<posx>120</posx>
+				<posy>64</posy>
 				<width>98</width>
 				<align>center</align>
 				<textcolor>menutext</textcolor>
@@ -45,8 +48,8 @@
 			</control>
 
 			<control type="button" id="11">
-				<posx>110</posx>
-				<posy>62</posy>
+				<posx>120</posx>
+				<posy>64</posy>
 				<width>98</width>
 				<align>center</align>
 				<textcolor>menutext</textcolor>
@@ -66,7 +69,7 @@
 
 			<control type="label">
 				<posx>84</posx>
-				<posy>-17</posy>
+				<posy>-15</posy>
 				<height>163</height>
 				<width>50</width>
 				<align>center</align>
@@ -76,8 +79,8 @@
 			</control>
 
 			<control type="label">
-				<posx>186</posx>
-				<posy>-17</posy>
+				<posx>206</posx>
+				<posy>-15</posy>
 				<height>163</height>
 				<width>50</width>
 				<align>center</align>
