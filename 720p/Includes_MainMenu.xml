@@ -25,6 +25,9 @@
 		<align>center</align>
 		<aligny>center</aligny>
 	</include>
+        <include name="DownForSub">
+               <ondown>351</ondown>
+        </include>
 	<include name="LatestAdditions">
 		<onup>SetFocus(510)</onup>
 		<ondown>351</ondown>
